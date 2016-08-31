@@ -40,7 +40,7 @@ body{background: #F5F7F7;font-family: ""PingFang SC",Proxima Nova","Helvetica Ne
     background: #373c45;
 }
 .article {
-    padding: 20px;
+    padding: 20px 40px 60px;
     background: #F5F7F7;
     min-height: 1000px;
     margin: 0 0 0 200px;
