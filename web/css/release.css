@@ -14,6 +14,7 @@
     border: 1px solid #EBEBEB;
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.04);
     border-radius: 2px;
+    position: relative;
 }
 .claim_top_li{
     display: inline-block;
@@ -70,6 +71,25 @@ span.task_mes_a{
     color: #1081DE;
     letter-spacing: 0px;
     cursor: pointer;
+}
+.user-window{
+
+    display: inline-block;
+    position: absolute;
+    width: 172px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    box-shadow: 0px -4px 6px 0px rgba(0,0,0,0.12);
+    padding: 15px 16px 0;
+    top:85px;
+    right: 0;
+}
+.user-window .task_message{
+    top:0;
+}
+.user-window-top{
+    border-bottom: 1px solid #DDDDDD;
+    margin-bottom: 6px;
 }
 
 

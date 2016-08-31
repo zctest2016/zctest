@@ -50,6 +50,7 @@ body{background: #F5F7F7;font-family: ""PingFang SC",Proxima Nova","Helvetica Ne
 .fix-content{
     width: 1165px;
     margin: 0 auto;
+    position: relative;
 }
 /*弹窗*/
 .testin-modal .modal-header{background: #f6f6f6;padding: 10px 20px;border-radius: 2px 2px 0 0;}

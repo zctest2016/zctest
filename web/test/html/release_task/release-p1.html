@@ -83,20 +83,38 @@
                 <li class="claim_top_li first">
                     <img class="claim_topApp" src="../../../images/Small_app.png">
                     <p class="task_message"><span>微信 1.0</span></p>
-                    <p class="task_message"><span>用例设计／ Andorid / 应用－社交通讯</span></p>
+                    <p class="task_message"><span>用例设计/Andorid/应用－社交通讯</span></p>
                     <p class="task_message"><span>安装包：</span><span class="task_mes_a">下载</span><span>用例文档：</span><span class="task_mes_a"> 下载</span></p>
                 </li>
                 <li class="claim_top_li second">
                     <p class="task_message">交稿时间：<span>2016 － 08 － 31  14:00</span></p>
-                    <p class="task_message">注意事项：<span>涉及支付环境／说明文档 ／ 开放注册 ／ 测试 环境 ／ 即将正式上线</span></p>
+                    <p class="task_message">注意事项：<span>涉及支付环境/说明文档/开放注册/测试 环境/即将正式上线</span></p>
                     <p class="task_message">其他文档：<span class="task_mes_a"> 下载1</span><span class="task_mes_a">下载2</span></p>
                 </li>
                 <li class="claim_top_li last">
                     <p class="remaining_time"><i class="icon iconfont">&#xe625;</i>客户信息</p>
                 </li>
             </ul>
+            <div class="user-window" style="display: none;">
+                <div class="user-window-top">
+                    <p class="task_message">客户：<span>徐季佳</span></p>
+                    <p class="task_message">手机：<span>18010050097</span></p>
+                    <p class="task_message">Q Q：<span> 414709426</span></p>
+                    <p class="task_message">邮箱：<span> xujijia@testin.cn</span></p>
+                </div>
+                <p class="task_message">管理员QQ：413709426  <span></span></p>
+            </div>
         </div>
     </div>
 </div>
 </body>
+<script>
+    $(document).ready(function(){
+        $(".remaining_time").hover(function(){
+            $(".user-window").css("display","inline-block");
+        },function(){
+            $(".user-window").hide();
+        })
+    });
+</script>
 </html>
