@@ -1,5 +1,5 @@
 .zc_new-nav{background: #0271C7; position: relative;}
-.zc_new-nav .navbar-default{width: 1180px;margin: 0 auto;background-color: #0271C7;border: none;}
+.zc_new-nav .navbar-default{width: 100%;margin: 0 auto;background-color: #0271C7;border: none;}
 .zc_new-nav .navbar-default .navbar-nav>.active>a{background: #3F454D;}
 .zc_new-nav .navbar-default .navbar-nav>li>a {color: #fff;font-size: 14px;}
 .apple-icon{padding: 0px 5px;}
