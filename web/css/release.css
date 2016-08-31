@@ -73,8 +73,6 @@ span.task_mes_a{
     cursor: pointer;
 }
 .user-window{
-
-    display: inline-block;
     position: absolute;
     width: 172px;
     background: #FFFFFF;
@@ -91,5 +89,52 @@ span.task_mes_a{
     border-bottom: 1px solid #DDDDDD;
     margin-bottom: 6px;
 }
-
+/*任务分配步骤样式*/
+.release-step{
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    margin-left: -241px;
+    margin-top: 30px;
+}
+.release-step li{
+    float: left;
+}
+.complete{
+    color: #1081DE;
+}
+ ul .complete.not-complete {
+    color: #999;
+}
+ul.release-step  li .span-name {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 50%;
+    background: 0 0;
+    font-size: 14px;
+    color: #FFF;
+    margin-right: 8px;
+    background: #1081DE;
+    border: 0;
+}
+ul .complete.not-complete {
+    color: #999;
+}
+ul.release-step li .span_lineccc {
+    display: inline-block;
+    height: 1px;
+    width: 74px;
+    background: #ccc;
+    margin: 7px 20px;
+    vertical-align: text-top;
+}
+ul.release-step li .span2 {
+    line-height: 24px;
+    background: 0 0;
+    background-color: #ccc;
+    color: #FFF;
+}
 
