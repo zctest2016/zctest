@@ -50,6 +50,7 @@ body{background: #F5F7F7;font-family: ""PingFang SC",Proxima Nova","Helvetica Ne
 .fix-content{
     width: 1165px;
     margin: 0 auto;
+    position: relative;
 }
 .zc_test-box{
     width: 100%;
