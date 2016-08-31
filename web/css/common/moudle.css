@@ -51,6 +51,24 @@ body{background: #F5F7F7;font-family: ""PingFang SC",Proxima Nova","Helvetica Ne
     width: 1165px;
     margin: 0 auto;
 }
+.zc_test-box{
+    width: 100%;
+    background: #FFF;
+    border: 1px solid #EBEBEB;
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.04);
+    border-radius: 2px;
+}
+.zc_test-box .cygl{
+    font-size: 14px;
+    color: #333;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    margin: 0px;
+}
+.has-error .control-label{
+    color: inherit;
+}
 /*弹窗*/
 .testin-modal .modal-header{background: #f6f6f6;padding: 10px 20px;border-radius: 2px 2px 0 0;}
 .testin-modal .modal-footer {padding: 10px 20px 10px 0;border-top: 0;border-radius: 0 0 5px 5px;}
