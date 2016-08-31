@@ -5,7 +5,47 @@ body{background: #F5F7F7;font-family: ""PingFang SC",Proxima Nova","Helvetica Ne
 .input-radio:disabled+.input-radio-show{ opacity: .3; -ms-filter : progid:DXImageTransform.Microsoft.Alpha(Opacity=30); filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);}
 .input-checkbox-show {background-position: 0px 1px;}
 .input-checkbox:checked+.input-checkbox-show {background-position: 0px -27px;}
-
+.content{min-height:1000px;_height:expression(this.scrollHeight>1000 ? "auto":"1000px");overflow:hidden;zoom:1;background:#303641;}
+.aside {
+    width: 200px;
+    float: left;
+    margin-bottom: 10px;
+    background: #303641;
+}
+.zc_list_bxone {
+    height: auto;
+    overflow: hidden;
+}
+.zc_list_bxone ul {
+    margin-bottom: 0px;
+}
+.zc_list_bxone ul li {
+    height: 41px;
+    line-height: 40px;
+    border-bottom: 1px solid #3f444e;
+}
+.zc_list_bxone ul li a {
+    display: block;
+    color: #AAABAE;
+    font-size: 13px;
+    padding-left: 50px;
+    background: #2b303a;
+}
+.zc_list_bxone ul li:first-child a{
+    background: #303641;
+}
+.zc_list_bxone ul li a.active {
+    color: #ffffff;
+    text-decoration: none;
+    background: #373c45;
+}
+.article {
+    padding: 20px;
+    background: #F5F7F7;
+    min-height: 1000px;
+    margin: 0 0 0 200px;
+    zoom: 1;
+}
 /*弹窗*/
 .testin-modal .modal-header{background: #f6f6f6;padding: 10px 20px;border-radius: 2px 2px 0 0;}
 .testin-modal .modal-footer {padding: 10px 20px 10px 0;border-top: 0;border-radius: 0 0 5px 5px;}
