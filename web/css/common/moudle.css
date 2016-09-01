@@ -74,6 +74,7 @@ body{background: #F5F7F7;font-family: ""PingFang SC",Proxima Nova","Helvetica Ne
 .bottom-btn-group{
     text-align: center;
     padding-top: 29px;
+    position: relative;
 }
 .bottom-btn-group .bottom-btn{
     display: inline-block;
@@ -119,6 +120,12 @@ body{background: #F5F7F7;font-family: ""PingFang SC",Proxima Nova","Helvetica Ne
 .basic-btn:focus{
     color: #333;
     text-decoration: none;
+}
+@media (min-width: 768px){
+    .modal-dialog {
+        width: 600px;
+        margin: 100px auto;
+    }
 }
 /*弹窗*/
 .testin-modal .modal-header{background: #f6f6f6;padding: 10px 20px;border-radius: 2px 2px 0 0;}

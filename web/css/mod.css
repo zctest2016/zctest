@@ -99,7 +99,7 @@ body {
     display: block;
 }
 .module_list_wrapper .sub-module-container .module-item {
-    padding: 0 20px 0 40px;
+    padding: 0 20px 0 60px;
     /*border: 1px;*/
 }
 .module_list_wrapper .sub-module-container .module-item:first-child .adjust-layout {
@@ -118,12 +118,13 @@ body {
 .module_list_wrapper .main.module-item .adjust-layout .title input{
     border: none;
     padding: 0px;
-    width: 648px;
+    width: 678px;
     height: 36px;
     border-radius: 2px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    margin-left: 3px;
 }
 .module_list_wrapper .title input:focus{
     border-color: #66afe9!important;
@@ -136,17 +137,14 @@ body {
     border: 1px solid #cccccc;
     padding: 9px 10px;
 }
-.module_list_wrapper .module-item .adjust-layout .title .save-text{
-    color: #1081de;
-    font-size: 22px;
-    position: relative;
-    top: 3px;
-    margin-left: 5px;
-    cursor: pointer;
-    display: none;
-}
-.module_list_wrapper .module-item.editing .adjust-layout .title .save-text{
+.module_list_wrapper .module-item.editing .adjust-layout .action .save-text{
     display: inline-block;
+}
+.module_list_wrapper .module-item.editing .adjust-layout .action .edit-module-name{
+    opacity: 0;z-index: -1;position: relative;
+}
+.module_list_wrapper .module-item.editing .adjust-layout .action .remove-module{
+    opacity: 0;z-index: -1;position: relative;
 }
 .cygl .btn-sm{
     padding: 4px 11px;
@@ -201,4 +199,19 @@ body {
 .modal-body .content-form .adding-name[disabled]{
     background-color: #eeeeee;
     color: #999999;
+}
+.new-item{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #1081DE;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+}
+.bottom-btn-group .blue-link.pull-right{
+    position: absolute;
+    right: 0;
+    top: 29px;
 }
