@@ -130,11 +130,25 @@ ul.release-step li .span_lineccc {
     margin: 7px 20px;
     vertical-align: text-top;
 }
+ul.release-step li .span_line {
+    display: inline-block;
+    height: 1px;
+    width: 74px;
+    background: #1081DE;
+    margin: 7px 20px;
+    vertical-align: text-top;
+}
 ul.release-step li .span2 {
     line-height: 24px;
     background: 0 0;
     background-color: #ccc;
     color: #FFF;
+}
+ul.release-step li .span-name.finish-icon {
+    background-image: url(../images/finish-icon.png);
+    background-color: transparent;
+    border: 0;
+    vertical-align: bottom;
 }
 .info_list_wrapper {
     padding: 60px 15px;
@@ -167,3 +181,19 @@ ul.release-step li .span2 {
     color: #EB5A3C;
     font-size: 12px;
 }
+/*release-p3的样式*/
+.release-p3 .testin-content-box{
+    background-color: #fff;
+    margin-top: 20px;
+}
+.release-p3 .testin-content-box li>a{
+    line-height: 38px;
+    width: 120px;
+    text-align: center;
+}
+.nav.nav-tabs.testin-nav-tabs{
+    margin: 0;
+    height: 60px;
+}
+
+
