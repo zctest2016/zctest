@@ -128,21 +128,53 @@
                             <div class="col-sm-5">
                                 <div class="fg-line">
                                     <input type="text" id="project_name" class="form-control input-sm" name="project_name" value="Web DEMO">
+                                    <div class="help-block">错误提示</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="bug_detail">任务描述</label>
+                            <div class="col-sm-5">
+                                <div class="fg-line">
+                                    <textarea type="text" id="bug_detail" class="form-control input-sm" name="bug_detail" rows="5">双击上传按钮，就闪退</textarea>
+                                    <p class="blue-link"><a><i class="icon iconfont">&#xe605;</i>客户要求</a></p>
                                     <div class="help-block"></div>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-4 control-label" for="project_name">项目名称</label>
+                            <label class="col-sm-4 control-label">其他附件</label>
                             <div class="col-sm-5">
                                 <div class="fg-line">
-                                    <input type="text" id="project_name" class="form-control input-sm" name="project_name" value="Web DEMO">
-                                    <div class="help-block"></div>
+                                    <input type="file" name="file">
+                                    <div class="upload-btn">
+                                        <img src="../../../images/Fill.png">
+                                        <span>添加附件</span>
+                                    </div>
+                                    <div class="upload-info">
+                                        <span class="upload-info-left">
+                                            <img src="../../../images/upload-tip.png">
+                                            <span class="upload-span">Hello,我是一个附件.jpg（3.68M）</span>
+                                        </span>
+                                        <span class="upload-info-close">
+                                            <img src="../../../images/close-x.png">
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label class="checkbox-inline send-check">
+                                <input type="checkbox" name="send" value="1" class="input-checkbox">
+                                <span class="input-checkbox-show"></span><span class="input-right-span">是否发送账号信息？</span>
+                            </label>
+                        </div>
                     </form>
                 </div>
+            </div>
+            <div class="bottom-btn-group">
+                <a href="javascript:;" class="basic-btn bottom-btn">上一步</a>
+                <a href="javascript:;" class="blue-btn bottom-btn">下一步</a>
             </div>
         </div>
     </div>

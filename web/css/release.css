@@ -94,7 +94,8 @@ span.task_mes_a{
     position: relative;
     left: 50%;
     margin-left: -250px;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 .release-step li{
     float: left;
@@ -168,7 +169,7 @@ ul.release-step li .span-name.finish-icon {
     width: 126px;
 }
 .release_task .form-horizontal-n .form-control{
-    width: 725px;
+    width: 735px;
 }
 .input-sm {
     height: 36px;
@@ -180,6 +181,72 @@ ul.release-step li .span-name.finish-icon {
     margin-bottom: 10px;
     color: #EB5A3C;
     font-size: 12px;
+}
+.blue-link{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.blue-link a{
+     font-size: 13px;
+     cursor: pointer;
+     color: #1081DE;
+}
+.blue-link a:hover{
+    color: #3098F2;
+}
+.blue-link a .iconfont{
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+    font-size: 18px;
+}
+.upload-btn{
+    width: 122px;
+    height: 40px;
+    border: 1px dashed #cccccc;
+    text-align: center;
+    line-height: 36px;
+    cursor: pointer;
+}
+.upload-btn img,.upload-btn span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.upload-btn span{
+    font-size: 13px;
+}
+.upload-info{
+    width: 737px;
+    height: 47px;
+    background: #FAFAFA;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+.upload-info-left{
+    margin: 14px 0 13px 21px;
+    display: block;
+    float: left;
+}
+.upload-span{
+    font-size: 13px;
+    margin-left: 6px;
+}
+.upload-info-close{
+    display: block;
+    float: right;
+    margin: 14px 29px 13px 0;
+    cursor: pointer;
+}
+.input-right-span{
+    font-size: 13px;
+}
+.input-checkbox-show{
+    position: relative;
+    top: 2px;
+}
+.send-check{
+    margin-top: 27px;
+    margin-left: 34px;
 }
 /*release-p3的样式*/
 .release-p3 .testin-content-box{
