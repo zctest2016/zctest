@@ -82,6 +82,9 @@ body {
     margin-top: 3px;
     margin-right: 5px;
 }
+.module_list_wrapper .module-item .action .action-area .checked-name{
+    margin-right: 47px;
+}
 .module_list_wrapper .module-item .action .action-area .edit-module-name{
     display: none;
 }
@@ -89,6 +92,15 @@ body {
     display: none;
 }
 .module_list_wrapper .module-item .action .action-area .save-text{
+    display: none;
+}
+.module_list_wrapper .module-item .action .action-area .cancel-check{
+    display: none;
+}
+.module_list_wrapper .module-item .action .action-area.test-checked .cancel-check{
+    display: inline-block;
+}
+.module_list_wrapper .module-item .action .action-area.test-checked .check-people{
     display: none;
 }
 .module_list_wrapper .sub-module-container {
@@ -214,4 +226,9 @@ body {
     position: absolute;
     right: 0;
     top: 29px;
+}
+.item-name{
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
 }

@@ -240,7 +240,7 @@ ul.release-step li .span-name.finish-icon {
 .input-right-span{
     font-size: 13px;
 }
-.input-checkbox-show{
+.send-check .input-checkbox-show{
     position: relative;
     top: 2px;
 }
@@ -249,18 +249,22 @@ ul.release-step li .span-name.finish-icon {
     margin-left: 34px;
 }
 /*release-p3的样式*/
-.release-p3 .testin-content-box{
-    background-color: #fff;
-    margin-top: 20px;
-}
-.release-p3 .testin-content-box li>a{
-    line-height: 38px;
-    width: 120px;
-    text-align: center;
-}
-.nav.nav-tabs.testin-nav-tabs{
+.release-p3 .testin-nav-tabs{
     margin: 0;
-    height: 60px;
+    font-size: 14px;
 }
-
-
+.release-p3 .testin-nav-tabs>li>a{
+    padding: 22px 32px 11px;
+    color: #1081DE;
+}
+.release-p3 .testin-nav-tabs>li.active>a, .release-p3 .testin-nav-tabs>li.active>a:hover, .release-p3 .testin-nav-tabs>li.active>a:focus{
+    border-bottom: 2px solid #1081de;
+}
+@media (min-width: 767px){
+    .release-p3 .tab-content {
+        margin: 0px;
+    }
+}
+.release-p3 .tab-content>.tab-pane{
+    padding: 2px 21px 21px;
+}
