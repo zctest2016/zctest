@@ -1,0 +1,113 @@
+.claim_content{
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.04);
+    border-radius: 2px;
+    margin-bottom:30px;
+}
+.claim_top_ul{
+    border-bottom: 1px solid #EBEBEB;
+}
+.claim_top_li{
+    display: inline-block;
+    width: 36%;
+}
+.claim_top_li:nth-child(2){
+    width: 30%;
+}
+.claim_top_li:nth-child(3){
+    width: 28%;
+    position: relative;
+    top: -19px;
+}
+.adr-logo{
+    margin-right: 10px;
+}
+.claim_topApp{
+    margin: 30px;
+    float: left;
+}
+.App_name{
+    font-size: 16px;
+    color: #333333;
+    letter-spacing: 0px;
+    margin-top: 36px;
+}
+.App_desgin{
+    background: #FFFFFF;
+    border: 1px solid #1081DE;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #1081DE;
+    letter-spacing: 0;
+    line-height: 22px;
+    padding: 0 15px;
+    outline: none;
+    margin-top: 4px;
+}
+.App_desgin:hover{
+    color: #3098F2;
+}
+.task_message{
+    position: relative;
+    top: 19px;
+    font-size: 13px;
+    color: #666666;
+    letter-spacing: 0;
+    line-height: 23px;
+}
+.task_message span{
+    color: #333333;
+}
+.remaining_time{
+    font-size: 16px;
+    color: #333333;
+    letter-spacing: 0;
+}
+.remaining_time span{
+    color: #EB5A3C;
+}
+.claim_discribe{
+    padding: 30px 0 30px 30px;
+}
+.discribe_title{
+    font-size: 13px;
+    color: #666666;
+    letter-spacing: 0px;
+}
+.fl-marTop{
+    margin-top: 5px;
+    float: left;
+}
+.task_discribe{
+    width: 90%;
+    padding-left:10px; ;
+    font-size: 13px;
+    color: #333333;
+    letter-spacing: 0px;
+    line-height: 24px;
+    clear: both;
+    display: inline-block;
+}
+.task_discribe.col-0271C7{
+    color: #0271C7;
+    cursor: pointer;
+}
+.task_discribe.col-0271C7:hover{
+    color:#3098F2;
+}
+.claim-btn{
+    font-size: 14px;
+    color: #FFFFFF;
+    background: #1081DE;
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.08);
+    border-radius: 2px;
+    border: none;
+    display: block;
+    margin: 30px auto;
+    padding: 10px 16px;
+    outline: none;
+}
+.claim-btn:hover{
+    background-color: #3098F2;
+}

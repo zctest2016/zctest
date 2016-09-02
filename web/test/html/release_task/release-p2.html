@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../../../css/common/normalize.css"/>
+    <link rel="stylesheet" href="../../../css/common/iconfont.css"/>
+    <link rel="stylesheet" href="../../../css/common/style.css"/>
+    <link rel="stylesheet" href="../../../css/common/module.css"/>
+    <link rel="stylesheet" href="../../../css/common/nav.css"/>
+    <link rel="stylesheet" href="../../../css/release.css"/>
+    <link rel="stylesheet" href="../../../css/mod.css">
+    <script src="../../../js/jquery-1.11.1.min.js"></script>
+    <script src="../../../js/testinBS.js"></script>
+</head>
+<body>
+<div class="zc_new-nav">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand clearfix" href="/">
+                <img src="../../../images/zc_logo.png" alt="">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <ul class="nav navbar-nav navbar-nav-right">
+                <li><a href="#" class="dropdown-toggle">首页</a></li>
+                <li><a href="#" class="dropdown-toggle">任务</a></li>
+                <li><a href="#" class="dropdown-toggle">团队</a></li>
+                <li><a href="#" class="dropdown-toggle">账户</a></li>
+                <li><a href="#" class="dropdown-toggle">社区</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="user-mail">user@domaim.com</span><i class="iconfont arrow-icon"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <ul>
+                            <li class="clearfix">
+                                <a href="#">
+                                    个人中心
+                                </a>
+                            </li>
+                            <li class="clearfix">
+                                <a href="#">
+                                    退出
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="content">
+    <div class="zc_new-aside">
+        <div class="zc_list_bxone">
+            <ul>
+                <li><a href="#">管理任务</a></li>
+                <li><a href="#" class="active">发布新任务<span>（6）</span></a></li>
+                <li><a href="#">执行中任务<span></span></a></li>
+                <li><a href="#">已验收任务<span></span></a></li>
+            </ul>
+            <ul>
+                <li><a href="#">任务大厅</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">测试任务</a></li>
+                <li><a href="#">团队任务<span></span></a></li>
+                <li><a href="#">大厅任务<span></span></a></li>
+                <li><a href="#">已审核任务<span></span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="article">
+        <div class="fix-content release_task">
+            <ul class="claim_top_ul add-show">
+                <li class="claim_top_li first">
+                    <img class="claim_topApp" src="../../../images/Small_app.png">
+                    <p class="task_message"><span>微信 1.0</span></p>
+                    <p class="task_message"><span>用例设计/Andorid/应用－社交通讯</span></p>
+                    <p class="task_message"><span>安装包：</span><span class="task_mes_a">下载</span><span>用例文档：</span><span class="task_mes_a"> 下载</span></p>
+                </li>
+                <li class="claim_top_li second">
+                    <p class="task_message">交稿时间：<span>2016 － 08 － 31  14:00</span></p>
+                    <p class="task_message">注意事项：<span>涉及支付环境/说明文档/开放注册/测试 环境/即将正式上线</span></p>
+                    <p class="task_message">其他文档：<span class="task_mes_a"> 下载1</span><span class="task_mes_a">下载2</span></p>
+                </li>
+                <li class="claim_top_li last">
+                    <p class="remaining_time"></p>
+                </li>
+            </ul>
+            <div class="user-window" style="display: none;">
+                <div class="user-window-top">
+                    <p class="task_message">客户：<span>徐季佳</span></p>｀
+                    <p class="task_message">手机：<span>18010050097</span></p>
+                    <p class="task_message">Q Q：<span> 414709426</span></p>
+                    <p class="task_message">邮箱：<span> xujijia@testin.cn</span></p>
+                </div>
+                <p class="task_message">管理员QQ：413709426  <span></span></p>
+            </div>
+            <ul class="release-step">
+                <li class="complete">
+                    <span class="span2 span-name finish-icon"></span>设置基本信息
+                </li>
+                <li class="complete ">
+                    <span class="span_line"></span>
+                    <span class="spanc span-name">2</span>确认模块 / 用例
+                </li>
+                <li class="complete not-complete">
+                    <span class="span_lineccc"></span>
+                    <span class="span2 span-name">3</span>分配人员
+                </li>
+            </ul>
+            <div class="zc_test-box">
+                <h3 class="cygl">
+                    <span>模块管理</span>
+                    <button class="btn btn-default btn-sm pull-right" data-toggle="modal" data-target="#add-main">添加主模块</button>
+                </h3>
+                <div class="module_list_wrapper">
+                    <!-- 模块 S-->
+                    <div class="version-area">
+                        <div class="module-item main">
+                            <div class="adjust-layout clearfix">
+                                <div class="col-xs-9 title">
+                                    <div class="arrow-icon">
+                                        <i class="iconfont">&#xe607;</i>
+                                    </div>
+                                    1. <input type="text" value="首页" disabled="disabled">
+                                </div>
+                                <div class="col-xs-3 action">
+                                    <div class="action-area">
+                                        <button class="btn btn-default btn-sm pull-right add-sub-module" data-toggle="modal" data-target="#add-sub">添加子模块</button>
+                                        <a class="edit-module-name">编辑</a>
+                                        <a class="remove-module">删除</a>
+                                        <a class="save-text">保存</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-module-container">
+                            <div class="module-item sub clearfix">
+                                <div class="adjust-layout clearfix">
+                                    <div class="col-xs-9 title">
+                                        1. <input type="text" value="发布" disabled="disabled">
+                                    </div>
+                                    <div class="col-xs-3 action">
+                                        <div class="action-area">
+                                            <a class="edit-module-name">编辑</a>
+                                            <a class="remove-module">删除</a>
+                                            <a class="save-text">保存</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="module-item sub clearfix">
+                                <div class="adjust-layout clearfix">
+                                    <div class="col-xs-9 title">
+                                        2. <input type="text" value="发布纯文字信息">
+                                    </div>
+                                    <div class="col-xs-3 action">
+                                        <div class="action-area">
+                                            <a class="edit-module-name">编辑</a>
+                                            <a class="remove-module">删除</a>
+                                            <a class="save-text">保存</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="module-item sub clearfix">
+                                <div class="adjust-layout clearfix">
+                                    <div class="col-xs-9 title">
+                                        3. <input type="text" value="修改文案">
+                                    </div>
+                                    <div class="col-xs-3 action">
+                                        <div class="action-area">
+                                            <a class="edit-module-name">编辑</a>
+                                            <a class="remove-module">删除</a>
+                                            <a class="save-text">保存</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="module-item sub clearfix">
+                                <div class="adjust-layout clearfix">
+                                    <div class="col-xs-9 title">
+                                        <span class="new-item"></span>
+                                        4. <input type="text" value="发布视频" disabled="disabled">
+                                    </div>
+                                    <div class="col-xs-3 action">
+                                        <div class="action-area">
+                                            <a class="edit-module-name">编辑</a>
+                                            <a class="remove-module">删除</a>
+                                            <a class="save-text">保存</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="module-item sub clearfix">
+                                <div class="adjust-layout clearfix">
+                                    <div class="col-xs-9 title">
+                                        <span class="new-item"></span>
+                                        5. <input type="text" value="发布纯文字信息">
+                                    </div>
+                                    <div class="col-xs-3 action">
+                                        <div class="action-area">
+                                            <a class="edit-module-name">编辑</a>
+                                            <a class="remove-module">删除</a>
+                                            <a class="save-text">保存</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="module-item sub clearfix">
+                                <div class="adjust-layout clearfix">
+                                    <div class="col-xs-9 title">
+                                        <span class="new-item"></span>
+                                        6. <input type="text" value="修改文案">
+                                    </div>
+                                    <div class="col-xs-3 action">
+                                        <div class="action-area">
+                                            <a class="edit-module-name">编辑</a>
+                                            <a class="remove-module">删除</a>
+                                            <a class="save-text">保存</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 模块 E-->
+
+                    <!-- 模块 S-->
+                    <div class="version-area">
+                        <div class="module-item clearfix main">
+                            <div class="adjust-layout clearfix">
+                                <div class="col-xs-9 title">
+                                    <div class="arrow-icon">
+                                        <i class="iconfont">&#xe607;</i>
+                                    </div>
+                                    2. <input type="text" value="探索" disabled="disabled">
+                                </div>
+                                <div class="col-xs-3 action">
+                                    <div class="action-area">
+                                        <button class="btn btn-default btn-sm pull-right add-sub-module" data-toggle="modal" data-target="#add-sub">添加子模块</button>
+                                        <a class="edit-module-name">编辑</a>
+                                        <a class="remove-module">删除</a>
+                                        <a class="save-text">保存</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-module-container">
+                            <div class="module-item sub clearfix">
+                                <div class="adjust-layout clearfix">
+                                    <div class="col-xs-9 title">
+                                        1. <input type="text" value="发布纯文字信息" disabled="disabled">
+                                    </div>
+                                    <div class="col-xs-3 action">
+                                        <div class="action-area">
+                                            <a class="edit-module-name">编辑</a>
+                                            <a class="remove-module">删除</a>
+                                            <a class="save-text">保存</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="module-item sub clearfix">
+                                <div class="adjust-layout clearfix">
+                                    <div class="col-xs-9 title">
+                                        2. <input type="text" value="发布视频">
+                                    </div>
+                                    <div class="col-xs-3 action">
+                                        <div class="action-area">
+                                            <a class="edit-module-name">编辑</a>
+                                            <a class="remove-module">删除</a>
+                                            <a class="save-text">保存</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 模块 E-->
+
+                    <!-- 模块 S-->
+                    <div class="version-area">
+                        <div class="module-item clearfix main">
+                            <div class="adjust-layout clearfix">
+                                <div class="col-xs-9 title">
+                                    <div class="arrow-icon">
+                                        <i class="iconfont">&#xe607;</i>
+                                    </div>
+                                    3. <input type="text" value="朋友圈" disabled="disabled">
+                                </div>
+                                <div class="col-xs-3 action">
+                                    <div class="action-area">
+                                        <button class="btn btn-default btn-sm pull-right add-sub-module" data-toggle="modal" data-target="#add-sub">添加子模块</button>
+                                        <a class="edit-module-name">编辑</a>
+                                        <a class="remove-module">删除</a>
+                                        <a class="save-text">保存</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-module-container">
+                            <div class="module-item sub clearfix">
+                                <div class="adjust-layout clearfix">
+                                    <div class="col-xs-9 title">
+                                        1. <input type="text" value="发布纯文字信息" disabled="disabled">
+                                    </div>
+                                    <div class="col-xs-3 action">
+                                        <div class="action-area">
+                                            <a class="edit-module-name">编辑</a>
+                                            <a class="remove-module">删除</a>
+                                            <a class="save-text">保存</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="module-item sub clearfix">
+                                <div class="adjust-layout clearfix">
+                                    <div class="col-xs-9 title">
+                                        2. <input type="text" value="发布视频">
+                                    </div>
+                                    <div class="col-xs-3 action">
+                                        <div class="action-area">
+                                            <a class="edit-module-name">编辑</a>
+                                            <a class="remove-module">删除</a>
+                                            <a class="save-text">保存</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 模块 E-->
+
+                    <!-- 模块 S-->
+                    <div class="version-area">
+                        <div class="module-item clearfix main">
+                            <div class="adjust-layout clearfix">
+                                <div class="col-xs-9 title">
+                                    <div class="arrow-icon">
+                                        <i class="iconfont">&#xe607;</i>
+                                    </div>
+                                    4. <input type="text" value="钱包支付" disabled="disabled">
+                                </div>
+                                <div class="col-xs-3 action">
+                                    <div class="action-area">
+                                        <button class="btn btn-default btn-sm pull-right add-sub-module" data-toggle="modal" data-target="#add-sub">添加子模块</button>
+                                        <a class="edit-module-name">编辑</a>
+                                        <a class="remove-module">删除</a>
+                                        <a class="save-text">保存</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-module-container">
+                            <div class="module-item sub clearfix">
+                                <div class="adjust-layout clearfix">
+                                    <div class="col-xs-9 title">
+                                        1. <input type="text" value="发布纯文字信息" disabled="disabled">
+                                    </div>
+                                    <div class="col-xs-3 action">
+                                        <div class="action-area">
+                                            <a class="edit-module-name">编辑</a>
+                                            <a class="remove-module">删除</a>
+                                            <a class="save-text">保存</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="module-item sub clearfix">
+                                <div class="adjust-layout clearfix">
+                                    <div class="col-xs-9 title">
+                                        2. <input type="text" value="发布视频">
+                                    </div>
+                                    <div class="col-xs-3 action">
+                                        <div class="action-area">
+                                            <a class="edit-module-name">编辑</a>
+                                            <a class="remove-module">删除</a>
+                                            <a class="save-text">保存</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 模块 E-->
+                </div>
+            </div>
+            <div class="bottom-btn-group">
+                <a href="javascript:;" class="basic-btn bottom-btn">上一步</a>
+                <a href="javascript:;" class="blue-btn bottom-btn" data-toggle="modal" data-target="#not-success">下一步</a>
+                <p class="blue-link pull-right"><a><i class="icon iconfont">&#xe600;</i>阅览遍历图</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade testin-modal enterprise-tip" id="not-success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    ×
+                </button>
+                <h4 class="modal-title" id="myModalLabel3">
+                    提示
+                </h4>
+            </div>
+            <div class="modal-body">
+                <p>有模块下尚未创建子模块，请确认后重新提交。</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn testin-btn-primary">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade testin-modal enterprise-tip" id="add-main" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    ×
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    添加主模块
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="content-form">
+                    <span class="form-label">模块名称</span>
+                    <input class="adding-name" type="text" value="">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn testin-btn-primary">保存</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade testin-modal enterprise-tip" id="add-sub" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    ×
+                </button>
+                <h4 class="modal-title" id="myModalLabel2">
+                    添加子模块
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="content-form">
+                    <span class="form-label">模块名称</span>
+                    <input class="adding-name" type="text" value="">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn testin-btn-primary">保存</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $(".title").find("input").attr("disabled",true);
+        $(".title").find("input").attr("disabled",true);
+//            切换
+        var can_toggle = 1;
+        $(".action-area *").hover(function(){
+            can_toggle = 0;
+        },function(){
+            if($(this).parents(".module-item").hasClass("editing")){
+                can_toggle = 0;
+            }else{
+                can_toggle = 1;
+            }
+        });
+        $(".module-item.main").click(function(){
+            if(can_toggle==1){
+                $(this).parents(".version-area").toggleClass("opening");
+            }
+        });
+//            编辑模块名称
+        $(".edit-module-name").click(function(){
+            var par = $(this).parents(".module-item");
+            par.toggleClass("editing");
+            if(par.hasClass("editing")){
+                par.find(".adjust-layout").find(".title").find("input").attr("disabled",false);
+            }else{
+                par.find(".adjust-layout").find(".title").find("input").attr("disabled",true);
+            }
+        });
+//            保存名称
+        $(".save-text").click(function(){
+            var par = $(this).parents(".module-item");
+            par.removeClass("editing");
+            par.find(".adjust-layout").find(".title").find("input").attr("disabled",true);
+        });
+//        悬停显示选项
+        $(".module_list_wrapper .module-item").hover(function(){
+            $(this).find(".edit-module-name").css({"display":"inline-block"});
+            $(this).find(".remove-module").css({"display":"inline-block"});
+        },function(){
+            $(this).find(".edit-module-name").css({"display":"none"});
+            $(this).find(".remove-module").css({"display":"none"});
+        });
+    });
+</script>
+</body>
+</html>
