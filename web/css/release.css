@@ -264,10 +264,11 @@ ul.release-step li .span-name.finish-icon {
 }
 .release-p3 .testin-nav-tabs>li>a{
     padding: 22px 32px 11px;
-    color: #1081DE;
+    color: #999999;
 }
 .release-p3 .testin-nav-tabs>li.active>a, .release-p3 .testin-nav-tabs>li.active>a:hover, .release-p3 .testin-nav-tabs>li.active>a:focus{
     border-bottom: 2px solid #1081de;
+    color: #1081de;
 }
 @media (min-width: 767px){
     .release-p3 .tab-content {
@@ -293,7 +294,11 @@ ul.release-step li .span-name.finish-icon {
 }
 .zc_test-box.choice-person .cygl .close-cy{
     float: right;
-    padding-right: 42px;
+    padding-right: 32px;
+}
+.zc_test-box.choice-person .cygl .close-cy img{
+    cursor: pointer;
+    padding: 10px;
 }
 .zc_test-box.choice-person .info_list_wrapper{
     overflow: hidden;
