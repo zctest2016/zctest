@@ -18,7 +18,7 @@ body {
     background: #F8FCFF;
 }
 .module_list_wrapper .opening .module-item.main{
-    background-color: #FCFCFC;
+    /*background-color: #FCFCFC;*/
 }
 .module_list_wrapper .module-item.main{
     cursor: pointer;
