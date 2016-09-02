@@ -283,6 +283,9 @@ ul.release-step li .span-name.finish-icon {
 .release-p3 .module_list_wrapper{
     border-bottom: 1px solid #f0f0f0;
 }
+.zc_test-box.choice-person{
+    border-color: #ffffff;
+}
 .zc_test-box.choice-person .cygl{
     height: 60px;
     line-height: 60px;
@@ -306,9 +309,9 @@ ul.release-step li .span-name.finish-icon {
 }
 .zc_test-box.choice-person .cp-items ul li{
     float: left;
-    width: 108px;
+    width: 110px;
     text-align: center;
-    padding: 10px 11px;
+    padding: 10px 12px;
     font-size: 11px;
     position: relative;
     -webkit-transition: all .5s ease;
@@ -317,9 +320,32 @@ ul.release-step li .span-name.finish-icon {
     -o-transition: all .5s ease;
     transition: all .5s ease;
 }
+.zc_test-box.choice-person .cp-items ul li img{
+    margin-bottom: 10px;
+}
+.zc_test-box.choice-person .cp-items ul li.active .current-selected{
+    display: inline-block;
+}
+.zc_test-box.choice-person .cp-items ul li .current-selected{
+    position: absolute;
+    left: 50%;
+    margin-left: -32px;
+    display: none;
+}
+/*.zc_test-box.choice-person .cp-items ul li .tester-head:hover{*/
+    /*box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.21);*/
+    /*border-radius: 50%;*/
+/*}*/
 .zc_test-box.choice-person .cp-items ul li span{
     width: 100%;
     display: inline-block;
+    -webkit-font-smoothing: antialiased;
+}
+.zc_test-box.choice-person .cp-items ul li span.tester-qq{
+    text-align: center;
+    margin-top: 5px;
+    white-space: nowrap;
+    letter-spacing: -1px;
 }
 .zc_test-box.choice-person .cp-control{
     float: left;

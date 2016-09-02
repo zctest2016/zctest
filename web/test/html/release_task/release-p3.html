@@ -349,48 +349,70 @@
                     <div class="cp-items">
                         <ul>
                             <li>
-                                <img src="../../../images/female01.png">
-                                <span>QQ：414709426</span>
+                                <img class="tester-head" src="../../../images/female01.png">
+                                <img class="current-selected" src="../../../images/selecting01.png">
+                                <span class="tester-name">徐三岁</span>
+                                <span class="tester-qq">QQ：414709426</span>
                             </li>
                             <li>
-                                <img src="../../../images/female01.png">
-                                <span>QQ：4147023329426</span>
+                                <img class="tester-head" src="../../../images/female02.png">
+                                <img class="current-selected" src="../../../images/selecting01.png">
+                                <span class="tester-name">徐三岁</span>
+                                <span class="tester-qq">QQ：414709426</span>
                             </li>
                             <li>
-                                <img src="../../../images/female01.png">
-                                <span>QQ：414709426</span>
+                                <img class="tester-head" src="../../../images/male01.png">
+                                <img class="current-selected" src="../../../images/selecting01.png">
+                                <span class="tester-name">徐三岁</span>
+                                <span class="tester-qq">QQ：414709426</span>
                             </li>
                             <li>
-                                <img src="../../../images/female01.png">
-                                <span>QQ：414709426</span>
+                                <img class="tester-head" src="../../../images/male02.png">
+                                <img class="current-selected" src="../../../images/selecting01.png">
+                                <span class="tester-name">徐三岁</span>
+                                <span class="tester-qq">QQ：414709426</span>
                             </li>
                             <li>
-                                <img src="../../../images/female01.png">
-                                <span>QQ：414709426</span>
+                                <img class="tester-head" src="../../../images/Pokemon01.png">
+                                <img class="current-selected" src="../../../images/selecting01.png">
+                                <span class="tester-name">徐三岁</span>
+                                <span class="tester-qq">QQ：414709426</span>
                             </li>
                             <li>
-                                <img src="../../../images/female01.png">
-                                <span>QQ：414709426</span>
+                                <img class="tester-head" src="../../../images/flower01.png">
+                                <img class="current-selected" src="../../../images/selecting01.png">
+                                <span class="tester-name">徐三岁</span>
+                                <span class="tester-qq">QQ：414709426</span>
                             </li>
                             <li>
-                                <img src="../../../images/female01.png">
-                                <span>QQ：414709426</span>
+                                <img class="tester-head" src="../../../images/moon01.png">
+                                <img class="current-selected" src="../../../images/selecting01.png">
+                                <span class="tester-name">徐三岁</span>
+                                <span class="tester-qq">QQ：414709426</span>
                             </li>
                             <li>
-                                <img src="../../../images/female01.png">
-                                <span>QQ：414709426</span>
+                                <img class="tester-head" src="../../../images/sun01.png">
+                                <img class="current-selected" src="../../../images/selecting01.png">
+                                <span class="tester-name">徐三岁</span>
+                                <span class="tester-qq">QQ：414709426</span>
                             </li>
                             <li>
-                                <img src="../../../images/female01.png">
-                                <span>QQ：414709426</span>
+                                <img class="tester-head" src="../../../images/female01.png">
+                                <img class="current-selected" src="../../../images/selecting01.png">
+                                <span class="tester-name">徐三岁</span>
+                                <span class="tester-qq">QQ：414709426</span>
                             </li>
                             <li>
-                                <img src="../../../images/female01.png">
-                                <span>QQ：414709426</span>
+                                <img class="tester-head" src="../../../images/female02.png">
+                                <img class="current-selected" src="../../../images/selecting01.png">
+                                <span class="tester-name">徐三岁</span>
+                                <span class="tester-qq">QQ：414709426</span>
                             </li>
                             <li>
-                                <img src="../../../images/female01.png">
-                                <span>QQ：414709426</span>
+                                <img class="tester-head" src="../../../images/male01.png">
+                                <img class="current-selected" src="../../../images/selecting01.png">
+                                <span class="tester-name">徐三岁</span>
+                                <span class="tester-qq">QQ：414709426</span>
                             </li>
                         </ul>
                     </div>
@@ -410,8 +432,6 @@
 </div>
 <script>
     $(document).ready(function(){
-        $(".title").find("input").attr("disabled",true);
-        $(".title").find("input").attr("disabled",true);
 //            切换
         var can_toggle = 1;
         $(".action-area *").hover(function(){
@@ -430,6 +450,10 @@
         });
 
 //            选择人员
+        /*选定*/
+        $(".cp-items ul li").click(function(){
+            $(this).toggleClass("active").siblings(".cp-items ul li").removeClass("active");
+        });
         /*选项的高度*/
         var i_height_less = $(".cp-items ul li").height();
         var i_height = i_height_less+20;
