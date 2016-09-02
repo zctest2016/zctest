@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../../css/common/normalize.css"/>
     <link rel="stylesheet" href="../../../css/common/iconfont.css"/>
     <link rel="stylesheet" href="../../../css/common/style.css"/>
-    <link rel="stylesheet" href="../../../css/common/moudle.css"/>
+    <link rel="stylesheet" href="../../../css/common/module.css"/>
     <link rel="stylesheet" href="../../../css/common/nav.css"/>
     <link rel="stylesheet" href="../../../css/release.css"/>
     <link rel="stylesheet" href="../../../css/mod.css">
@@ -59,7 +59,7 @@
     </nav>
 </div>
 <div class="content">
-    <div class="aside">
+    <div class="zc_new-aside">
         <div class="zc_list_bxone">
             <ul>
                 <li><a href="#">管理任务</a></li>
@@ -126,6 +126,41 @@
                 <div class="tab-content" id="myTabContent">
                     <div id="tab1" class="tab-pane fade active in">
                         <div class="module_list_wrapper">
+                            <!--标题部分 S-->
+                            <div class="heading-area">
+                                <div class="module-item">
+                                    <div class="adjust-layout clearfix">
+                                        <div class="col-xs-9 title">
+                                            <span class="heading-area-title">交稿时间</span>
+                                            <select class="testin-select" style="display: none;">
+                                                <option selected="selected">2016-09-30  14:00</option>
+                                                <option>2016-09-30  14:30</option>
+                                                <option>2016-09-30  15:00</option>
+                                                <option>2016-09-30  15:30</option>
+                                                <option>2016-09-30  16:00</option>
+                                            </select>
+                                            <span class="color-6">（交稿时间需大于当前时间）</span>
+                                        </div>
+                                        <div class="col-xs-3 action">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="module-item">
+                                    <div class="adjust-layout clearfix">
+                                        <div class="col-xs-9 title">
+                                            <span class="heading-area-title">分配人员－勾选模块</span>
+                                        </div>
+                                        <div class="col-xs-3 action">
+                                            <div class="action-area">
+                                                <span class="checked-name">执行人</span>
+                                                <a class="checking-head">操作</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--标题部分 E-->
                             <!-- 模块 S-->
                             <div class="version-area">
                                 <div class="module-item main">
@@ -214,6 +249,24 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="module-item sub clearfix">
+                                        <div class="adjust-layout clearfix">
+                                            <div class="col-xs-9 title">
+                                                <span class="new-item"></span>
+                                                5. <span class="item-name">发布视频</span>
+                                            </div>
+                                            <div class="col-xs-3 action">
+                                                <div class="action-area test-checked">
+                                                    <span class="checked-name">徐三岁四岁五岁123</span>
+                                                    <a class="cancel-check">取消</a>
+                                                    <label class="checkbox-inline check-people">
+                                                        <input type="checkbox" name="send" value="1" class="input-checkbox">
+                                                        <span class="input-checkbox-show"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <!-- 模块 E-->
@@ -283,7 +336,74 @@
             </div>
             <div class="bottom-btn-group">
                 <a href="javascript:;" class="basic-btn bottom-btn">上一步</a>
-                <a href="javascript:;" class="blue-btn bottom-btn" data-toggle="modal" data-target="#not-success">下一步</a>
+                <a href="javascript:;" class="blue-btn bottom-btn" data-toggle="modal" data-target="#not-success">发布任务</a>
+            </div>
+            <div class="zc_test-box choice-person">
+                <h3 class="cygl">
+                    <span>分配人员－选择人员</span>
+                    <div class="close-cy">
+                        <img src="../../../images/close-x12.png">
+                    </div>
+                </h3>
+                <div class="info_list_wrapper">
+                    <div class="cp-items">
+                        <ul>
+                            <li>
+                                <img src="../../../images/female01.png">
+                                <span>QQ：414709426</span>
+                            </li>
+                            <li>
+                                <img src="../../../images/female01.png">
+                                <span>QQ：4147023329426</span>
+                            </li>
+                            <li>
+                                <img src="../../../images/female01.png">
+                                <span>QQ：414709426</span>
+                            </li>
+                            <li>
+                                <img src="../../../images/female01.png">
+                                <span>QQ：414709426</span>
+                            </li>
+                            <li>
+                                <img src="../../../images/female01.png">
+                                <span>QQ：414709426</span>
+                            </li>
+                            <li>
+                                <img src="../../../images/female01.png">
+                                <span>QQ：414709426</span>
+                            </li>
+                            <li>
+                                <img src="../../../images/female01.png">
+                                <span>QQ：414709426</span>
+                            </li>
+                            <li>
+                                <img src="../../../images/female01.png">
+                                <span>QQ：414709426</span>
+                            </li>
+                            <li>
+                                <img src="../../../images/female01.png">
+                                <span>QQ：414709426</span>
+                            </li>
+                            <li>
+                                <img src="../../../images/female01.png">
+                                <span>QQ：414709426</span>
+                            </li>
+                            <li>
+                                <img src="../../../images/female01.png">
+                                <span>QQ：414709426</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cp-control">
+                        <div class="pull-left">
+                            <a class="cp-arrow" id="cp-up"></a>
+                            <a class="cp-arrow" id="cp-down"></a>
+                        </div>
+                        <div class="pull-right">
+                            <a class="confirm-cp blue-btn">确定</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -306,6 +426,35 @@
         $(".module-item.main").click(function(){
             if(can_toggle==1){
                 $(this).parents(".version-area").toggleClass("opening");
+            }
+        });
+
+//            选择人员
+        /*选项的高度*/
+        var i_height_less = $(".cp-items ul li").height();
+        var i_height = i_height_less+20;
+        $(".cp-items ul").height(i_height);
+        /*选项的个数*/
+        var i_length = $(".cp-items ul li").length;
+        /*总共的层数*/
+        var i_floor = Math.ceil(i_length/8);
+        /*设定当前层数位置*/
+        var current_floor = 1;
+        var floor_style = (current_floor-1)*-i_height;
+        $(".cp-items ul li").css("top",floor_style);
+        /*改变层数*/
+        $("#cp-down").click(function(){
+            if(current_floor<i_floor){
+                current_floor = current_floor+1;
+                var floor_style = (current_floor-1)*-i_height;
+                $(".cp-items ul li").css("top",floor_style);
+            }
+        });
+        $("#cp-up").click(function(){
+            if(current_floor>1){
+                current_floor = current_floor-1;
+                var floor_style = (current_floor-1)*-i_height;
+                $(".cp-items ul li").css("top",floor_style);
             }
         });
     });

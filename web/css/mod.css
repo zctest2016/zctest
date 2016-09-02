@@ -14,7 +14,7 @@ body {
     border-top: 1px solid #f0f0f0;
     padding: 12px 20px 11px 10px;
 }
-.module_list_wrapper .module-item:hover,.module_list_wrapper .module-item:focus{
+.module_list_wrapper .version-area .module-item:hover,.module_list_wrapper .module-item:focus{
     background: #F8FCFF;
 }
 .module_list_wrapper .opening .module-item.main{
@@ -22,6 +22,7 @@ body {
 }
 .module_list_wrapper .module-item.main{
     cursor: pointer;
+    font-size: 14px;
 }
 .module_list_wrapper .module-item.main.editing{
     background-color: #FFFFFF;
@@ -69,6 +70,7 @@ body {
 .module_list_wrapper .module-item .action .action-area a {
     margin-left: 15px;
     cursor: pointer;
+    vertical-align: top;
 }
 .module_list_wrapper .module-item .action .action-area button{
     margin-top: -5px;
@@ -83,7 +85,13 @@ body {
     margin-right: 5px;
 }
 .module_list_wrapper .module-item .action .action-area .checked-name{
-    margin-right: 47px;
+    margin-right: 15px;
+    display: inline-block;
+    width: 105px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .module_list_wrapper .module-item .action .action-area .edit-module-name{
     display: none;
@@ -231,4 +239,31 @@ body {
     display: inline-block;
     height: 36px;
     line-height: 36px;
+}
+.heading-area .module-item .title span{
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    vertical-align: top;
+}
+.heading-area-title{
+    margin-left: 4px;
+}
+.heading-area .module-item .title .testin-select{
+    margin-left: 18px;
+    width: 180px;
+    display: inline-block;
+}
+.heading-area .module-item .testin-select-set{
+    height: 36px;
+}
+.module_list_wrapper .heading-area .module-item{
+    font-size: 14px;
+}
+.module_list_wrapper .heading-area .module-item:first-child{
+    border-top: 0;
+    padding: 10px 20px 8px 10px;
+}
+.module_list_wrapper .heading-area .module-item:last-child{
+    background: #F2F2F2;
 }

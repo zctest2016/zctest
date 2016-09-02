@@ -277,3 +277,91 @@ ul.release-step li .span-name.finish-icon {
 .release-p3 .tab-content>.tab-pane{
     padding: 2px 21px 21px;
 }
+.release-p3 .module_list_wrapper .sub-module-container {
+    background: #fafafa;
+}
+.release-p3 .module_list_wrapper{
+    border-bottom: 1px solid #f0f0f0;
+}
+.zc_test-box.choice-person .cygl{
+    height: 60px;
+    line-height: 60px;
+    padding-left: 32px;
+}
+.zc_test-box.choice-person .cygl .close-cy{
+    float: right;
+    padding-right: 42px;
+}
+.zc_test-box.choice-person .info_list_wrapper{
+    overflow: hidden;
+    padding: 7px 20px 22px;
+}
+.zc_test-box.choice-person .cp-items{
+    float: left;
+    width: 900px;
+}
+.zc_test-box.choice-person .cp-items ul{
+    overflow: hidden;
+    margin-bottom: 0;
+}
+.zc_test-box.choice-person .cp-items ul li{
+    float: left;
+    width: 108px;
+    text-align: center;
+    padding: 10px 11px;
+    font-size: 11px;
+    position: relative;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.zc_test-box.choice-person .cp-items ul li span{
+    width: 100%;
+    display: inline-block;
+}
+.zc_test-box.choice-person .cp-control{
+    float: left;
+    width: 127px;
+    padding-top: 26px;
+    margin-left: 15px;
+}
+.cp-arrow{
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.05);
+    border-radius: 2px;
+    cursor: pointer;
+}
+.cp-arrow:hover{
+    border: 1px solid #1081de;
+}
+.cp-arrow#cp-up{
+    background-image: url("../images/arrow-up.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 18px;
+}
+.cp-arrow#cp-down{
+    background-image: url("../images/arrow-down.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.cp-arrow:hover#cp-up{
+    background-image: url("../images/arrow-up-active.png");
+}
+.cp-arrow:hover#cp-down{
+    background-image: url("../images/arrow-down-active.png");
+}
+.confirm-cp.blue-btn{
+    margin-top: 23px;
+    padding: 0 14px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    cursor: pointer;
+}
