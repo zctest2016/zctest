@@ -17,6 +17,8 @@
 }
 .claim_top_li:nth-child(3){
     width: 28%;
+    position: relative;
+    top: -19px;
 }
 .adr-logo{
     margin-right: 10px;
@@ -48,10 +50,11 @@
 }
 .task_message{
     position: relative;
-    top:15px;
+    top: 19px;
     font-size: 13px;
     color: #666666;
     letter-spacing: 0;
+    line-height: 23px;
 }
 .task_message span{
     color: #333333;
