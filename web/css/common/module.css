@@ -26,12 +26,20 @@ body{background: #F5F7F7;font-family: ""PingFang SC",Proxima Nova","Helvetica Ne
 .page-pagination{ line-height: 28px; padding: 6px 20px; border-top:1px solid #EBEBEB; border-bottom:1px solid #EBEBEB; background: #FCFCFC;}
 .page-pagination .page-btn{display: inline-block;*display: inline;*zoom:1;width:28px;height: 28px;margin-left: 6px;background: #FFFFFF;border: 1px solid #CCCCCC;box-shadow: 0 1px 1px 0 #cccccc;box-shadow: 0 1px 1px 0 rgba(0,0,0,0.05);border-radius: 2px;text-align: center;cursor: pointer;}
 /*众测页面*/
-.content{min-height:1000px;_height:expression(this.scrollHeight>1000 ? "auto":"1000px");overflow:hidden;zoom:1;background:#303641;}
+.content{
+    /*min-height:1000px;*/
+    _height:expression(this.scrollHeight>1000 ? "auto":"1000px");
+    height: 100%;
+    /*overflow:hidden;*/
+    zoom:1;
+    background:#F5F7F6;
+}
 .zc_new-aside {
     width: 200px;
     float: left;
     margin-bottom: 10px;
     background: #303641;
+    height: 100%;
 }
 .zc_new-aside .zc_list_bxone {
     height: auto;
@@ -62,7 +70,7 @@ body{background: #F5F7F7;font-family: ""PingFang SC",Proxima Nova","Helvetica Ne
 }
 .article {
     background: #F5F7F7;
-    min-height: 1000px;
+    /*min-height: 1000px;*/
     margin: 0 0 0 200px;
     zoom: 1;
     overflow: hidden;
