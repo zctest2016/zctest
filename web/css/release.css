@@ -176,6 +176,7 @@ ul.release-step li .span-name.finish-icon {
 }
 .release_task .form-horizontal-n .control-label{
     width: 126px;
+    font-weight: normal;
 }
 .release_task .form-horizontal-n .form-control{
     width: 735px;
@@ -327,6 +328,7 @@ ul.release-step li .span-name.finish-icon {
 }
 .zc_test-box.choice-person .cp-items ul li img{
     margin-bottom: 10px;
+    cursor: pointer;
 }
 .zc_test-box.choice-person .cp-items ul li.active .current-selected{
     display: inline-block;

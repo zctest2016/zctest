@@ -451,8 +451,8 @@
 
 //            选择人员
         /*选定*/
-        $(".cp-items ul li").click(function(){
-            $(this).toggleClass("active").siblings(".cp-items ul li").removeClass("active");
+        $(".cp-items ul li img").click(function(){
+            $(this).parents(".cp-items ul li").toggleClass("active").siblings(".cp-items ul li").removeClass("active");
         });
         /*选项的高度*/
         var i_height_less = $(".cp-items ul li").height();
