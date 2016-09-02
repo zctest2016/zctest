@@ -18,11 +18,16 @@
 .claim_top_li{
     display: inline-block;
 }
+
 .claim_top_li.first{
-    width: 35%;
+    width: 36%;
 }
 .claim_top_li.second{
-    width: 55%;
+    width: 43%;
+}
+.claim_top_li.last{
+    position: relative;
+    top: -8px;
 }
 .claim_topApp{
     margin: 20px;
@@ -65,6 +70,9 @@ span.task_mes_a{
     margin-right: 25px;
     cursor: pointer;
 }
+span.task_mes_a:hover{
+    color: #3098F2;
+}
 .remaining_time{
     font-size: 13px;
     color: #1081DE;
@@ -79,7 +87,8 @@ span.task_mes_a{
     box-shadow: 0px -4px 6px 0px rgba(0,0,0,0.12);
     padding: 15px 16px 0;
     top:85px;
-    right: 0;
+    right: 120px;
+    z-index: 8;
 }
 .user-window .task_message{
     top:0;

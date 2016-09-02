@@ -10,7 +10,16 @@
 }
 .claim_top_li{
     display: inline-block;
-    width: 33%;
+    width: 36%;
+}
+.claim_top_li:nth-child(2){
+    width: 30%;
+}
+.claim_top_li:nth-child(3){
+    width: 28%;
+}
+.adr-logo{
+    margin-right: 10px;
 }
 .claim_topApp{
     margin: 30px;
@@ -32,10 +41,14 @@
     line-height: 22px;
     padding: 0 15px;
     outline: none;
+    margin-top: 4px;
+}
+.App_desgin:hover{
+    color: #3098F2;
 }
 .task_message{
     position: relative;
-    top:20px;
+    top:15px;
     font-size: 13px;
     color: #666666;
     letter-spacing: 0;
@@ -77,6 +90,9 @@
     color: #0271C7;
     cursor: pointer;
 }
+.task_discribe.col-0271C7:hover{
+    color:#3098F2;
+}
 .claim-btn{
     font-size: 14px;
     color: #FFFFFF;
@@ -88,4 +104,7 @@
     margin: 30px auto;
     padding: 10px 16px;
     outline: none;
+}
+.claim-btn:hover{
+    background-color: #3098F2;
 }
