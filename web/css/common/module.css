@@ -153,6 +153,7 @@ body{background: #F5F7F7;font-family: ""PingFang SC",Proxima Nova","Helvetica Ne
 .testin-select-set{
     background: url("../../images/icon_01.png") no-repeat right center;
     font-size: 13px;
+    cursor: pointer;
 }
 .testin-select-list li{
     font-size: 13px;
