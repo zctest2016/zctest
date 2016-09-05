@@ -164,7 +164,7 @@ body {
     opacity: 0;z-index: -1;position: relative;
 }
 .module_list_wrapper .module-item.editing .adjust-layout .action .remove-module{
-    opacity: 0;z-index: -1;position: relative;
+    /*opacity: 0;z-index: -1;position: relative;*/
 }
 .cygl .btn-sm{
     padding: 4px 11px;
