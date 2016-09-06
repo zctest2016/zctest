@@ -146,13 +146,13 @@
                                 </div>
                                 <div class="sub-module-container">
                                     <div class="module-item sub clearfix">
-                                        <div class="adjust-layout clearfix">
+                                        <div class="adjust-layout clearfix op3">
                                             <div class="col-xs-9 title">
                                                 1. <span class="item-name">发布</span>
                                             </div>
                                             <div class="col-xs-3 action">
                                                 <div class="action-area">
-                                                    <button class="btn btn-blue btn-sm pull-right">添加用例</button>
+                                                    <button class="btn btn-blue btn-sm pull-right right-ctl">添加用例</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -162,36 +162,34 @@
                                                     <div class="adjust-layout clearfix">
                                                         <div class="col-xs-7 title">
                                                             <span class="new-item"></span>
-                                                            1. <span class="item-name">用例名称</span>
+                                                            <!--<span class="item-name">1. 用例名称</span>-->
+                                                            <p class="per-fail-li-p per-edit-p">1. 用例名称</p>
                                                         </div>
                                                         <div class="col-xs-5 action">
                                                             <div class="action-area">
-                                                                <a><i class="iconfont">&#xe602;</i>编辑</a>
-                                                                <a><i class="iconfont">&#xe60d;</i>备注</a>
-                                                                <a><i class="iconfont">&#xe60c;</i>删除</a>
-                                                                <span class="state-tip color-pass">Pass</span>
-                                                                <button class="btn btn-default btn-sm pull-right">继续执行</button>
+                                                                <a class="edit-item right-ctl"><i class="iconfont">&#xe602;</i>编辑</a>
+                                                                <a class="edit-save right-ctl"><i class="iconfont">&#xe602;</i>保存</a>
+                                                                <a class="remark right-ctl"><i class="iconfont">&#xe60d;</i>备注</a>
+                                                                <a class="delete right-ctl"><i class="iconfont">&#xe60c;</i>删除</a>
+                                                                <span class="state-tip color-pass right-ctl">Pass</span>
+                                                                <button class="btn btn-default btn-sm pull-right right-ctl">继续执行</button>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="details-content">
                                                         <ul class="per-step-ul">
-                                                            <li class="per-fail-li">
-                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
-                                                                <textarea class="per-fail-li-p" rows="3">1、点击商品进入商品详 情页
-                                                                    2、点击右上角【分享】图标，弹出分享方式选择层
-                                                                    3、选择分享至【微信】，在微信中选择好友，确认分享
-                                                                </textarea>
-                                                                <p class="per-fail-li-p">1、点击商品进入商品详 情页
-                                                                    2、点击右上角【分享】图标，弹出分享方式选择层
-                                                                    3、选择分享至【微信】，在微信中选择好友，确认分享
-                                                                </p>
-                                                            </li>
                                                             <li class="per-fail-li mar-top">
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </li>
+                                                            <li class="per-fail-li ">
                                                                 <p class="per-fail-li-p bef title2">期望结果：</p>
-                                                                <p class="per-fail-li-p">提供微信好友、微信朋友圈二种方式选择</p>
+                                                                <p class="per-fail-li-p per-edit-p">提供微信好友、微信朋友圈二种方式选择</p>
                                                                 <p class="per-fail-li-p bef title3">前提条件：</p>
-                                                                <p class="per-fail-li-p"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                                <p class="per-fail-li-p per-edit-p"> 提供微信好友、微信朋友圈二种方式选择。</p>
                                                             </li>
                                                         </ul>
                                                         <div class="sup-info">
@@ -234,7 +232,7 @@
                                         </div>
                                     </div>
                                     <div class="module-item sub clearfix">
-                                        <div class="adjust-layout clearfix">
+                                        <div class="adjust-layout clearfix op3">
                                             <div class="col-xs-9 title">
                                                 2. <span class="item-name">发布纯文字信息</span>
                                             </div>
@@ -246,7 +244,7 @@
                                         </div>
                                     </div>
                                     <div class="module-item sub clearfix">
-                                        <div class="adjust-layout clearfix">
+                                        <div class="adjust-layout clearfix op3">
                                             <div class="col-xs-9 title">
                                                 3. <span class="item-name">修改文案</span>
                                             </div>
@@ -259,7 +257,7 @@
                                         </div>
                                     </div>
                                     <div class="module-item sub clearfix">
-                                        <div class="adjust-layout clearfix">
+                                        <div class="adjust-layout clearfix op3">
                                             <div class="col-xs-9 title">
                                                 4. <span class="item-name">发布视频</span>
                                             </div>
@@ -355,6 +353,62 @@
                 $(this).parents(".version-area").toggleClass("opening");
             }
         });
+////        打开第三层内容
+//        $(".module-item.sub .adjust-layout.op3").click(function(){
+//            if(can_toggle==1){
+//                $(this).parents(".module-item.sub").toggleClass("third-open");
+//            }
+//        })
+////        打开第四层内容
+//        $(".third-item .adjust-layout").click(function(){
+//            if(can_toggle==1){
+//                $(this).parents(".third-item").toggleClass("details-open");
+//            }
+//        })
+    });
+</script>
+<script>
+    $(document).ready(function(){
+//            切换
+        var can_toggle = 1;
+        $(".action-area .right-ctl").hover(function(){
+            can_toggle = 0;
+        },function(){
+            can_toggle = 1;
+        });
+//        打开第三层内容
+        $(".module-item.sub .adjust-layout.op3").click(function(){
+            if(can_toggle==1){
+                $(this).parents(".module-item.sub").toggleClass("third-open");
+            }
+        })
+//        打开第四层内容
+        $(".third-item .adjust-layout").click(function(){
+            if(can_toggle==1){
+                $(this).parents(".third-item").toggleClass("details-open");
+            }
+        })
+    });
+</script>
+<script>
+    //    备注上方的提示
+    $(".per-form-span.note").hover(function(){
+        $(".note-window").show();
+    },function(){
+        $(".note-window").hide();
+    })
+    //    编辑保存按钮操作
+    $(".edit-item").click(function(){
+        var prt = $(this).parents(".third-item");
+        prt.toggleClass("editing");
+        $(".per-fail-li-p.per-edit-p").attr("contenteditable","true").css("border-color","#ccc");
+        $(".per-fail-li-text").removeAttr("disabled").css("border-color","#ccc");
+    });
+    $(".edit-save").click(function(){
+        var prt = $(this).parents(".third-item");
+        prt.toggleClass("editing");
+        $(".per-fail-li-p.per-edit-p").attr("contenteditable","false").css("border-color","transparent");
+        $(".per-fail-li-text").attr("disabled","disabled").css("border-color","transparent");
     });
 </script>
 </body>
