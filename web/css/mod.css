@@ -17,6 +17,9 @@ body {
 .module_list_wrapper .version-area .module-item:hover,.module_list_wrapper .module-item:focus{
     background: #F8FCFF;
 }
+.module_list_wrapper .version-area .module-item.third-open:hover, .module_list_wrapper .module-item.third-open:focus{
+    background: #fafafa;
+}
 .module_list_wrapper .opening .module-item.main{
     /*background-color: #FCFCFC;*/
 }
@@ -324,6 +327,18 @@ body {
 .color-pass{
     background: #00C185;
 }
+.color-fail{
+    background: #EB5A3C;
+}
+.color-block{
+    background: #FFC500;
+}
+.color-na{
+    background: #7261BF;
+}
+.state-tip.color-block{
+    text-indent: -3px;
+}
 .third-item .action .state-tip{
     border-radius: 2px;
     display: inline-block;
@@ -332,6 +347,13 @@ body {
     padding: 0px 6px;
     font-size: 14px;
     margin-left: 15px;
+    width: 42px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+}
+.third-item .action .disable{
+    color: #A8A8A8;
 }
 .module_list_wrapper .module-item .third-item .action .action-area button{
     margin-top: 10px;
@@ -421,6 +443,14 @@ body {
     padding: 6px 25px 0;
     line-height: 22px;
     letter-spacing: 0px;
+    border: 1px solid transparent;
+}
+.editing .details-content .sup-info .sup-info-content.info-text{
+    margin-top: 18px;
+    padding: 15px 25px 15px;
+}
+.editing .details-content .sup-info{
+    padding: 15px 20px 20px;
 }
 .details-content .per-fail-li-p{
     white-space: pre-line;
