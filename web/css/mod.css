@@ -374,3 +374,50 @@ body {
 .details-content .per-fail-li-p{
     white-space: pre-line;
 }
+
+/*BUG列表样式*/
+.tab2-item-p,
+.tab2-explore-p{
+    font-size: 13px;
+    color: #333333;
+    letter-spacing: 0px;
+    line-height: 58px;
+    border-bottom: 1px solid #ebebeb;
+    padding-left: 50px;
+    margin-bottom: 0;
+}
+.tab2-item-p:hover{
+    background-color: #F8FCFF;
+}
+.tab2-explore-p{
+    background-color: #fafafa;
+    padding:0 22px 0 70px;
+    font-size: 12px;
+}
+.explore-addBug{
+    float: right;
+    color: #FFFFFF;
+    background: #1081DE;
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.08);
+    border-radius: 2px;
+    line-height: 28px;
+    padding: 0 13px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+.explore-addBug:hover{
+    background-color: #3098F2;
+}
+.tab2-explore-div{
+    background: #FAFAFA;
+    padding: 20px 60px;
+}
+.exp-Bug{
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px;
+}
+
+
+
+

@@ -265,6 +265,12 @@ input.BUG-input{
 .per-fr-notice.PassNotice{
     background: #00C185;
 }
+.per-fr-notice.BlockNotice{
+    background: #FFC500;
+}
+.per-fr-notice.NANotice{
+    background: #7261BF;
+}
 .per-step-ul{
     padding-bottom: 22px;
     border-bottom: 1px solid #ebebeb;
@@ -533,6 +539,9 @@ input.fail2-Bug-input{
     height: 78px;
     outline: none;
     padding: 7px 20px;
+}
+.pass-note-text.BlockPage{
+    width: 827px;
 }
 
 
