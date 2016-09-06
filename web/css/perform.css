@@ -137,7 +137,6 @@ input.BUG-input{
 
 }
 .add-dis-cont.word-col{
-    font-family: .HelveticaNeueDeskInterface-Regular;
     color: #666666;
     line-height: 20px;
 }
@@ -150,7 +149,6 @@ input.BUG-input{
     padding-right: 20px;
 }
 .mod-rig-title{
-    font-family: .HelveticaNeueDeskInterface-Regular;
     font-size: 14px;
     color: #333333;
     letter-spacing: 0px;
@@ -186,7 +184,6 @@ input.BUG-input{
     padding-left: 0;
 }
 .notice-error{
-    font-family: STHeitiSC-Light;
     font-size: 14px;
     color: #EB5A3C;
     letter-spacing: 0px;
@@ -202,7 +199,6 @@ input.BUG-input{
 
 /*perform-fail1的样式*/
 .Name-title{
-    font-family: .HelveticaNeueDeskInterface-Regular;
     font-size: 13px;
     color: #333333;
     letter-spacing: 0px;
@@ -222,7 +218,6 @@ input.BUG-input{
     background-color:  #1081DE;
 }
 .per-form-span{
-    font-family: STHeitiSC-Light;
     font-size: 13px;
     color: #1081DE;
     letter-spacing: 0px;
@@ -237,7 +232,6 @@ input.BUG-input{
     border-bottom: 1px solid #ebebeb;
 }
 .per-fail{
-    font-family: .HelveticaNeueDeskInterface-Regular;
     font-size: 14px;
     color: #FFFFFF;
     letter-spacing: 0px;
@@ -260,7 +254,6 @@ input.BUG-input{
 }
 .per-fail-li-p{
     position: relative;
-    font-family: STHeitiSC-Light;
     font-size: 13px;
     color: #333333;
     letter-spacing: 0px;
@@ -298,7 +291,6 @@ input.BUG-input{
     border-radius: 2px;
 }
 .per-res-title{
-    font-family: STHeitiSC-Light;
     font-size: 14px;
     color: #333333;
     letter-spacing: 0px;
@@ -307,7 +299,6 @@ input.BUG-input{
     border-bottom: 1px solid #EBEBEB;
 }
 .per-res-title a span{
-    font-family: .HelveticaNeueDeskInterface-Regular;
     font-size: 14px;
     letter-spacing: 0px;
     margin-right: 12px;
@@ -346,7 +337,6 @@ input.BUG-input{
     border-radius: 2px;
 }
 .fail-contact-title{
-    font-family: STHeitiSC-Light;
     font-size: 14px;
     color: #333333;
     letter-spacing: 0px;
@@ -357,7 +347,6 @@ input.BUG-input{
     border-bottom: 1px solid #EBEBEB;
 }
 .fail-contact-detail{
-    font-family: .HelveticaNeueDeskInterface-Regular;
     font-size: 13px;
     color: #1081DE;
     letter-spacing: 0px;
@@ -365,6 +354,8 @@ input.BUG-input{
     margin: 0 20px;
     padding: 0 25px;
     border: 1px solid transparent;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
 }
 .fail-contact-detail:hover{
     background: #F8FCFF;
@@ -378,7 +369,6 @@ input.BUG-input{
     padding-bottom: 20px;
 }
 .per-choice-p{
-    font-family: STHeitiSC-Light;
     font-size: 14px;
     color: #333333;
     letter-spacing: 0px;
@@ -387,7 +377,6 @@ input.BUG-input{
     padding-left: 20px;
 }
 .per-choice-label{
-    font-family: STHeitiSC-Light;
     font-size: 13px;
     color: #333333;
     letter-spacing: 0px;

@@ -398,3 +398,10 @@ ul.release-step li .span-name.finish-icon {
     font-size: 12px;
     cursor: pointer;
 }
+/*p5样式*/
+.release-p3.add-p5 .testin-nav-tabs{
+    font-size: 13px;
+}
+.add-p5 .module_list_wrapper .module-item.main{
+    font-size: 13px;
+}
