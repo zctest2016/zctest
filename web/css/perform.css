@@ -232,17 +232,16 @@ input.BUG-input{
     border-bottom: 1px solid #ebebeb;
     position: relative;
 }
-.per-fail{
+/*.per-fail{*/
 .note-window{
     position: absolute;
-    background: url("../images/note-window.png") no-repeat;
+    /*background: url("../images/note-window.png") no-repeat;*/
     top: -36px;
     right: 27px;
     width: 273px;
     height: 43px;
 }
 .note-window-p{
-    font-family: STHeitiSC-Light;
     font-size: 12px;
     color: #333333;
     letter-spacing: 0px;
@@ -251,7 +250,6 @@ input.BUG-input{
     padding-left: 20px;
 }
 .per-fr-notice{
-    font-family: .HelveticaNeueDeskInterface-Regular;
     font-size: 14px;
     color: #FFFFFF;
     letter-spacing: 0px;
@@ -498,7 +496,6 @@ textarea.per-fail-li-text{
 .per-fail2-Bug label{
     display: block;
     font-weight: 200;
-    font-family: .HelveticaNeueDeskInterface-Regular;
     font-size: 13px;
     color: #333333;
     letter-spacing: 0px;
