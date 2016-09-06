@@ -422,7 +422,6 @@ body {
     line-height: 22px;
     letter-spacing: 0px;
 }
-<<<<<<< HEAD
 .details-content .per-fail-li-p{
     white-space: pre-line;
 }
@@ -469,11 +468,6 @@ body {
     border: 1px solid #CCCCCC;
     border-radius: 2px;
 }
-
-
-
-
-=======
 .module_list_wrapper .module-item .third-item .action .action-area .edit-save{
     display: none;
 }
@@ -483,4 +477,3 @@ body {
 .module_list_wrapper .module-item .third-item.editing .action .action-area .edit-save{
     display: inline-block;
 }
->>>>>>> c8bfe08c6557bc7dbe589e632ac1b74eaad4f459
