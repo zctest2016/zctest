@@ -274,7 +274,7 @@ input.BUG-input{
 .per-step-ul{
     padding-bottom: 22px;
     border-bottom: 1px solid #ebebeb;
-    min-height: 154px;
+    min-height: 196px;
 }
 .per-fail-li{
     display: inline-block;
