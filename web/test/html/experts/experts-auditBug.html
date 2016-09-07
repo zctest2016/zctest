@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="../../../css/common/module.css"/>
     <link rel="stylesheet" href="../../../css/common/nav.css"/>
     <link rel="stylesheet" href="../../../css/experts.css"/>
+    <link rel="stylesheet" href="../../../css/mod.css"/>
+    <link rel="stylesheet" href="../../../css/release.css"/>
+    <link rel="stylesheet" href="../../../css/perform.css"/>
     <script src="../../../js/jquery-1.11.1.min.js"></script>
     <script src="../../../js/testinBS.js"></script>
 </head>
@@ -129,10 +132,975 @@
                     </div>
                 </div>
             </div>
+            <div >
+                <div class="testin-content-box experts-tab" style="" id="tab">
+                    <ul class="nav nav-tabs testin-nav-tabs experts-tab-ul" id="myTab">
+                        <li class="experts-tab-li active"><a data-toggle="tab" href="#tab1" aria-expanded="false">审核Bug</a></li>
+                        <li class="experts-tab-li"><a data-toggle="tab" href="#tab2" aria-expanded="false">审核用例结果</a></li>
+                    </ul>
+                    <div class="tab-content experts-audit-content" id="myTabContent">
+                        <div id="tab1" class="tab-pane fade active in">
+                            <div class="experts-tab1-top">
+                                <span class="tab1-status">状态：</span>
+                                <label class="tab1-status-label"><input type="checkbox" class="tab1-status-input">未审核 </label>
+                                <label class="tab1-status-label"><input type="checkbox" class="tab1-status-input">有效 </label>
+                                <label class="tab1-status-label"><input type="checkbox" class="tab1-status-input">无效 </label>
+                                <span class="tab1-status-data">共筛选出<span>10个</span> Bug</span>
+                                <label class="tab1-label-search"><input type="text" class="tab1-status-search form-control" placeholder="请输入Bug标题或BugID"> </label>
+                            </div>
+                            <div class="module_list_wrapper">
+                            <!-- 模块 S-->
+                            <div class="version-area">
+                            <div class="module-item main">
+                                <div class="adjust-layout clearfix">
+                                    <div class="col-xs-9 title">
+                                        <div class="arrow-icon">
+                                            <i class="iconfont"></i>
+                                        </div>
+                                        1. <span class="item-name">首页（100）</span>
+                                    </div>
+                                    <div class="col-xs-3 action">
+                                        <div class="action-area">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub-module-container">
+                            <div class="module-item sub clearfix">
+                            <div class="adjust-layout clearfix op3">
+                                <div class="col-xs-9 title">
+                                    1. <span class="item-name">发布</span>
+                                </div>
+                                <div class="col-xs-3 action">
+                                    <div class="action-area">
+                                        <button class="btn btn-blue btn-sm pull-right right-ctl">添加Bug</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mod-third-content">
+                            <div class="mod-third-box">
+
+                            <!--第三层 S-->
+                            <div class="third-item clearfix">
+                                <div class="adjust-layout clearfix">
+                                    <div class="col-xs-7 title">
+                                        <input type="checkbox" class="experts-col-input">
+                                        <!--<span class="new-item"></span>-->
+                                        <p class="per-fail-li-p per-edit-p form-control">1. 用例名称</p>
+                                    </div>
+                                    <div class="col-xs-5 action">
+                                        <div class="action-area">
+                                            <!--<a class="edit-item right-ctl"><i class="iconfont">&#xe602;</i>编辑</a>-->
+                                            <!--<a class="edit-save right-ctl"><i class="iconfont">&#xe602;</i>保存</a>-->
+                                            <!--<a class="remark right-ctl"><i class="iconfont">&#xe60d;</i>备注</a>-->
+                                            <!--<a class="delete right-ctl"><i class="iconfont">&#xe60c;</i>删除</a>-->
+                                            <!--<span class="state-tip color-pass right-ctl">Pass</span>-->
+                                            <!--<button class="btn btn-default btn-sm pull-right right-ctl">继续执行</button>-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="details-content">
+                                    <ul class="per-step-ul">
+                                        <li class="per-fail-li mar-top">
+                                            <p class="per-fail-li-p bef title1">测试步骤：</p>
+                                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                                            </textarea>
+                                        </li>
+                                        <li class="per-fail-li ">
+                                            <p class="per-fail-li-p bef title2">期望结果：</p>
+                                            <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                            <p class="per-fail-li-p bef title3">前提条件：</p>
+                                            <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--第三层 E-->
+
+                            <!--第三层 S-->
+                            <div class="third-item clearfix">
+                                <div class="adjust-layout clearfix">
+                                    <div class="col-xs-7 title">
+                                        <input type="checkbox" class="experts-col-input">
+                                        <!--<span class="new-item"></span>-->
+                                        <p class="per-fail-li-p per-edit-p form-control">2. 用例名称</p>
+                                    </div>
+                                    <div class="col-xs-5 action">
+                                        <div class="action-area">
+                                            <!--<a class="edit-item right-ctl"><i class="iconfont"></i>编辑</a>-->
+                                            <!--<a class="edit-save right-ctl"><i class="iconfont">&#xe602;</i>保存</a>-->
+                                            <!--<a class="remark disable right-ctl"><i class="iconfont"></i>备注</a>-->
+                                            <!--<a class="delete right-ctl"><i class="iconfont">&#xe60c;</i>删除</a>-->
+                                            <!--<span class="state-tip color-pass right-ctl">Pass</span>-->
+                                            <!--<button class="btn btn-default btn-sm pull-right right-ctl">继续执行</button>-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="details-content">
+                                    <ul class="per-step-ul">
+                                        <li class="per-fail-li mar-top">
+                                            <p class="per-fail-li-p bef title1">测试步骤：</p>
+                                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                                            </textarea>
+                                        </li>
+                                        <li class="per-fail-li ">
+                                            <p class="per-fail-li-p bef title2">期望结果：</p>
+                                            <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                            <p class="per-fail-li-p bef title3">前提条件：</p>
+                                            <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--第三层 E-->
+
+                            <!--第三层 S-->
+                            <div class="third-item clearfix">
+                                <div class="adjust-layout clearfix">
+                                    <div class="col-xs-7 title">
+                                        <input type="checkbox" class="experts-col-input">
+                                        <!--<span class="new-item"></span>-->
+                                        <p class="per-fail-li-p per-edit-p form-control">3. 用例名称</p>
+                                    </div>
+                                    <div class="col-xs-5 action">
+                                        <div class="action-area">
+                                            <!--<a class="edit-item right-ctl"><i class="iconfont">&#xe602;</i>编辑</a>-->
+                                            <!--<a class="edit-save right-ctl"><i class="iconfont">&#xe602;</i>保存</a>-->
+                                            <!--<a class="remark disable right-ctl"><i class="iconfont">&#xe60d;</i>备注</a>-->
+                                            <!--<a class="delete right-ctl"><i class="iconfont">&#xe60c;</i>删除</a>-->
+                                            <!--<span class="state-tip color-fail right-ctl">Fail</span>-->
+                                            <!--<button class="btn btn-default btn-sm pull-right right-ctl">继续执行</button>-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="details-content">
+                                    <ul class="per-step-ul">
+                                        <li class="per-fail-li mar-top">
+                                            <p class="per-fail-li-p bef title1">测试步骤：</p>
+                                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                                            </textarea>
+                                        </li>
+                                        <li class="per-fail-li ">
+                                            <p class="per-fail-li-p bef title2">期望结果：</p>
+                                            <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                            <p class="per-fail-li-p bef title3">前提条件：</p>
+                                            <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--第三层 E-->
+
+                            <!--第三层 S-->
+                            <!--<div class="third-item clearfix">-->
+                                <!--<div class="adjust-layout clearfix">-->
+                                    <!--<div class="col-xs-7 title">-->
+                                        <!--<span class="new-item"></span>-->
+                                        <!--<p class="per-fail-li-p per-edit-p form-control">4. 用例名称</p>-->
+                                    <!--</div>-->
+                                    <!--<div class="col-xs-5 action">-->
+                                        <!--<div class="action-area">-->
+                                            <!--&lt;!&ndash;<a class="edit-item right-ctl"><i class="iconfont"></i>编辑</a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<a class="edit-save right-ctl"><i class="iconfont"></i>保存</a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<a class="remark right-ctl"><i class="iconfont"></i>备注</a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<a class="delete right-ctl"><i class="iconfont"></i>删除</a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<span class="state-tip color-block right-ctl">Block</span>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<button class="btn btn-default btn-sm pull-right right-ctl">继续执行</button>&ndash;&gt;-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="details-content">-->
+                                    <!--<ul class="per-step-ul">-->
+                                        <!--<li class="per-fail-li mar-top">-->
+                                            <!--<p class="per-fail-li-p bef title1">测试步骤：</p>-->
+                                            <!--<textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页-->
+                                                <!--2、点击右上角【分享】图标，弹出分享方式选择层-->
+                                                <!--3、选择分享至【微信】，在微信中选择好友，确认分享-->
+                                            <!--</textarea>-->
+                                        <!--</li>-->
+                                        <!--<li class="per-fail-li ">-->
+                                            <!--<p class="per-fail-li-p bef title2">期望结果：</p>-->
+                                            <!--<p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>-->
+                                            <!--<p class="per-fail-li-p bef title3">前提条件：</p>-->
+                                            <!--<p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>-->
+                                        <!--</li>-->
+                                    <!--</ul>-->
+                                    <!--<div class="sup-info">-->
+                                        <!--<div class="sup-info-title">-->
+                                            <!--<span class="info-title-span"><img src="../../../images/Shape-ox.png">无法测试原因</span>-->
+                                            <!--<a class="pull-right"><i class="iconfont"></i>编辑</a>-->
+                                        <!--</div>-->
+                                        <!--<div class="sup-info-content info-text">-->
+                                            <!--1、点击商品进入商品详情页2、点击右上角【分享】图标，弹出分享方式选择层3、选择分享至【微信】，在微信中选择好友，确认分享1、点击商品进入商品详情页2、点击右上角【分享】图标，弹出分享方式选择层、选择分享至【微信】-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--第三层 E-->
+
+                            <!--第三层 S-->
+                            <!--<div class="third-item clearfix">-->
+                                <!--<div class="adjust-layout clearfix">-->
+                                    <!--<div class="col-xs-7 title">-->
+                                        <!--<p class="per-fail-li-p per-edit-p form-control">5. 用例名称</p>-->
+                                    <!--</div>-->
+                                    <!--<div class="col-xs-5 action">-->
+                                        <!--<div class="action-area">-->
+                                            <!--&lt;!&ndash;<a class="edit-item right-ctl"><i class="iconfont">&#xe602;</i>编辑</a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<a class="edit-save right-ctl"><i class="iconfont">&#xe602;</i>保存</a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<a class="remark disable right-ctl"><i class="iconfont">&#xe60d;</i>备注</a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<a class="delete right-ctl"><i class="iconfont">&#xe60c;</i>删除</a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<span class="state-tip color-na right-ctl">N/A</span>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<button class="btn btn-default btn-sm pull-right right-ctl">继续执行</button>&ndash;&gt;-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="details-content">-->
+                                    <!--<ul class="per-step-ul">-->
+                                        <!--<li class="per-fail-li mar-top">-->
+                                            <!--<p class="per-fail-li-p bef title1">测试步骤：</p>-->
+                                            <!--<textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页-->
+                                                <!--2、点击右上角【分享】图标，弹出分享方式选择层-->
+                                                <!--3、选择分享至【微信】，在微信中选择好友，确认分享-->
+                                            <!--</textarea>-->
+                                        <!--</li>-->
+                                        <!--<li class="per-fail-li ">-->
+                                            <!--<p class="per-fail-li-p bef title2">期望结果：</p>-->
+                                            <!--<p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>-->
+                                            <!--<p class="per-fail-li-p bef title3">前提条件：</p>-->
+                                            <!--<p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>-->
+                                        <!--</li>-->
+                                    <!--</ul>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--第三层 E-->
+
+                            <!--第三层 S-->
+                            <!--<div class="third-item clearfix">-->
+                                <!--<div class="adjust-layout clearfix">-->
+                                    <!--<div class="col-xs-7 title">-->
+                                        <!--<span class="new-item color-fail"></span>-->
+                                        <!--<p class="per-fail-li-p per-edit-p form-control">6. 用例名称</p>-->
+                                    <!--</div>-->
+                                    <!--<div class="col-xs-5 action">-->
+                                        <!--<div class="action-area">-->
+                                            <!--&lt;!&ndash;<a class="edit-item right-ctl"><i class="iconfont"></i>编辑</a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<a class="edit-save right-ctl"><i class="iconfont"></i>保存</a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<a class="remark right-ctl"><i class="iconfont"></i>备注</a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<a class="delete right-ctl"><i class="iconfont"></i>删除</a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<span class="state-tip color-fail right-ctl">Fail</span>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<button class="btn btn-default btn-sm pull-right right-ctl">继续执行</button>&ndash;&gt;-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="details-content">-->
+                                    <!--<ul class="per-step-ul">-->
+                                        <!--<li class="per-fail-li mar-top">-->
+                                            <!--<p class="per-fail-li-p bef title1">测试步骤：</p>-->
+                                            <!--<textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页-->
+                                                <!--2、点击右上角【分享】图标，弹出分享方式选择层-->
+                                                <!--3、选择分享至【微信】，在微信中选择好友，确认分享-->
+                                            <!--</textarea>-->
+                                        <!--</li>-->
+                                        <!--<li class="per-fail-li ">-->
+                                            <!--<p class="per-fail-li-p bef title2">期望结果：</p>-->
+                                            <!--<p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>-->
+                                            <!--<p class="per-fail-li-p bef title3">前提条件：</p>-->
+                                            <!--<p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>-->
+                                        <!--</li>-->
+                                    <!--</ul>-->
+                                    <!--<div class="sup-info">-->
+                                        <!--<div class="sup-info-title">-->
+                                            <!--<span class="info-title-span"><img src="../../../images/Shape-link.png">关联问题</span>-->
+                                        <!--</div>-->
+                                        <!--<div class="sup-info-content">-->
+                                            <!--<p class="fail-contact-detail">Bug1  注册时验证码输入错误的提示语不正确<span>取消关联</span></p>-->
+                                            <!--<p class="fail-contact-detail">Bug1  注册时验证码输入错误的提示语不正确<span>取消关联</span></p>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--第三层 E-->
+
+                            <!--第三层 S-->
+                            <!--<div class="third-item clearfix">-->
+                                <!--<div class="adjust-layout clearfix">-->
+                                    <!--<div class="col-xs-7 title">-->
+                                        <!--<span class="new-item"></span>-->
+                                        <!--<p class="per-fail-li-p per-edit-p form-control">7. 用例名称</p>-->
+                                    <!--</div>-->
+                                    <!--<div class="col-xs-5 action">-->
+                                        <!--<div class="action-area">-->
+                                            <!--&lt;!&ndash;<a class="edit-item right-ctl"><i class="iconfont"></i>编辑</a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<a class="edit-save right-ctl"><i class="iconfont"></i>保存</a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<a class="remark right-ctl"><i class="iconfont"></i>备注</a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<a class="delete right-ctl"><i class="iconfont"></i>删除</a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<span class="state-tip color-pass right-ctl">Pass</span>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<button class="btn btn-default btn-sm pull-right right-ctl">继续执行</button>&ndash;&gt;-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="details-content">-->
+                                    <!--<ul class="per-step-ul">-->
+                                        <!--<li class="per-fail-li mar-top">-->
+                                            <!--<p class="per-fail-li-p bef title1">测试步骤：</p>-->
+                                            <!--<textarea class="per-fail-li-text" disabled="disabled" rows="4">1、点击商品进入商品详情页-->
+                                                <!--2、点击右上角【分享】图标，弹出分享方式选择层-->
+                                                <!--3、选择分享至【微信】，在微信中选择好友，确认分享-->
+                                            <!--</textarea>-->
+                                        <!--</li>-->
+                                        <!--<li class="per-fail-li ">-->
+                                            <!--<p class="per-fail-li-p bef title2">期望结果：</p>-->
+                                            <!--<p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>-->
+                                            <!--<p class="per-fail-li-p bef title3">前提条件：</p>-->
+                                            <!--<p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>-->
+                                        <!--</li>-->
+                                    <!--</ul>-->
+                                    <!--<div class="sup-info">-->
+                                        <!--<div class="sup-info-title">-->
+                                            <!--<span class="info-title-span"><img src="../../../images/Shape-ox.png">无法测试原因</span>-->
+                                            <!--<a class="pull-right"><i class="iconfont"></i>编辑</a>-->
+                                        <!--</div>-->
+                                        <!--<div class="sup-info-content info-text">-->
+                                            <!--1、点击商品进入商品详情页2、点击右上角【分享】图标，弹出分享方式选择层3、选择分享至【微信】，在微信中选择好友，确认分享1、点击商品进入商品详情页2、点击右上角【分享】图标，弹出分享方式选择层、选择分享至【微信】-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<br>-->
+                                    <!--<div class="sup-info">-->
+                                        <!--<div class="sup-info-title">-->
+                                            <!--<span class="info-title-span"><img src="../../../images/Shape-link.png">关联问题</span>-->
+                                        <!--</div>-->
+                                        <!--<div class="sup-info-content">-->
+                                            <!--<p class="fail-contact-detail">Bug1  注册时验证码输入错误的提示语不正确<span>取消关联</span></p>-->
+                                            <!--<p class="fail-contact-detail">Bug1  注册时验证码输入错误的提示语不正确<span>取消关联</span></p>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--第三层 E-->
+                            </div>
+                            </div>
+                            </div>
+                            <div class="module-item sub clearfix">
+                                <div class="adjust-layout clearfix op3">
+                                    <div class="col-xs-9 title">
+                                        2. <span class="item-name">发布纯文字信息</span>
+                                    </div>
+                                    <div class="col-xs-3 action">
+                                        <div class="action-area">
+                                            <button class="btn btn-blue btn-sm pull-right">添加Bug</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="module-item sub clearfix">
+                                <div class="adjust-layout clearfix op3">
+                                    <div class="col-xs-9 title">
+                                        3. <span class="item-name">修改文案</span>
+                                    </div>
+                                    <div class="col-xs-3 action">
+                                        <div class="action-area">
+                                            <span class="checked-name">执行人：徐三岁</span>
+                                            <button class="btn btn-blue btn-sm pull-right">添加Bug</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="module-item sub clearfix">
+                                <div class="adjust-layout clearfix op3">
+                                    <div class="col-xs-9 title">
+                                        4. <span class="item-name">发布视频</span>
+                                    </div>
+                                    <div class="col-xs-3 action">
+                                        <div class="action-area test-checked">
+                                            <span class="checked-name">执行人：徐三岁</span>
+                                            <button class="btn btn-blue btn-sm pull-right">添加Bug</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            </div>
+                            <!-- 模块 E-->
+
+                            <!-- 模块 S-->
+                            <div class="version-area">
+                                <div class="module-item clearfix main">
+                                    <div class="adjust-layout clearfix">
+                                        <div class="col-xs-9 title">
+                                            <div class="arrow-icon">
+                                                <i class="iconfont"></i>
+                                            </div>
+                                            2. <span class="item-name">探索</span>
+                                        </div>
+                                        <div class="col-xs-3 action">
+                                            <div class="action-area">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sub-module-container">
+                                    <div class="module-item sub clearfix">
+                                        <div class="adjust-layout clearfix">
+                                            <div class="col-xs-9 title">
+                                                1. <span class="item-name">发布纯文字信息</span>
+                                            </div>
+                                            <div class="col-xs-3 action">
+                                                <div class="action-area">
+                                                    <a class="cancel-check">取消</a>
+                                                    <label class="checkbox-inline check-people">
+                                                        <input type="checkbox" name="send" value="1" class="input-checkbox">
+                                                        <span class="input-checkbox-show"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="module-item sub clearfix">
+                                        <div class="adjust-layout clearfix">
+                                            <div class="col-xs-9 title">
+                                                <span class="new-item"></span>
+                                                2. <span class="item-name">发布视频</span>
+                                            </div>
+                                            <div class="col-xs-3 action">
+                                                <div class="action-area">
+                                                    <a class="edit-module-name">编辑</a>
+                                                    <a class="remove-module">删除</a>
+                                                    <a class="save-text">保存</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 模块 E-->
+                            </div>
+                        </div>
+                        <div id="tab2" class="tab-pane fade">
+                        <div class="module_list_wrapper">
+                        <!-- 模块 S-->
+                        <div class="version-area">
+                        <div class="module-item main">
+                            <div class="adjust-layout clearfix">
+                                <div class="col-xs-9 title">
+                                    <div class="arrow-icon">
+                                        <i class="iconfont"></i>
+                                    </div>
+                                    1. <span class="item-name">首页</span>
+                                </div>
+                                <div class="col-xs-3 action">
+                                    <div class="action-area">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-module-container">
+                        <div class="module-item sub clearfix">
+                        <div class="adjust-layout clearfix op3">
+                            <div class="col-xs-9 title">
+                                1. <span class="item-name">发布</span>
+                            </div>
+                            <div class="col-xs-3 action">
+                                <div class="action-area">
+                                    <button class="btn btn-blue btn-sm pull-right right-ctl">添加Bug</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mod-third-content">
+                        <div class="mod-third-box">
+
+                        <!--第三层 S-->
+                        <div class="third-item clearfix">
+                            <div class="adjust-layout clearfix">
+                                <div class="col-xs-7 title">
+                                    <span class="new-item"></span>
+                                    <p class="per-fail-li-p per-edit-p form-control">1. 用例名称</p>
+                                </div>
+                                <div class="col-xs-5 action">
+                                    <div class="action-area">
+                                        <!--<a class="edit-item right-ctl"><i class="iconfont">&#xe602;</i>编辑</a>-->
+                                        <!--<a class="edit-save right-ctl"><i class="iconfont">&#xe602;</i>保存</a>-->
+                                        <!--<a class="remark right-ctl"><i class="iconfont">&#xe60d;</i>备注</a>-->
+                                        <!--<a class="delete right-ctl"><i class="iconfont">&#xe60c;</i>删除</a>-->
+                                        <span class="state-tip color-pass right-ctl">Pass</span>
+                                        <button class="btn btn-default btn-sm pull-right right-ctl">继续执行</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details-content">
+                                <ul class="per-step-ul">
+                                    <li class="per-fail-li mar-top">
+                                        <p class="per-fail-li-p bef title1">测试步骤：</p>
+                                        <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+ 3、选择分享至【微信】，在微信中选择好友，确认分享
+                                        </textarea>
+                                    </li>
+                                    <li class="per-fail-li ">
+                                        <p class="per-fail-li-p bef title2">期望结果：</p>
+                                        <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                        <p class="per-fail-li-p bef title3">前提条件：</p>
+                                        <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--第三层 E-->
+
+                        <!--第三层 S-->
+                        <div class="third-item clearfix">
+                            <div class="adjust-layout clearfix">
+                                <div class="col-xs-7 title">
+                                    <p class="per-fail-li-p per-edit-p form-control">2. 用例名称</p>
+                                </div>
+                                <div class="col-xs-5 action">
+                                    <div class="action-area">
+                                        <a class="edit-item right-ctl"><i class="iconfont"></i>编辑</a>
+                                        <!--<a class="edit-save right-ctl"><i class="iconfont">&#xe602;</i>保存</a>-->
+                                        <a class="remark disable right-ctl"><i class="iconfont"></i>备注</a>
+                                        <!--<a class="delete right-ctl"><i class="iconfont">&#xe60c;</i>删除</a>-->
+                                        <span class="state-tip color-pass right-ctl">Pass</span>
+                                        <button class="btn btn-default btn-sm pull-right right-ctl">继续执行</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details-content">
+                                <ul class="per-step-ul">
+                                    <li class="per-fail-li mar-top">
+                                        <p class="per-fail-li-p bef title1">测试步骤：</p>
+                                        <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                                        </textarea>
+                                    </li>
+                                    <li class="per-fail-li ">
+                                        <p class="per-fail-li-p bef title2">期望结果：</p>
+                                        <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                        <p class="per-fail-li-p bef title3">前提条件：</p>
+                                        <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--第三层 E-->
+
+                        <!--第三层 S-->
+                        <div class="third-item clearfix">
+                            <div class="adjust-layout clearfix">
+                                <div class="col-xs-7 title">
+                                    <p class="per-fail-li-p per-edit-p form-control">3. 用例名称</p>
+                                </div>
+                                <div class="col-xs-5 action">
+                                    <div class="action-area">
+                                        <!--<a class="edit-item right-ctl"><i class="iconfont">&#xe602;</i>编辑</a>-->
+                                        <!--<a class="edit-save right-ctl"><i class="iconfont">&#xe602;</i>保存</a>-->
+                                        <!--<a class="remark disable right-ctl"><i class="iconfont">&#xe60d;</i>备注</a>-->
+                                        <!--<a class="delete right-ctl"><i class="iconfont">&#xe60c;</i>删除</a>-->
+                                        <span class="state-tip color-fail right-ctl">Fail</span>
+                                        <button class="btn btn-default btn-sm pull-right right-ctl">继续执行</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details-content">
+                                <ul class="per-step-ul">
+                                    <li class="per-fail-li mar-top">
+                                        <p class="per-fail-li-p bef title1">测试步骤：</p>
+                                        <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                                        </textarea>
+                                    </li>
+                                    <li class="per-fail-li ">
+                                        <p class="per-fail-li-p bef title2">期望结果：</p>
+                                        <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                        <p class="per-fail-li-p bef title3">前提条件：</p>
+                                        <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--第三层 E-->
+
+                        <!--第三层 S-->
+                        <div class="third-item clearfix">
+                            <div class="adjust-layout clearfix">
+                                <div class="col-xs-7 title">
+                                    <span class="new-item"></span>
+                                    <p class="per-fail-li-p per-edit-p form-control">4. 用例名称</p>
+                                </div>
+                                <div class="col-xs-5 action">
+                                    <div class="action-area">
+                                        <a class="edit-item right-ctl"><i class="iconfont"></i>编辑</a>
+                                        <a class="edit-save right-ctl"><i class="iconfont"></i>保存</a>
+                                        <a class="remark right-ctl"><i class="iconfont"></i>备注</a>
+                                        <a class="delete right-ctl"><i class="iconfont"></i>删除</a>
+                                        <span class="state-tip color-block right-ctl">Block</span>
+                                        <button class="btn btn-default btn-sm pull-right right-ctl">继续执行</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details-content">
+                                <ul class="per-step-ul">
+                                    <li class="per-fail-li mar-top">
+                                        <p class="per-fail-li-p bef title1">测试步骤：</p>
+                                        <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                                        </textarea>
+                                    </li>
+                                    <li class="per-fail-li ">
+                                        <p class="per-fail-li-p bef title2">期望结果：</p>
+                                        <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                        <p class="per-fail-li-p bef title3">前提条件：</p>
+                                        <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                    </li>
+                                </ul>
+                                <div class="sup-info">
+                                    <div class="sup-info-title">
+                                        <span class="info-title-span"><img src="../../../images/Shape-ox.png">无法测试原因</span>
+                                        <a class="pull-right"><i class="iconfont"></i>编辑</a>
+                                    </div>
+                                    <div class="sup-info-content info-text">
+                                        1、点击商品进入商品详情页2、点击右上角【分享】图标，弹出分享方式选择层3、选择分享至【微信】，在微信中选择好友，确认分享1、点击商品进入商品详情页2、点击右上角【分享】图标，弹出分享方式选择层、选择分享至【微信】
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--第三层 E-->
+
+                        <!--第三层 S-->
+                        <div class="third-item clearfix">
+                            <div class="adjust-layout clearfix">
+                                <div class="col-xs-7 title">
+                                    <p class="per-fail-li-p per-edit-p form-control">5. 用例名称</p>
+                                </div>
+                                <div class="col-xs-5 action">
+                                    <div class="action-area">
+                                        <!--<a class="edit-item right-ctl"><i class="iconfont">&#xe602;</i>编辑</a>-->
+                                        <!--<a class="edit-save right-ctl"><i class="iconfont">&#xe602;</i>保存</a>-->
+                                        <!--<a class="remark disable right-ctl"><i class="iconfont">&#xe60d;</i>备注</a>-->
+                                        <!--<a class="delete right-ctl"><i class="iconfont">&#xe60c;</i>删除</a>-->
+                                        <span class="state-tip color-na right-ctl">N/A</span>
+                                        <button class="btn btn-default btn-sm pull-right right-ctl">继续执行</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details-content">
+                                <ul class="per-step-ul">
+                                    <li class="per-fail-li mar-top">
+                                        <p class="per-fail-li-p bef title1">测试步骤：</p>
+                                        <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                                        </textarea>
+                                    </li>
+                                    <li class="per-fail-li ">
+                                        <p class="per-fail-li-p bef title2">期望结果：</p>
+                                        <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                        <p class="per-fail-li-p bef title3">前提条件：</p>
+                                        <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--第三层 E-->
+
+                        <!--第三层 S-->
+                        <div class="third-item clearfix">
+                            <div class="adjust-layout clearfix">
+                                <div class="col-xs-7 title">
+                                    <span class="new-item color-fail"></span>
+                                    <p class="per-fail-li-p per-edit-p form-control">6. 用例名称</p>
+                                </div>
+                                <div class="col-xs-5 action">
+                                    <div class="action-area">
+                                        <a class="edit-item right-ctl"><i class="iconfont"></i>编辑</a>
+                                        <a class="edit-save right-ctl"><i class="iconfont"></i>保存</a>
+                                        <a class="remark right-ctl"><i class="iconfont"></i>备注</a>
+                                        <a class="delete right-ctl"><i class="iconfont"></i>删除</a>
+                                        <span class="state-tip color-fail right-ctl">Fail</span>
+                                        <button class="btn btn-default btn-sm pull-right right-ctl">继续执行</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details-content">
+                                <ul class="per-step-ul">
+                                    <li class="per-fail-li mar-top">
+                                        <p class="per-fail-li-p bef title1">测试步骤：</p>
+                                        <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                                        </textarea>
+                                    </li>
+                                    <li class="per-fail-li ">
+                                        <p class="per-fail-li-p bef title2">期望结果：</p>
+                                        <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                        <p class="per-fail-li-p bef title3">前提条件：</p>
+                                        <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                    </li>
+                                </ul>
+                                <div class="sup-info">
+                                    <div class="sup-info-title">
+                                        <span class="info-title-span"><img src="../../../images/Shape-link.png">关联问题</span>
+                                    </div>
+                                    <div class="sup-info-content">
+                                        <p class="fail-contact-detail">Bug1  注册时验证码输入错误的提示语不正确<span>取消关联</span></p>
+                                        <p class="fail-contact-detail">Bug1  注册时验证码输入错误的提示语不正确<span>取消关联</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--第三层 E-->
+
+                        <!--第三层 S-->
+                        <div class="third-item clearfix">
+                            <div class="adjust-layout clearfix">
+                                <div class="col-xs-7 title">
+                                    <span class="new-item"></span>
+                                    <p class="per-fail-li-p per-edit-p form-control">7. 用例名称</p>
+                                </div>
+                                <div class="col-xs-5 action">
+                                    <div class="action-area">
+                                        <a class="edit-item right-ctl"><i class="iconfont"></i>编辑</a>
+                                        <a class="edit-save right-ctl"><i class="iconfont"></i>保存</a>
+                                        <a class="remark right-ctl"><i class="iconfont"></i>备注</a>
+                                        <a class="delete right-ctl"><i class="iconfont"></i>删除</a>
+                                        <span class="state-tip color-pass right-ctl">Pass</span>
+                                        <button class="btn btn-default btn-sm pull-right right-ctl">继续执行</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details-content">
+                                <ul class="per-step-ul">
+                                    <li class="per-fail-li mar-top">
+                                        <p class="per-fail-li-p bef title1">测试步骤：</p>
+                                        <textarea class="per-fail-li-text" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+ 3、选择分享至【微信】，在微信中选择好友，确认分享
+                                        </textarea>
+                                    </li>
+                                    <li class="per-fail-li ">
+                                        <p class="per-fail-li-p bef title2">期望结果：</p>
+                                        <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                        <p class="per-fail-li-p bef title3">前提条件：</p>
+                                        <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                    </li>
+                                </ul>
+                                <div class="sup-info">
+                                    <div class="sup-info-title">
+                                        <span class="info-title-span"><img src="../../../images/Shape-ox.png">无法测试原因</span>
+                                        <a class="pull-right"><i class="iconfont"></i>编辑</a>
+                                    </div>
+                                    <div class="sup-info-content info-text">
+                                        1、点击商品进入商品详情页2、点击右上角【分享】图标，弹出分享方式选择层3、选择分享至【微信】，在微信中选择好友，确认分享1、点击商品进入商品详情页2、点击右上角【分享】图标，弹出分享方式选择层、选择分享至【微信】
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="sup-info">
+                                    <div class="sup-info-title">
+                                        <span class="info-title-span"><img src="../../../images/Shape-link.png">关联问题</span>
+                                    </div>
+                                    <div class="sup-info-content">
+                                        <p class="fail-contact-detail">Bug1  注册时验证码输入错误的提示语不正确<span>取消关联</span></p>
+                                        <p class="fail-contact-detail">Bug1  注册时验证码输入错误的提示语不正确<span>取消关联</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--第三层 E-->
+                        </div>
+                        </div>
+                        </div>
+                        <div class="module-item sub clearfix">
+                            <div class="adjust-layout clearfix op3">
+                                <div class="col-xs-9 title">
+                                    2. <span class="item-name">发布纯文字信息</span>
+                                </div>
+                                <div class="col-xs-3 action">
+                                    <div class="action-area">
+                                        <button class="btn btn-blue btn-sm pull-right">添加Bug</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="module-item sub clearfix">
+                            <div class="adjust-layout clearfix op3">
+                                <div class="col-xs-9 title">
+                                    3. <span class="item-name">修改文案</span>
+                                </div>
+                                <div class="col-xs-3 action">
+                                    <div class="action-area">
+                                        <span class="checked-name">执行人：徐三岁</span>
+                                        <button class="btn btn-blue btn-sm pull-right">添加Bug</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="module-item sub clearfix">
+                            <div class="adjust-layout clearfix op3">
+                                <div class="col-xs-9 title">
+                                    4. <span class="item-name">发布视频</span>
+                                </div>
+                                <div class="col-xs-3 action">
+                                    <div class="action-area test-checked">
+                                        <span class="checked-name">执行人：徐三岁</span>
+                                        <button class="btn btn-blue btn-sm pull-right">添加Bug</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                        <!-- 模块 E-->
+
+                        <!-- 模块 S-->
+                        <div class="version-area">
+                            <div class="module-item clearfix main">
+                                <div class="adjust-layout clearfix">
+                                    <div class="col-xs-9 title">
+                                        <div class="arrow-icon">
+                                            <i class="iconfont"></i>
+                                        </div>
+                                        2. <span class="item-name">探索</span>
+                                    </div>
+                                    <div class="col-xs-3 action">
+                                        <div class="action-area">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub-module-container">
+                                <div class="module-item sub clearfix">
+                                    <div class="adjust-layout clearfix">
+                                        <div class="col-xs-9 title">
+                                            1. <span class="item-name">发布纯文字信息</span>
+                                        </div>
+                                        <div class="col-xs-3 action">
+                                            <div class="action-area">
+                                                <a class="cancel-check">取消</a>
+                                                <label class="checkbox-inline check-people">
+                                                    <input type="checkbox" name="send" value="1" class="input-checkbox">
+                                                    <span class="input-checkbox-show"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="module-item sub clearfix">
+                                    <div class="adjust-layout clearfix">
+                                        <div class="col-xs-9 title">
+                                            <span class="new-item"></span>
+                                            2. <span class="item-name">发布视频</span>
+                                        </div>
+                                        <div class="col-xs-3 action">
+                                            <div class="action-area">
+                                                <a class="edit-module-name">编辑</a>
+                                                <a class="remove-module">删除</a>
+                                                <a class="save-text">保存</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 模块 E-->
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 </body>
+<script>
+    $(document).ready(function(){
+//            切换
+        var can_toggle = 1;
+        $(".action-area *").hover(function(){
+            can_toggle = 0;
+        },function(){
+            if($(this).parents(".module-item").hasClass("editing")){
+                can_toggle = 0;
+            }else{
+                can_toggle = 1;
+            }
+        });
+        $(".module-item.main").click(function(){
+            if(can_toggle==1){
+                $(this).parents(".version-area").toggleClass("opening");
+            }
+        });
+////        打开第三层内容
+//        $(".module-item.sub .adjust-layout.op3").click(function(){
+//            if(can_toggle==1){
+//                $(this).parents(".module-item.sub").toggleClass("third-open");
+//            }
+//        })
+////        打开第四层内容
+//        $(".third-item .adjust-layout").click(function(){
+//            if(can_toggle==1){
+//                $(this).parents(".third-item").toggleClass("details-open");
+//            }
+//        })
+    });
+</script>
+<script>
+    $(document).ready(function(){
+//            切换
+        var can_toggle = 1;
+        $(".action-area .right-ctl").hover(function(){
+            can_toggle = 0;
+        },function(){
+            can_toggle = 1;
+        });
+//        打开第三层内容
+        $(".module-item.sub .adjust-layout.op3").click(function(){
+            if(can_toggle==1){
+                $(this).parents(".module-item.sub").toggleClass("third-open");
+            }
+        })
+//        打开第四层内容
+        $(".third-item .adjust-layout").click(function(){
+            if(can_toggle==1){
+                $(this).parents(".third-item").toggleClass("details-open");
+            }
+        })
+    });
+</script>
+<script>
+    //    备注上方的提示
+    $(".per-form-span.note").hover(function(){
+        $(".note-window").show();
+    },function(){
+        $(".note-window").hide();
+    })
+    //    编辑保存按钮操作
+    $(".edit-item").click(function(){
+        var prt = $(this).parents(".third-item");
+        prt.toggleClass("editing");
+        prt.find(".per-fail-li-p.per-edit-p").attr("contenteditable","true").css("border-color","#ccc");
+        prt.find(".sup-info-content.info-text").attr("contenteditable","true").css("border-color","#ccc");
+        prt.find(".per-fail-li-text").removeAttr("disabled").css("border-color","#ccc");
+    });
+    $(".edit-save").click(function(){
+        var prt = $(this).parents(".third-item");
+        prt.toggleClass("editing");
+        prt.find(".per-fail-li-p.per-edit-p").attr("contenteditable","false").css("border-color","transparent");
+        prt.find(".sup-info-content.info-text").attr("contenteditable","false").css("border-color","transparent");
+        prt.find(".per-fail-li-text").attr("disabled","disabled").css("border-color","transparent");
+    });
+</script>
 <script>
     $(".experts-notice").hover(function(){
         $(".window-notice").show();
@@ -140,5 +1108,6 @@
         $(".window-notice").hide();
     })
 </script>
+
 
 </html>
