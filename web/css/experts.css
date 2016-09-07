@@ -240,8 +240,19 @@ input.tab1-status-input{
     top: 6px;
     cursor: pointer;
 }
-
-
+/*experts-auditBug页面样式*/
+.module_list_wrapper .sub-module-container .module-item .adjust-layout .title input.experts-col-input{
+    /*display: inline-block;*/
+    width: 20px;
+    position: relative;
+    top: 11px;
+}
+.module_list_wrapper .sub-module-container .module-item .adjust-layout .title input.experts-col-input:focus{
+    border-color: transparent;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
 
 
 
