@@ -405,3 +405,58 @@ ul.release-step li .span-name.finish-icon {
 .add-p5 .module_list_wrapper .module-item.main{
     font-size: 13px;
 }
+.enterprise-tip .new-problem{
+    width: 836px;
+}
+.enterprise-tip .new-problem .modal-body{
+    padding: 30px 22px 30px 20px!important;
+}
+.enterprise-tip .new-problem .new-problem-content{
+    overflow: hidden;
+    text-align: left;
+}
+.enterprise-tip .new-problem .new-problem-content .new-problem-left{
+    width: 210px;
+    height: 522px;
+    background: #FAFAFA;
+    border: 1px solid #EBEBEB;
+    border-radius: 2px;
+    float: left;
+}
+.enterprise-tip .new-problem .new-problem-content .new-problem-right{
+    width: 550px;
+    margin-left: 20px;
+    float: left;
+}
+.new-problem-left .testin-select{
+    width: 170px;
+}
+.new-problem-left .choice-sele1{
+    width: 170px;
+}
+.new-problem-right .mod-right-input,.new-problem-right .mod-rig-text{
+    width: 100%;
+}
+.new-problem-right .mod-rig-title{
+    margin-top: 29px;
+    margin-bottom: 9px;
+}
+.new-problem-right .mod-rig-title:first-child{
+    margin-top: -2px;
+}
+.enterprise-tip input{
+    width: 678px;
+    height: 36px;
+    border-radius: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border: 1px solid #cccccc;
+    padding: 9px 10px;
+}
+.enterprise-tip input:focus{
+    border-color: #66afe9!important;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
