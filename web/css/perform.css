@@ -172,7 +172,7 @@ input.BUG-input{
 .mod-right-input.error{
     border-color:#EB5A3C;
 }
-.mod-rig-text{
+textarea.mod-rig-text{
     height: 120px;
     width: 646px;
     border: 1px solid #cccccc;
