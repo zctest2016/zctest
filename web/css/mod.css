@@ -7,6 +7,12 @@ body {
 .p-30{
     padding: 30px;
 }
+.mb-20{
+    margin-bottom: 20px;
+}
+.mt-30{
+    margin-top: 30px;
+}
 .tac{
     text-align: center;
 }
@@ -355,6 +361,13 @@ body {
     text-align: center;
     line-height: 18px;
 }
+.bug-list .third-item .action .state-tip{
+    width: 64px;
+    height: 20px;
+    line-height: 20px;
+    padding: 0;
+    font-size: 12px;
+}
 .third-item .action .disable{
     color: #A8A8A8;
 }
@@ -458,49 +471,10 @@ body {
 .details-content .per-fail-li-p{
     white-space: pre-line;
 }
-
-/*BUG列表样式*/
-.tab2-item-p,
-.tab2-explore-p{
-    font-size: 13px;
-    color: #333333;
-    letter-spacing: 0px;
-    line-height: 58px;
-    border-bottom: 1px solid #ebebeb;
-    padding-left: 50px;
-    margin-bottom: 0;
-}
-.tab2-item-p:hover{
-    background-color: #F8FCFF;
-}
-.tab2-explore-p{
-    background-color: #fafafa;
-    padding:0 22px 0 70px;
-    font-size: 12px;
-}
-.explore-addBug{
-    float: right;
-    color: #FFFFFF;
-    background: #1081DE;
-    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.08);
-    border-radius: 2px;
-    line-height: 28px;
-    padding: 0 13px;
-    margin-top: 16px;
+.details-content .per-fail-li-p a{
     cursor: pointer;
 }
-.explore-addBug:hover{
-    background-color: #3098F2;
-}
-.tab2-explore-div{
-    background: #FAFAFA;
-    padding: 20px 60px;
-}
-.exp-Bug{
-    background: #FFFFFF;
-    border: 1px solid #CCCCCC;
-    border-radius: 2px;
-}
+/*BUG列表样式*/
 .module_list_wrapper .module-item .third-item .action .action-area .edit-save{
     display: none;
 }
@@ -509,4 +483,47 @@ body {
 }
 .module_list_wrapper .module-item .third-item.editing .action .action-area .edit-save{
     display: inline-block;
+}
+.bug-list .third-item .details-content .details-left{
+    width: 415px;
+    float: left;
+}
+.bug-list .third-item .details-content .details-right{
+    width: 358px;
+    float: right;
+}
+.bug-list .third-item .details-content{
+    overflow: hidden;
+    padding: 20px 20px 30px 60px;
+}
+.bug-list .third-item .details-content .per-fail-li-p.bef.title7{
+    width: 271px;
+}
+.bug-list .third-item .details-content .per-fail-li-p.bef.title8{
+    width: 141px;
+}
+.bug-list .third-item textarea.per-fail-li-text{
+    height: 66px;
+    overflow: hidden;
+    width: 100%;
+}
+.details-right .pic-area{
+    overflow: hidden;
+    padding: 0 2px;
+}
+.details-right .pic-area .pic-item{
+    float: left;
+    width: 167px;
+    height: 294px;
+    margin-left: 20px;
+    cursor: pointer;
+    border: 1px solid #d2d6da;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.details-right .pic-area .pic-item:first-child{
+    margin-left: 0;
+}
+.details-right .pic-area .pic-item img{
+
 }

@@ -120,13 +120,13 @@
             </div>
             <div class="zc_test-box release-p3 add-p5">
                 <ul class="nav nav-tabs testin-nav-tabs" id="myTab">
-                    <li class="active"><a data-toggle="tab" href="#tab1" aria-expanded="true">提交用例</a></li>
-                    <li class=""><a data-toggle="tab" href="#tab2" aria-expanded="false">BUG列表</a></li>
+                    <li class=""><a data-toggle="tab" href="#tab1" aria-expanded="false">提交用例</a></li>
+                    <li class="active"><a data-toggle="tab" href="#tab2" aria-expanded="true">BUG列表</a></li>
                     <a class="" data-toggle="modal" data-target="#add-problem">新建问题</a>
                     <button class="btn btn-default btn-sm pull-right">继续执行</button>
                 </ul>
                 <div class="tab-content" id="myTabContent">
-                    <div id="tab1" class="tab-pane fade active in">
+                    <div id="tab1" class="tab-pane fade">
                         <div class="module_list_wrapper">
                             <!-- 模块 S-->
                             <div class="version-area">
@@ -558,26 +558,241 @@
                             <!-- 模块 E-->
                         </div>
                     </div>
-                    <div id="tab2" class="tab-pane fade">
-                        <div class="tab2-content">
-                            <div class="tab2-content-item">
-                                <p class="tab2-item-p">1. 首页（100）</p>
-                            </div>
-                            <div class="tab2-content-item">
-                                <p class="tab2-item-p">2.探索 </p>
-                                <div class="tab2-explore">
-                                    <p class="tab2-explore-p">1. 发布<span class="explore-addBug">添加Bug</span></p>
-                                    <p class="tab2-explore-p">2. 发布纯文字信息<span class="explore-addBug">添加Bug</span></p>
+                    <div id="tab2" class="tab-pane fade active in">
+                        <div class="module_list_wrapper bug-list">
+                            <!-- 模块 S-->
+                            <div class="version-area">
+                                <div class="module-item main">
+                                    <div class="adjust-layout clearfix">
+                                        <div class="col-xs-9 title">
+                                            <div class="arrow-icon">
+                                                <i class="iconfont"></i>
+                                            </div>
+                                            1. <span class="item-name">首页</span>
+                                        </div>
+                                        <div class="col-xs-3 action">
+                                            <div class="action-area">
 
-                                    <div class="tab2-explore-div">
-                                        <div class="exp-Bug">
-
+                                            </div>
                                         </div>
                                     </div>
-                                    <p class="tab2-explore-p">3. 发布<span class="explore-addBug">添加Bug</span></p>
-                                    <p class="tab2-explore-p">4. 发布纯文字信息<span class="explore-addBug">添加Bug</span></p>
+                                </div>
+                                <div class="sub-module-container" style="display: block">
+                                    <div class="module-item sub clearfix" >
+                                        <div class="adjust-layout clearfix op3">
+                                            <div class="col-xs-9 title">
+                                                1. <span class="item-name">发布</span>
+                                            </div>
+                                            <div class="col-xs-3 action">
+                                                <div class="action-area">
+                                                    <button class="btn btn-blue btn-sm pull-right right-ctl">添加用例</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mod-third-content" style="display: block">
+                                            <div class="mod-third-box">
+
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix" style="display: block">
+                                                    <div class="adjust-layout clearfix">
+                                                        <div class="col-xs-7 title">
+                                                            <p class="per-fail-li-p per-edit-p">1.［ UI问题 ］Bug名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <a class="edit-bug right-ctl"  data-toggle="modal" data-target="#edit-bug"><i class="iconfont">&#xe602;</i>编辑</a>
+                                                                <!--<a class="edit-save right-ctl"><i class="iconfont">&#xe614;</i>保存</a>-->
+                                                                <!--<a class="remark right-ctl"><i class="iconfont">&#xe60d;</i>备注</a>-->
+                                                                <a class="delete right-ctl"><i class="iconfont">&#xe60c;</i>删除</a>
+                                                                <span class="state-tip color-pass right-ctl">审核通过</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content" style="display: block">
+                                                        <div class="details-left">
+                                                            <div class="mb-20">
+                                                                <p class="per-fail-li-p bef title2">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </div>
+                                                            <div>
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </div>
+                                                            <div class="mb-20">
+                                                                <p class="per-fail-li-p bef title3">期望结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p">提供微信好友、微信朋友圈二种方式选择</p>
+                                                            </div>
+                                                            <div class="mb-20">
+                                                                <p class="per-fail-li-p bef title4">实际结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p">提供微信好友、微信朋友圈二种方式选择</p>
+                                                            </div>
+                                                            <div class="mb-20">
+                                                                <p class="per-fail-li-p bef title5">浮现概率：<span>75%</span></p>
+                                                            </div>
+                                                            <div class="mb-20">
+                                                                <p class="per-fail-li-p bef title6">备注：</p>
+                                                                <p class="per-fail-li-p per-edit-p">这是一条很长很长的备注</p>
+                                                            </div>
+                                                            <div class="clearfix">
+                                                                <p class="per-fail-li-p bef title7 pull-left">测试设备：技嘉-Luchino系列007 </p>
+                                                                <p class="per-fail-li-p bef title8 pull-left">测试网络：WI－FI </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="details-right">
+                                                            <div class="pic-area">
+                                                                <div class="pic-item">
+                                                                    <img src="../../../images/screen-capture.png">
+                                                                </div>
+                                                                <div class="pic-item">
+                                                                    <img src="../../../images/screen-capture.png">
+                                                                </div>
+                                                            </div>
+                                                            <div class="mt-30">
+                                                                <p class="per-fail-li-p bef title9">附件：</p>
+                                                                <p class="per-fail-li-p per-edit-p"><a style="line-height: 22px;">Bojack Horseman.txt
+                                                                    Who is he？ He's Mr. Peanut butter.</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--第三层 E-->
+
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix">
+                                                    <div class="adjust-layout clearfix">
+                                                        <div class="col-xs-7 title">
+                                                            <p class="per-fail-li-p per-edit-p">2. ［ 功能问题 ］Bug名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <a class="edit-item right-ctl"><i class="iconfont">&#xe602;</i>编辑</a>
+                                                                <!--<a class="edit-save right-ctl"><i class="iconfont">&#xe614;</i>保存</a>-->
+                                                                <!--<a class="remark disable right-ctl"><i class="iconfont">&#xe60d;</i>备注</a>-->
+                                                                <a class="delete right-ctl"><i class="iconfont">&#xe60c;</i>删除</a>
+                                                                <span class="state-tip color-fail right-ctl">审核无效</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content">
+                                                        <ul class="per-step-ul">
+                                                            <li class="per-fail-li mar-top">
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </li>
+                                                            <li class="per-fail-li ">
+                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p">提供微信好友、微信朋友圈二种方式选择</p>
+                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--第三层 E-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="module-item sub clearfix">
+                                        <div class="adjust-layout clearfix op3">
+                                            <div class="col-xs-9 title">
+                                                2. <span class="item-name">发布纯文字信息</span>
+                                            </div>
+                                            <div class="col-xs-3 action">
+                                                <div class="action-area">
+                                                    <button class="btn btn-blue btn-sm pull-right">添加用例</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="module-item sub clearfix">
+                                        <div class="adjust-layout clearfix op3">
+                                            <div class="col-xs-9 title">
+                                                3. <span class="item-name">修改文案</span>
+                                            </div>
+                                            <div class="col-xs-3 action">
+                                                <div class="action-area">
+                                                    <span class="checked-name">执行人：徐三岁</span>
+                                                    <button class="btn btn-blue btn-sm pull-right">添加用例</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="module-item sub clearfix">
+                                        <div class="adjust-layout clearfix op3">
+                                            <div class="col-xs-9 title">
+                                                4. <span class="item-name">发布视频</span>
+                                            </div>
+                                            <div class="col-xs-3 action">
+                                                <div class="action-area test-checked">
+                                                    <span class="checked-name">执行人：徐三岁</span>
+                                                    <button class="btn btn-blue btn-sm pull-right">添加用例</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- 模块 E-->
+
+                            <!-- 模块 S-->
+                            <div class="version-area">
+                                <div class="module-item clearfix main">
+                                    <div class="adjust-layout clearfix">
+                                        <div class="col-xs-9 title">
+                                            <div class="arrow-icon">
+                                                <i class="iconfont"></i>
+                                            </div>
+                                            2. <span class="item-name">探索</span>
+                                        </div>
+                                        <div class="col-xs-3 action">
+                                            <div class="action-area">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sub-module-container">
+                                    <div class="module-item sub clearfix">
+                                        <div class="adjust-layout clearfix">
+                                            <div class="col-xs-9 title">
+                                                1. <span class="item-name">发布纯文字信息</span>
+                                            </div>
+                                            <div class="col-xs-3 action">
+                                                <div class="action-area">
+                                                    <a class="cancel-check">取消</a>
+                                                    <label class="checkbox-inline check-people">
+                                                        <input type="checkbox" name="send" value="1" class="input-checkbox">
+                                                        <span class="input-checkbox-show"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="module-item sub clearfix">
+                                        <div class="adjust-layout clearfix">
+                                            <div class="col-xs-9 title">
+                                                <span class="new-item"></span>
+                                                2. <span class="item-name">发布视频</span>
+                                            </div>
+                                            <div class="col-xs-3 action">
+                                                <div class="action-area">
+                                                    <a class="edit-module-name">编辑</a>
+                                                    <a class="remove-module">删除</a>
+                                                    <a class="save-text">保存</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 模块 E-->
                         </div>
                     </div>
                 </div>
@@ -635,6 +850,104 @@
                         <input class="mod-right-input" type="text">
                         <p class="mod-rig-title">备注</p>
                         <input class="mod-right-input" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn testin-btn-primary" style="width: 108px">创建并继续</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" style="width: 108px">创建后结束</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade testin-modal enterprise-tip" id="edit-bug" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog new-problem">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    ×
+                </button>
+                <h4 class="modal-title" id="myModalLabel2">
+                    修改BUG
+                </h4>
+            </div>
+            <p class="modify-message">［ 登录／注册 ］－ ［ 登录 ］</p>
+            <div class="modal-body">
+                <div class="new-problem-content">
+                    <div class="new-problem-left">
+                        <div class="choice-equipment">
+                            <p class="choice-one">选择设备与网络</p>
+                            <div class="col-xs-9 title choice-sele1">
+                                <select class="testin-select" style="display: none;">
+                                    <option selected="selected">技嘉007</option>
+                                    <option>技嘉007</option>
+                                    <option>技嘉007</option>
+                                    <option>技嘉007</option>
+                                    <option>技嘉007</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-9 title choice-sele2">
+                                <select class="testin-select" style="display: none;">
+                                    <option selected="selected">WI - FI</option>
+                                    <option>技嘉007</option>
+                                    <option>技嘉007</option>
+                                    <option>技嘉007</option>
+                                    <option>技嘉007</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="choice-equipment" style="height: 89px">
+                            <p class="choice-one">Bug类型</p>
+                            <label class="BUG-type-label"><input type="radio" class="BUG-input" name="BUG-type">UI问题 </label>
+                            <label class="BUG-type-label"><input type="radio" class="BUG-input" name="BUG-type">功能问题 </label>
+                            <label class="BUG-type-label"><input type="radio" class="BUG-input" name="BUG-type">功能问题 </label>
+                        </div>
+                        <div class="modify-pho">
+                            <div class="add-pho-discript">
+                                <p class="add-dis-cont mar-top-bot">附件</p>
+                                <p class="add-dis-cont word-col"><a>HOTSHOTST.jpg</a></p>
+                                <p class="add-dis-cont word-col"><a>Hdsdhfjhfjg123456jdhfjg.mp4</a></p>
+
+                                <p class="add-dis-cont mar-top">日志要求：</p>
+                                <p class="add-dis-cont word-col">1.崩溃问题至少提供1个有效的log文件（自动化工具
+                                    跑出   来的log无效），请只提供和bug有关的log。
+                                    </p>
+                                <p class="add-dis-cont word-col">2.上传格式：txt、log、crash、ips 格式</p>
+
+                                <p class="add-dis-cont mar-top">视屏要求：</p>
+                                <p class="add-dis-cont word-col">1.视频请保持清晰，避免造成判断障碍。</p>
+                                <p class="add-dis-cont word-col"> 2.请用简短的视频展现BUG，大小尽量控制在50M以内。</p>
+                                <p class="add-dis-cont word-col"> 3.上传格式：mp4、avi、3gp、rmvb、swf、flv、swf、flv、mpg、mlv、mpe、mpeg、dat、mpg、mpe、mpeg、m2v、vob、tp、ts、mov、asf、wmv、rm、ra、ram，大小不超过300MB。</p>
+
+                                <p class="add-dis-cont mar-top">截图要求：</p>
+                                <p class="add-dis-cont word-col">1.图片需与描述一致，能够证明BUG。</p>
+                                <p class="add-dis-cont word-col"> 2.若静态图片无法证明BUG有效，请使用视频展示。</p>
+                                <p class="add-dis-cont word-col">3.上传格式：jpg、png、gif、jpeg，不超过300MB。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-problem-right">
+                        <p class="mod-rig-title must">Bug标题</p>
+                        <input class="mod-right-input" type="text">
+                        <p class="mod-rig-title must">复现步骤</p>
+                        <textarea type="text" class="form-control input-sm" rows="5"></textarea>
+                        <p class="mod-rig-title">前提条件</p>
+                        <input class="mod-right-input" type="text">
+                        <p class="mod-rig-title must">期望结果</p>
+                        <input class="mod-right-input" type="text">
+                        <p class="mod-rig-title must">实际结果</p>
+                        <input class="mod-right-input" type="text">
+                        <p class="mod-rig-title">复现概率</p>
+                        <select class="testin-select" style="display: none;">
+                            <option selected="selected">100%</option>
+                            <option>75%</option>
+                            <option>50%</option>
+                            <option>25%</option>
+                            <option>0%</option>
+                        </select>
+                        <p class="mod-rig-title">备注</p>
+                        <input class="mod-right-input" type="text" value="一家很有意思的网络科技有限公司">
+                        <p class="notice-error">有必填内容未填写，或附件格式不对，请确认后提交。</p>
                     </div>
                 </div>
             </div>
