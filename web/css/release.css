@@ -495,3 +495,82 @@ ul.release-step li .span-name.finish-icon {
     line-height: 24px;
     cursor: pointer;
 }
+/*p10样式*/
+.release-p3 .tab-content>.tab-pane.examine-bug{
+    padding: 20px 0;
+}
+.examine-bug .experts-tab1-top{
+    border-bottom: 0;
+    line-height: inherit;
+    height: 40px;
+    padding: 10px 20px 10px 30px;
+}
+.examine-bug .experts-tab1-top .input-checkbox-show{
+    position: relative;
+    top: 1px;
+}
+.examine-bug .experts-tab1-top .input-checkbox-show,.examine-bug .experts-tab1-top .input-right-span{
+    vertical-align: top;
+    display: inline-block;
+}
+.examine-bug .experts-tab1-top .checkbox-inline{
+    vertical-align: top;
+}
+.release-p3 .examine-bug .module_list_wrapper{
+    padding: 0 20px;
+    border-bottom: 0px solid #f0f0f0;
+}
+.release-p3 .examine-bug .module_list_wrapper .version-area:last-child{
+    border-bottom: 1px solid #f0f0f0;
+}
+.examine-bug .sub-module-container .module-item .third-item .adjust-layout{
+    padding: 0;
+}
+.examine-bug .third-item .title{
+    padding-left: 0!important;
+}
+.examine-bug .third-item .action{
+    padding-right: 24px!important;
+}
+.examine-bug .testin-select{
+    width: 73px;
+    text-align: left;
+}
+.examine-bug .testin-select-set{
+    height: 28px;
+    line-height: 28px;
+    padding: 0px 20px 0px 12px;
+    border-radius: 2px;
+    font-size: 12px;
+    -webkit-font-smoothing: antialiased;
+
+    background: url("../images/icon_02.png") no-repeat right center;
+    padding: 0px 20px 0px 12px;
+    text-align: left;
+    color: #00c185;
+    border: 1px solid #00c185;
+}
+.examine-bug .not-select .testin-select-set{
+    border: 1px solid #cccccc;
+    color: #333333;
+    background: none;
+    text-align: center;
+    padding: 0;
+}
+.examine-bug .not-select .testin-select-set.t-hover{
+    background: url("../images/icon_02.png") no-repeat right center;
+    padding: 0px 20px 0px 12px;
+    text-align: left;
+    color: #00c185;
+    border: 1px solid #00c185;
+}
+.examine-bug .testin-select-list{
+    border-radius: 2px;
+    font-size: 12px;
+}
+.examine-bug .testin-select .testin-select-list li:first-child{
+    display: none;
+}
+.examine-bug .third-item .action .action-area .select-grade{
+    display: inline-block;
+}
