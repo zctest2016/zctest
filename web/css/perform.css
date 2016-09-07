@@ -44,6 +44,9 @@
     height: 102px;
     border-bottom: 1px solid #ebebeb;
 }
+.BUG-type{
+    border-bottom: 1px solid #ebebeb;
+}
 .choice-one{
     padding-top: 20px;
     padding-left: 20px;
@@ -97,6 +100,7 @@ input.BUG-input{
     background: #FFFFFF;
     border: 1px dashed #CCCCCC;
     border-radius: 2px;
+    cursor: pointer;
 }
 .add-attachment{
     margin:0 20px;
@@ -286,6 +290,10 @@ textarea.per-fail-li-text{
     width: 420px;
     height: 126px;
 }
+textarea.per-fail-li-text.form-control[disabled]{
+    background-color: #fff;
+    cursor:default;
+}
 p.per-fail-li-p{
    width: 90%;
 }
@@ -302,6 +310,9 @@ textarea.per-fail-li-text{
     outline: none;
     padding: 2px 5px 2px 23px;
     border-radius: 2px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: none;
 }
 .per-fail-li-p.bef{
     margin-bottom: 6px;
@@ -530,7 +541,7 @@ input.fail2-Bug-input{
     float: left;
     padding-left: 20px;
 }
-.pass-note-text{
+textarea.pass-note-text{
     display: inline-block;
     background: #FFFFFF;
     border: 1px solid #EBEBEB;
@@ -539,6 +550,9 @@ input.fail2-Bug-input{
     height: 78px;
     outline: none;
     padding: 7px 20px;
+    -webkit-box-shadow: none;
+     box-shadow: none;
+    -webkit-transition: none;
 }
 .pass-note-text.BlockPage{
     width: 827px;
