@@ -81,6 +81,9 @@ body {
     width: 84px;
     height: 28px;
 }
+.module_list_wrapper .module-item .third-item .action .action-area button{
+    width: 74px;
+}
 .module_list_wrapper .module-item .action .action-area a img{
     display: inline-block;
     vertical-align: top;

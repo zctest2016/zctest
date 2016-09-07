@@ -122,6 +122,7 @@
                 <ul class="nav nav-tabs testin-nav-tabs" id="myTab">
                     <li class="active"><a data-toggle="tab" href="#tab1" aria-expanded="true">提交用例</a></li>
                     <li class=""><a data-toggle="tab" href="#tab2" aria-expanded="false">BUG列表</a></li>
+                    <a class="" data-toggle="modal" data-target="#add-problem">新建问题</a>
                     <button class="btn btn-default btn-sm pull-right">继续执行</button>
                 </ul>
                 <div class="tab-content" id="myTabContent">
@@ -169,7 +170,7 @@
                                                         <div class="col-xs-5 action">
                                                             <div class="action-area">
                                                                 <!--<a class="edit-item right-ctl"><i class="iconfont">&#xe602;</i>编辑</a>-->
-                                                                <!--<a class="edit-save right-ctl"><i class="iconfont">&#xe602;</i>保存</a>-->
+                                                                <!--<a class="edit-save right-ctl"><i class="iconfont">&#xe614;</i>保存</a>-->
                                                                 <!--<a class="remark right-ctl"><i class="iconfont">&#xe60d;</i>备注</a>-->
                                                                 <!--<a class="delete right-ctl"><i class="iconfont">&#xe60c;</i>删除</a>-->
                                                                 <span class="state-tip color-pass right-ctl">Pass</span>
@@ -206,7 +207,7 @@
                                                         <div class="col-xs-5 action">
                                                             <div class="action-area">
                                                                 <a class="edit-item right-ctl"><i class="iconfont">&#xe602;</i>编辑</a>
-                                                                <!--<a class="edit-save right-ctl"><i class="iconfont">&#xe602;</i>保存</a>-->
+                                                                <!--<a class="edit-save right-ctl"><i class="iconfont">&#xe614;</i>保存</a>-->
                                                                 <a class="remark disable right-ctl"><i class="iconfont">&#xe60d;</i>备注</a>
                                                                 <!--<a class="delete right-ctl"><i class="iconfont">&#xe60c;</i>删除</a>-->
                                                                 <span class="state-tip color-pass right-ctl">Pass</span>
@@ -243,7 +244,7 @@
                                                         <div class="col-xs-5 action">
                                                             <div class="action-area">
                                                                 <!--<a class="edit-item right-ctl"><i class="iconfont">&#xe602;</i>编辑</a>-->
-                                                                <!--<a class="edit-save right-ctl"><i class="iconfont">&#xe602;</i>保存</a>-->
+                                                                <!--<a class="edit-save right-ctl"><i class="iconfont">&#xe614;</i>保存</a>-->
                                                                 <!--<a class="remark disable right-ctl"><i class="iconfont">&#xe60d;</i>备注</a>-->
                                                                 <!--<a class="delete right-ctl"><i class="iconfont">&#xe60c;</i>删除</a>-->
                                                                 <span class="state-tip color-fail right-ctl">Fail</span>
@@ -281,7 +282,7 @@
                                                         <div class="col-xs-5 action">
                                                             <div class="action-area">
                                                                 <a class="edit-item right-ctl"><i class="iconfont">&#xe602;</i>编辑</a>
-                                                                <a class="edit-save right-ctl"><i class="iconfont">&#xe602;</i>保存</a>
+                                                                <a class="edit-save right-ctl"><i class="iconfont">&#xe614;</i>保存</a>
                                                                 <a class="remark right-ctl"><i class="iconfont">&#xe60d;</i>备注</a>
                                                                 <a class="delete right-ctl"><i class="iconfont">&#xe60c;</i>删除</a>
                                                                 <span class="state-tip color-block right-ctl">Block</span>
@@ -327,7 +328,7 @@
                                                         <div class="col-xs-5 action">
                                                             <div class="action-area">
                                                                 <!--<a class="edit-item right-ctl"><i class="iconfont">&#xe602;</i>编辑</a>-->
-                                                                <!--<a class="edit-save right-ctl"><i class="iconfont">&#xe602;</i>保存</a>-->
+                                                                <!--<a class="edit-save right-ctl"><i class="iconfont">&#xe614;</i>保存</a>-->
                                                                 <!--<a class="remark disable right-ctl"><i class="iconfont">&#xe60d;</i>备注</a>-->
                                                                 <!--<a class="delete right-ctl"><i class="iconfont">&#xe60c;</i>删除</a>-->
                                                                 <span class="state-tip color-na right-ctl">N/A</span>
@@ -365,7 +366,7 @@
                                                         <div class="col-xs-5 action">
                                                             <div class="action-area">
                                                                 <a class="edit-item right-ctl"><i class="iconfont">&#xe602;</i>编辑</a>
-                                                                <a class="edit-save right-ctl"><i class="iconfont">&#xe602;</i>保存</a>
+                                                                <a class="edit-save right-ctl"><i class="iconfont">&#xe614;</i>保存</a>
                                                                 <a class="remark right-ctl"><i class="iconfont">&#xe60d;</i>备注</a>
                                                                 <a class="delete right-ctl"><i class="iconfont">&#xe60c;</i>删除</a>
                                                                 <span class="state-tip color-fail right-ctl">Fail</span>
@@ -412,7 +413,7 @@
                                                         <div class="col-xs-5 action">
                                                             <div class="action-area">
                                                                 <a class="edit-item right-ctl"><i class="iconfont">&#xe602;</i>编辑</a>
-                                                                <a class="edit-save right-ctl"><i class="iconfont">&#xe602;</i>保存</a>
+                                                                <a class="edit-save right-ctl"><i class="iconfont">&#xe614;</i>保存</a>
                                                                 <a class="remark right-ctl"><i class="iconfont">&#xe60d;</i>备注</a>
                                                                 <a class="delete right-ctl"><i class="iconfont">&#xe60c;</i>删除</a>
                                                                 <span class="state-tip color-pass right-ctl">Pass</span>
@@ -584,6 +585,66 @@
         </div>
     </div>
 </div>
+<div class="modal fade testin-modal enterprise-tip" id="add-problem" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog new-problem">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    ×
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    新建问题
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="new-problem-content">
+                    <div class="new-problem-left">
+                        <div class="clearfix">
+                            <p class="choice-one">模块</p>
+                            <div class="choice-sele1">
+                                <select class="testin-select" style="display: none;">
+                                    <option selected="selected">登录／注册</option>
+                                    <option>登录／注册</option>
+                                    <option>登录／注册</option>
+                                    <option>登录／注册</option>
+                                    <option>登录／注册</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <p class="choice-one">子模块</p>
+                            <div class="choice-sele1">
+                                <select class="testin-select" style="display: none;">
+                                    <option selected="selected">登录</option>
+                                    <option>注册</option>
+                                    <option>注册</option>
+                                    <option>注册</option>
+                                    <option>注册</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-problem-right">
+                        <p class="mod-rig-title must">用例标题</p>
+                        <input class="mod-right-input" type="text">
+                        <p class="mod-rig-title">前提条件</p>
+                        <input class="mod-right-input" type="text" value="一家很有意思的网络科技有限公司">
+                        <p class="mod-rig-title must">测试步骤</p>
+                        <textarea type="text" class="form-control input-sm" rows="5"></textarea>
+                        <p class="mod-rig-title must">期望结果</p>
+                        <input class="mod-right-input" type="text">
+                        <p class="mod-rig-title">备注</p>
+                        <input class="mod-right-input" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn testin-btn-primary" style="width: 108px">创建并继续</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" style="width: 108px">创建后结束</button>
+            </div>
+        </div>
+    </div>
+</div>
 <script>
     $(document).ready(function(){
 //            切换
@@ -602,18 +663,6 @@
                 $(this).parents(".version-area").toggleClass("opening");
             }
         });
-////        打开第三层内容
-//        $(".module-item.sub .adjust-layout.op3").click(function(){
-//            if(can_toggle==1){
-//                $(this).parents(".module-item.sub").toggleClass("third-open");
-//            }
-//        })
-////        打开第四层内容
-//        $(".third-item .adjust-layout").click(function(){
-//            if(can_toggle==1){
-//                $(this).parents(".third-item").toggleClass("details-open");
-//            }
-//        })
     });
 </script>
 <script>
