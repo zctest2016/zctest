@@ -82,6 +82,12 @@ body{background: #F5F7F7;font-family: ""PingFang SC",Proxima Nova","Helvetica Ne
     position: relative;
     padding: 20px 40px 60px;
 }
+.fix-UseCase-content{
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px 40px 60px;
+}
 .zc_test-box{
     width: 100%;
     background: #FFF;
