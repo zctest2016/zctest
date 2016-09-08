@@ -13,6 +13,9 @@ body {
 .mb-20{
     margin-bottom: 20px;
 }
+.mt-15{
+    margin-top: 15px;
+}
 .mt-30{
     margin-top: 30px;
 }
@@ -348,6 +351,9 @@ body {
 .color-na{
     background: #7261BF;
 }
+.color-or{
+    background: #ff7733;
+}
 .checkbox-inline .input-right-span.color-pass{
     background: transparent;
     color: #00c185;
@@ -364,6 +370,77 @@ body {
     background: transparent;
     color: #7261BF;
 }
+.importance-span.color-pass{
+    background: transparent;
+    color: #00c185;
+}
+.importance-span.color-fail{
+    background: transparent;
+    color: #EB5A3C;
+}
+.importance-span.color-block{
+    background: transparent;
+    color: #FFC500;
+}
+.importance-span.color-na{
+    background: transparent;
+    color: #7261BF;
+}
+/********/
+.expert-control button:hover:active:focus{
+    outline: none;
+}
+.expert-control button:hover:active{
+    color: #ffffff;
+    box-shadow: none;
+}
+.expert-control button:hover{
+    color: #ffffff;
+    border: none;
+}
+.expert-control button.active:focus{
+    color: #fff;
+    outline: none;
+}
+.expert-control button.active:hover{
+    color: #ffffff;
+}
+.expert-control button.active{
+    color: #ffffff;
+    box-shadow: none;
+    border: none;
+}
+.expert-control button.active-color-1:hover{
+    background: #EB5A3C;
+}
+.expert-control button.active-color-2:hover{
+    background: #ff7733;
+}
+.expert-control button.active-color-3:hover{
+    background: #7261BF;
+}
+.expert-control button.active-color-4:hover{
+    background: #1081de;
+}
+.expert-control button.active-color-5:hover{
+    background: #00c185;
+}
+.expert-control button.active-color-1.active{
+    background: #EB5A3C;
+}
+.expert-control button.active-color-2.active{
+    background: #ff7733;
+}
+.expert-control button.active-color-3.active{
+    background: #7261BF;
+}
+.expert-control button.active-color-4.active{
+    background: #1081de;
+}
+.expert-control button.active-color-5.active{
+    background: #00c185;
+}
+/********/
 .checking-area{
     display: inline-block;
 }

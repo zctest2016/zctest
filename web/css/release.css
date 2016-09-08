@@ -716,6 +716,94 @@ ul.release-step li .span-name.finish-icon {
 .bugs-list .third-item .bug-item-content .title .per-fail-li-p{
     background-color: #FAFAFA;
 }
+/*p14-p15*/
+.examine-bug.case-list.report .experts-tab1-top{
+    padding: 10px 20px 10px 42px;
+}
+.examine-bug.case-list.report .tab1-label-search{
+    float: right;
+}
+.release-p3 .examine-bug.report .module_list_wrapper{
+    padding: 0 40px 0 42px;
+}
+.examine-bug.report .module_list_wrapper .module-item.main .title{
+    padding-left: 0;
+}
+.examine-bug.report .module_list_wrapper .sub-module-container .module-item .adjust-layout{
+    padding: 12px 45px 12px 36px;
+}
+.examine-bug.report .third-item .adjust-layout{
+    padding: 0 20px 0 30px!important;
+}
+.examine-bug.bg-list.report .experts-tab1-top{
+    padding: 10px 20px 10px 42px;
+}
+.module_list_wrapper.bug-list .version-area:first-child .module-item.main{
+    border-top: none;
+}
+.examine-bug.bg-list.report .third-item .adjust-layout{
+    padding: 1px 10px 1px 21px!important;
+}
+.examine-bug.bg-list.report .third-item .action{
+    padding-right: 0!important;
+}
+.report-remark-area{
+    clear: both;
+    border-top: 1px solid #ebebeb;
+    padding-top: 19px;
+    padding-right: 4px;
+}
+.details-content .report-remark-area .sup-info{
+    width: 100%;
+}
+.edit-remark,.save-remark{
+    margin-left: 12px;
+}
+.edit-remark .iconfont,.save-remark .iconfont{
+    margin-right: 5px;
+}
+.marking-text{
+    overflow: hidden;
+}
+.marking-text textarea{
+    width: 755px;
+    height: 60px;
+    float: left;
+    font-size: 13px;
+    padding: 10px 20px;
+}
+.marking-text .save-remark{
+    float: left;
+    margin-top: 18px;
+}
+.file-area{
+    overflow: hidden;
+    padding-bottom: 13px;
+}
+.file-area .per-fail-li-p.bef{
+    width: auto;
+    float: left;
+}
+.file-area .per-fail-li-p{
+    float: left;
+    width: 270px;
+}
+.details-right .pic-area .expert-control{
+    float: left;
+    width: 167px;
+    height: 294px;
+    margin-left: 20px;
+    text-align: center;
+}
+.control-title{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.expert-control button{
+    width: 74px;
+    height: 28px;
+    margin-bottom: 20px;
+}
 /*p12头部样式*/
 .blue-btn.bottom-btn.usecase-save{
     font-size: 12px;
