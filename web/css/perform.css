@@ -79,6 +79,8 @@
     line-height: 35px;
 }
 input.BUG-input{
+    width: inherit;
+    height: inherit;
     display: inline-block;
     margin-right: 9px;
 }
@@ -127,10 +129,11 @@ input.BUG-input{
 }
 .add-dis-cont{
     margin-bottom: 0;
-    font-family: STHeitiSC-Light;
     font-size: 13px;
     color: #333333;
     letter-spacing: 0px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 500;
 }
 .add-dis-cont.mar-top{
     margin-top: 20px;
@@ -328,6 +331,24 @@ textarea.per-fail-li-text{
 }
 .per-fail-li-p.bef.title3:before{
     content: url("../images/expect.png");
+}
+.per-fail-li-p.bef.title4:before{
+    content: url("../images/actual.png");
+}
+.per-fail-li-p.bef.title5:before{
+    content: url("../images/probability.png");
+}
+.per-fail-li-p.bef.title6:before{
+    content: url("../images/remarks.png");
+}
+.per-fail-li-p.bef.title7:before{
+    content: url("../images/device.png");
+}
+.per-fail-li-p.bef.title8:before{
+    content: url("../images/network.png");
+}
+.per-fail-li-p.bef.title9:before{
+    content: url("../images/upload-tip.png");
 }
 .per-fail-li-p.bef:before{
     position: absolute;

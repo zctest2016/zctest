@@ -325,7 +325,13 @@ input.tab1-status-input{
 }
 .tab1-status-data{
     font-size: 12px;
-    margin-left: 30px;
+    margin-left: 50px;
+    vertical-align: top;
+    position: relative;
+    top: 1px;
+}
+.tab1-status-data *{
+    vertical-align: top;
 }
 .tab1-status-search{
     background: #FFFFFF;
@@ -343,6 +349,7 @@ input.tab1-status-input{
 .tab1-label-search{
     position: relative;
     float: right;
+    top: -5px;
 }
 .tab1-label-search:after{
     position: absolute;
