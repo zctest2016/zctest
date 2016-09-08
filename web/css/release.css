@@ -8,6 +8,9 @@
 .claim_top_ul{
     border-bottom: 1px solid #EBEBEB;
 }
+.excute-topul.claim_top_ul{
+    padding-bottom:  20px;
+}
 .claim_top_ul.add-show{
     background: #FFFFFF;
     border: 1px solid #EBEBEB;
@@ -20,14 +23,19 @@
 }
 
 .claim_top_li.first{
-    width: 36%;
+    width: 38%;
 }
 .claim_top_li.second{
-    width: 43%;
+    width: 49%;
 }
 .claim_top_li.last{
     position: relative;
-    top: -8px;
+    float: right;
+    top: 53px;
+    right: 45px;
+}
+.claim_top_ul.add-show .claim_topApp{
+    margin: 20px 27px 20px 24px;
 }
 .claim_topApp{
     margin: 20px;
@@ -49,6 +57,11 @@
     line-height: 22px;
     padding: 0 15px;
     outline: none;
+}
+.more-up.App_name,
+.more-up.App_desgin{
+    position: relative;
+    top:-12px;
 }
 .task_message{
     position: relative;

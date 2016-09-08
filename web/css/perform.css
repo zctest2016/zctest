@@ -365,7 +365,6 @@ textarea.per-fail-li-text{
     border-radius: 2px;
 }
 .per-res-title{
-    font-family: STHeitiSC-Light;
     font-size: 14px;
     color: #333333;
     letter-spacing: 0px;
@@ -555,7 +554,6 @@ input.fail2-Bug-input{
     margin: 20px 0;
 }
 .Pass-note-title{
-    font-family: STHeitiSC-Light;
     font-size: 14px;
     color: #333333;
     letter-spacing: 0px;
