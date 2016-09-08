@@ -666,6 +666,56 @@ ul.release-step li .span-name.finish-icon {
 .module_list_wrapper.results .version-area:first-child .module-item.main{
     border-top: none;
 }
+/*p12-13*/
+.module_list_wrapper.bugs-list .version-area:first-child .module-item.main{
+    border-top: none;
+}
+.examine-bug.case-list .experts-tab1-top{
+    padding: 10px 33px 10px 33px;
+}
+.examine-bug.case-list  .tab1-label-search{
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 155px;
+}
+.examine-bug.bg-list .experts-tab1-top{
+    height: 41px;
+}
+.module_list_wrapper.bugs-list .module-item .action .action-area .checked-name{
+    line-height: 28px;
+    margin-top: 10px;
+    float: right;
+    width: 85px;
+    margin-right: 3px;
+}
+.module_list_wrapper.bugs-list .module-item .bug-item-content .action .action-area .checked-name{
+    margin-right: 8px;
+}
+.module_list_wrapper.bugs-list .module-item .action .action-area .bug-grade{
+    line-height: 28px;
+    margin-top: 10px;
+    float: right;
+    width: 30px;
+    text-align: center;
+}
+.module_list_wrapper.bugs-list .module-item .action .action-area a{
+    margin-left: 0;
+    /*cursor: pointer;*/
+    /*vertical-align: top;*/
+}
+.examine-bug .bugs-list .third-item .action{
+    padding-right: 20px!important;
+}
+.examine-bug .bugs-list .third-item .title{
+    padding-left: 20px!important;
+}
+.examine-bug.bg-list .sub-module-container .module-item .third-item .bug-item-content .adjust-layout{
+    background-color: #FAFAFA;
+}
+.bugs-list .third-item .bug-item-content .title .per-fail-li-p{
+    background-color: #FAFAFA;
+}
 /*p12头部样式*/
 .blue-btn.bottom-btn.usecase-save{
     font-size: 12px;
@@ -678,7 +728,6 @@ ul.release-step li .span-name.finish-icon {
 }
 .claim_topApp.usecase-APP{
     margin:15px 30px 15px 20px;
-
 }
 /*验收用例页面样式*/
 .blue-btn.bottom-btn.acc-residue{
