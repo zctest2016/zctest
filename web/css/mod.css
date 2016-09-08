@@ -7,6 +7,9 @@ body {
 .p-30{
     padding: 30px;
 }
+.m-0{
+    margin: 0;
+}
 .mb-20{
     margin-bottom: 20px;
 }
@@ -345,6 +348,25 @@ body {
 .color-na{
     background: #7261BF;
 }
+.checkbox-inline .input-right-span.color-pass{
+    background: transparent;
+    color: #00c185;
+}
+.checkbox-inline .input-right-span.color-fail{
+    background: transparent;
+    color: #EB5A3C;
+}
+.checkbox-inline .input-right-span.color-block{
+    background: transparent;
+    color: #FFC500;
+}
+.checkbox-inline .input-right-span.color-na{
+    background: transparent;
+    color: #7261BF;
+}
+.checking-area{
+    display: inline-block;
+}
 .state-tip.color-block{
     text-indent: -3px;
 }
@@ -523,7 +545,4 @@ body {
 }
 .details-right .pic-area .pic-item:first-child{
     margin-left: 0;
-}
-.details-right .pic-area .pic-item img{
-
 }

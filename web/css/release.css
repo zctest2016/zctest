@@ -515,6 +515,8 @@ ul.release-step li .span-name.finish-icon {
 }
 .examine-bug .experts-tab1-top .checkbox-inline{
     vertical-align: top;
+    position: relative;
+    top: 1px;
 }
 .release-p3 .examine-bug .module_list_wrapper{
     padding: 0 20px;
@@ -572,12 +574,84 @@ ul.release-step li .span-name.finish-icon {
     display: none;
 }
 .examine-bug .third-item .action .action-area .select-grade{
-    display: inline-block;
-}.enterprise-tip input:focus{
+    margin-top: 10px;
+    float: right;
+    margin-left: 15px;
+}
+.enterprise-tip input:focus{
     border-color: #66afe9!important;
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+.examine-bug .bug-item-content{
+    padding: 19px 24px 22px 50px;
+    border-top: 1px solid #ebebeb;
+    display: none;
+}
+.examine-bug .details-open .bug-item-content{
+    display: block;
+}
+.examine-bug .sub-module-container .module-item .third-item .bug-item-content .adjust-layout{
+    border: 1px solid #cccccc;
+    border-bottom: 0;
+    background-color: #FCFCFC;
+}
+.examine-bug .sub-module-container .module-item .third-item .bug-item-content .adjust-layout:last-child{
+    border-bottom: 1px solid #cccccc;
+}
+.examine-bug .third-item .bug-item-content .action{
+    padding-right: 20px;
+}
+.examine-bug .third-item .bug-item-content .title{
+    padding-left: 20px!important;
+}
+.examine-bug .third-item .action .action-area .error-btn{
+    border: 1px solid #EB5A3C;
+    color: #EB5A3C;
+}
+.expert-bug .repeat-bug{
+    width: 1084px;
+}
+.expert-bug .repeat-bug .modal-body{
+    padding: 17px 44px 19px 41px!important;
+}
+.expert-bug .repeat-bug .modal-body .fail-contact-detail{
+    margin: 0;
+    padding: 0 20px;
+    color: #333;
+}
+.expert-bug .repeat-bug .modal-body .per-fail-contact{
+    padding: 13px 0;
+    border-bottom: 1px solid #EBEBEB;
+    border-top: 1px solid #ebebeb;
+}
+.expert-bug .repeat-bug .modal-body .repeat-bug-title{
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+.expert-bug .repeat-bug .modal-body .fail-contact-detail .t-2{
+    position: relative;
+    top: -2px;
+}
+.expert-bug .repeat-bug .modal-body .tac button{
+    margin-top: 20px;
+}
+/*p11*/
+.examine-bug .results .third-item .adjust-layout{
+    padding: 0 30px!important;
+}
+.examine-bug .results .third-item .title {
+    padding-left: 23px!important;
+}
+.examine-bug .results .third-item .action {
+    padding: 0!important;
+}
+.examine-bug .experts-tab1-top.add-top{
+    border-bottom: 1px solid #ebebeb;
+}
+.module_list_wrapper.results .version-area:first-child .module-item.main{
+    border-top: none;
 }
 /*p12头部样式*/
 .blue-btn.bottom-btn.usecase-save{
