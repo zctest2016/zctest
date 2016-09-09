@@ -19,7 +19,7 @@
 <style>
     body{background-color: #F5F7F7; }
 </style>
-<body>
+<body class="">
 <div class="zc_new-nav">
     <nav class="navbar navbar-default" role="navigation">
         <div class="navbar-header">
@@ -919,9 +919,42 @@
         </div>
     </div>
 </div>
+<div class="modal fade testin-modal enterprise-tip" id="quota" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog" style="width: 406px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    ×
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    提示
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="amount-area">
+                    <p>剩余配额：<span>3000</span> 条</p>
+                    <p>所需配额：<span>6000</span> 条</p>
+                    <p>您的余额：<span class="balance-span">6,000</span> 元</p>
+                </div>
+                <p class="message-p">
+                    您的配额不足，无法查看报告。<br>请拨打销售电话8093348或联系QQ:414709462
+                </p>
+                <button type="button" class="btn testin-btn-primary color-or">去支付</button>
+            </div>
+        </div>
+    </div>
+</div>
 <script>
     $(document).ready(function(){
-//            切换
+//        默认显示弹窗
+        $('#quota').modal('show');
+
+//        按钮切换
+        $(".notoggle-one-active .for_active button").on("click",function(){
+            $(this).addClass("active").parent(".for_active").siblings(".for_active").find("button").removeClass("active");
+        });
+
+//            切换打开第二层内容
         var can_toggle = 1;
         $(".action-area *").hover(function(){
             can_toggle = 0;
@@ -959,13 +992,6 @@
             if(can_toggle==1){
                 $(this).parents(".third-item").toggleClass("details-open");
             }
-        });
-    });
-</script>
-<script>
-    $(function(){
-        $(".notoggle-one-active .for_active button").on("click",function(){
-            $(this).addClass("active").parent(".for_active").siblings(".for_active").find("button").removeClass("active");
         });
     });
 </script>

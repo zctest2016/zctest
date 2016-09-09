@@ -804,6 +804,32 @@ ul.release-step li .span-name.finish-icon {
     height: 28px;
     margin-bottom: 20px;
 }
+#quota .modal-body{
+    padding: 36px 0 46px 0!important;
+    text-align: center;
+}
+#quota .amount-area{
+    width: 146px;
+    text-align: left;
+    display: inline-block;
+    margin-left: 8px;
+}
+#quota .amount-area p{
+    line-height: 27px;
+    margin-bottom: 0;
+}
+#quota .balance-span{
+    color: #ff7733;
+}
+#quota .message-p{
+    margin: 30px 0;
+}
+#quota button.color-or:hover{
+    background-color: #ff843e;
+}
+#quota button.color-or:focus{
+    background-color: #ff843e;
+}
 /*p12头部样式*/
 .blue-btn.bottom-btn.usecase-save{
     font-size: 12px;
