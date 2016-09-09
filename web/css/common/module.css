@@ -41,6 +41,10 @@ body{background: #F5F7F7;font-family: ""PingFang SC",Proxima Nova","Helvetica Ne
     background: #303641;
     height: 100%;
 }
+.zc_new-aside.fix{
+    position: fixed;
+    top:0;
+}
 .zc_new-aside .zc_list_bxone {
     height: auto;
     overflow: hidden;
