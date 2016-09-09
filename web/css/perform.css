@@ -203,6 +203,10 @@ textarea.mod-rig-text{
     margin-left: -22px;
     position: relative;
 }
+a.blue-btn.bottom-btn.mar-top.No-left {
+    left: 0;
+    margin-left: 81px;
+}
 
 /*perform-fail1的样式*/
 .Name-title{
@@ -353,7 +357,7 @@ textarea.per-fail-li-text{
 .per-fail-li-p.bef:before{
     position: absolute;
     left: 0;
-    top: 2px;
+    top: 1px;
 }
 .per-fail-li.mar-top{
     float: left;

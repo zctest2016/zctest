@@ -434,6 +434,9 @@ ul.release-step li .span-name.finish-icon {
 .add-p5 .module_list_wrapper .module-item.main{
     font-size: 13px;
 }
+.module-item.main.add-padd {
+    padding-left: 28px;
+}
 .enterprise-tip .new-problem{
     width: 836px;
 }

@@ -354,6 +354,9 @@ body {
 .color-or{
     background: #ff7733;
 }
+.color-need{
+    background: #666666;
+}
 .checkbox-inline .input-right-span.color-pass{
     background: transparent;
     color: #00c185;
@@ -369,6 +372,14 @@ body {
 .checkbox-inline .input-right-span.color-na{
     background: transparent;
     color: #7261BF;
+}
+.checkbox-inline .input-right-span.color-or{
+    background: transparent;
+    color: #FF7733;
+}
+.checkbox-inline .input-right-span.color-need{
+    background: transparent;
+    color: #666666;
 }
 .importance-span.color-pass{
     background: transparent;
@@ -459,6 +470,10 @@ body {
     height: 18px;
     text-align: center;
     line-height: 18px;
+}
+.third-item .state-tip.fix-wid{
+    width: 60px;
+    font-size: 12px;
 }
 .bug-list .third-item .action .state-tip{
     width: 64px;
