@@ -107,6 +107,9 @@ body{background: #F5F7F7;font-family: ""PingFang SC",Proxima Nova","Helvetica Ne
     padding-left: 20px;
     margin: 0px;
 }
+.zc_test-box .cygl.b-b-1{
+    border-bottom: 1px solid #ebebeb;
+}
 .has-error .control-label{
     color: inherit;
 }
