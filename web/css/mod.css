@@ -638,3 +638,10 @@ body {
 .details-right .pic-area .pic-item:first-child{
     margin-left: 0;
 }
+.member-list{
+    border: 1px solid red;
+}
+.member-list .expert-area{
+    padding: 0;
+}
+.member-table .t-head {}
