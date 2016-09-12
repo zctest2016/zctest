@@ -187,6 +187,12 @@ ul.release-step li .span-name.finish-icon {
 .form-horizontal-n .form-group{
     overflow: hidden;
 }
+.has-error .form-control{
+    border: 1px solid #EB5A3C;
+}
+.has-error .help-block{
+    color: #EB5A3C;
+}
 .release_task .form-horizontal-n .control-label{
     width: 126px;
     font-weight: normal;
