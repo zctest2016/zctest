@@ -723,6 +723,11 @@ ul.release-step li .span-name.finish-icon {
 .examine-bug.case-list.report .experts-tab1-top{
     padding: 10px 20px 10px 42px;
 }
+.examine-bug.case-list.report .experts-tab1-top.mar-left-reduce{
+    padding-left: 27px;
+    border-left:1px solid #ebebeb ;
+    border-right:1px solid #ebebeb ;
+}
 .examine-bug.case-list.report .tab1-label-search{
     float: right;
 }
@@ -855,6 +860,91 @@ ul.release-step li .span-name.finish-icon {
     position: relative;
     top: -24px;
 }
+/*专家审核用例设计头部样式*/
+.experts-Top{
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.04);
+    border-radius: 2px;
+    margin: 20px 0;
+    padding-bottom: 20px;
+}
+.experts-table{
+    margin:  20px;
+}
+.experts-Top .zc_test-box.add-p5{
+    box-shadow: none;
+    border: none;
+}
+.experts-table table{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #333333;
+    letter-spacing: 0px;
+    line-height: 50px;
+}
+.experts-table-tr{
+    line-height: 60px;
+    border-bottom: 1px solid #ebebeb;
+}
+.experts-table-th{
+    border: 1px solid #EBEBEB;
+
+}
+.experts-table table th{
+    text-align: center;
+    line-height: 40px;
+    background: #FAFAFA;
+    /*border: 1px solid #EBEBEB;*/
+}
+.table-th-one{
+    width: 210px;
+}
+.table-th-two{
+    width: 200px;
+}
+.table-th-three{
+    width: 215px;
+}
+
+.table-th-four{
+    width: 220px;
+}
+.experts-table a:link,
+.experts-table a:visited,
+.experts-table a:active{
+    text-decoration: none;
+    color:#22a4e5;
+}
+.experts-table a:hover{
+    text-decoration: none;
+    color: #25b3fa;
+}
+.experts-table a.experts-btn{
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #BDBDBD;
+    border-radius: 2px;
+    width: 85px;
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+}
+.experts-table a.experts-btn:hover{
+    border: 1px solid #1081DE;
+}
+.experts-PM{
+    margin: 0 20px;
+    background: #FAFAFA;
+    border: 1px solid #EBEBEB;
+    border-radius: 2px;
+    padding: 20px 0 10px 20px;
+}
+.experts-Top.mar-top-none{
+    margin-top: 0;
+}
+
 
 
 

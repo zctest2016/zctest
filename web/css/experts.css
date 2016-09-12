@@ -58,6 +58,33 @@
     padding-left: 34px;
 }
 
+
+
+.customer-ul .acc_top_li.usecase-topli{
+    width: 248px;
+}
+.customer-ul .acc_top_li:nth-child(2){
+    width: 287px;
+}
+.customer-ul .acc_top_li:nth-child(3){
+    width: 384px;
+}
+.customer-ul .acc_top_li:nth-child(4){
+    padding-left: 34px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .adr-logo{
     margin-right: 10px;
 }
@@ -168,6 +195,9 @@
     border: 1px solid #CCCCCC;
     border-radius: 2px;
 }
+.experts-PM .task_discribe.form-control{
+    width: 940px;
+}
 .task_discribe.form-control:focus {
     border-color: #66afe9;
     outline: 0;
@@ -229,6 +259,11 @@
     width: 44px;
     text-align: center;
     margin: 0 20px;
+}
+.acc_top_ul.customer-ul .experts-li3-span{
+    font-size: 12px;
+    width: 60px;
+    margin: 0 11px;
 }
 .acc_top_li .acc-li-sapn{
     margin: 0 3px;

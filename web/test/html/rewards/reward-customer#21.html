@@ -66,47 +66,43 @@
 <div class="content">
 <div class="fix-UseCase-content">
 <div class="claim_content">
-    <ul class="acc_top_ul">
+    <ul class="acc_top_ul customer-ul">
         <li class="acc_top_li usecase-topli">
             <img class="claim_topApp usecase-APP" src="../../../images/Small_app.png">
             <p class="App_name"> 周末去哪儿 </p>
         </li>
         <li class="acc_top_li">
             <p class="claim_top_title">当前版本数据</p>
-            <div class="experts-li3-div">
+            <div class="experts-li3-div" style="margin-left: 25px;">
                 <p class="experts-li3-p"><span>189</span></p>
                 <span class="acc-li-sapn">用例总数</span>
             </div>
             <div class="experts-li3-div">
                 <p class="experts-li3-p"><span>100</span></p>
-                <span class="acc-li-sapn">原有用例</span>
+                <span class="acc-li-sapn">模块</span>
             </div>
             <div class="experts-li3-div">
-                <p class="experts-li3-p"><span>84%</span></p>
-                <span class="acc-li-sapn">通过率</span>
-            </div>
-            <div class="experts-li3-div">
-                <p class="experts-li3-p"><span>123</span></p>
-                <span class="acc-li-sapn">Bug总数</span>
+                <p class="experts-li3-p"><span>84</span></p>
+                <span class="acc-li-sapn">子模块</span>
             </div>
         </li>
         <li class="acc_top_li">
-            <p class="claim_top_title">执行用例数据</p>
-            <div class="experts-li3-div">
+            <p class="claim_top_title">审核结果数据</p>
+            <div class="experts-li3-div" style="margin-left: 20px;">
                 <p class="experts-li3-p"><span>6</span>条</p>
-                <span class="experts-li3-span PassNotice">Pass</span>
+                <span class="experts-li3-span PassNotice">新增</span>
             </div>
             <div class="experts-li3-div">
                 <p class="experts-li3-p"><span>250</span>条</p>
-                <span class="experts-li3-span FailNotice">Fail</span>
+                <span class="experts-li3-span color-or">修改</span>
             </div>
             <div class="experts-li3-div">
                 <p class="experts-li3-p"><span>23</span>条</p>
-                <span class="experts-li3-span BlockNotice">Block</span>
+                <span class="experts-li3-span color-fail">建议删除</span>
             </div>
             <div class="experts-li3-div">
                 <p class="experts-li3-p"><span>12</span>条</p>
-                <span class="experts-li3-span NANotice">N /A</span>
+                <span class="experts-li3-span color-need">需求不清</span>
             </div>
         </li>
         <li class="acc_top_li">
@@ -116,29 +112,22 @@
                 <p class="residue-data"> 用例执行<span>1</span> 条</p>
             </div>
             <a href="javascript:;" class="blue-btn bottom-btn acc-residue" data-toggle="modal" data-target="#not-success">确认验收</a>
-
         </li>
     </ul>
 </div>
-
-
 <div class="zc_test-box add-p5">
-<h3 class="cygl bor-bot-1">
-    <span>模块管理</span>
-    <button class="btn btn-default btn-sm pull-right"> 上传审核结果</button>
-    <button class="btn btn-default btn-sm pull-right">下载模版</button>
-</h3>
 
 <ul class="nav nav-tabs testin-nav-tabs" id="myTab">
     <li class=""><a data-toggle="tab" href="#tab1" aria-expanded="false">遍历图</a></li>
     <li class="active"><a data-toggle="tab" href="#tab2" aria-expanded="true">用例列表</a></li>
+    <button class="btn btn-default btn-sm pull-right">导出报告</button>
 </ul>
 <div class="tab-content" id="myTabContent">
 <div id="tab1" class="examine-bug tab-pane fade">
 
 </div>
 <div id="tab2" class="examine-bug case-list report   tab-pane fade active in">
-<div class="experts-tab1-top add-top">
+<div class="experts-tab1-top mar-left-reduce">
     <div class="checking-area">
         <span class="tab1-status">标签：</span>
         <label class="checkbox-inline">
@@ -160,9 +149,9 @@
     </div>
     <label class="tab1-label-search"><input type="text" class="tab1-status-search form-control" placeholder="请输入Bug标题或BugID"></label>
 </div>
-<div class="experts-tab1-top">
-    <span class="tab1-status-data m-0">共筛选出<span> 10个</span> Bug</span>
-</div>
+<!--<div class="experts-tab1-top mar-left-reduce">-->
+    <!--<span class="tab1-status-data m-0">共筛选出<span> 10个</span> Bug</span>-->
+<!--</div>-->
 <div class="module_list_wrapper ">
 <!-- 模块 S-->
 <div class="version-area">
@@ -452,14 +441,6 @@
 </div>
 </div>
 </div>
-
-
-
-
-
-
-
-
 </div>
 </div>
 
