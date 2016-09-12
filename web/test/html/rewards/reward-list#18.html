@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../../../css/perform.css"/>
     <script src="../../../js/jquery-1.11.1.min.js"></script>
     <script src="../../../js/testinBS.js"></script>
+    <script src="../../../js/left-menu.js"></script>
 </head>
 <style>
     body{background-color: #F5F7F7; }
@@ -130,18 +131,18 @@
                         </div>
                     </li>
                     <li class="acc_top_li">
-                        <!--<p class="claim_top_title No-center">剩余配额</p>-->
-                        <!--<div class="residue-data-wap">-->
-                            <!--<p class="residue-data">用例设计 <span>650</span> 条</p>-->
-                            <!--<p class="residue-data"> 用例执行<span>1</span> 条</p>-->
-                        <!--</div>-->
-                        <!--<a href="javascript:;" class="blue-btn bottom-btn acc-residue" data-toggle="modal" data-target="#not-success">确认验收</a>-->
+                        <p class="claim_top_title No-center">剩余配额</p>
+                        <div class="residue-data-wap">
+                            <p class="residue-data">用例设计 <span>650</span> 条</p>
+                            <p class="residue-data"> 用例执行<span>1</span> 条</p>
+                        </div>
+                        <a href="javascript:;" class="blue-btn bottom-btn acc-residue" data-toggle="modal" data-target="#not-success">确认验收</a>
 
                     </li>
                 </ul>
             </div>
 
-            <div class="zc_test-box release-p3 add-p5">
+            <div class="zc_test-box release-p3 add-p5 rewards">
                 <h3 class="cygl b-b-1">
                     <span>成员奖励清单</span>
                 </h3>
@@ -154,9 +155,9 @@
                         <div class="module_list_wrapper results">
                             <div class="member-list">
                                 <div class="expert-area">
-                                    <img src="../../../images/male02.png">
-                                    <span>专家：尼古拉斯赵四</span>
-                                    <span>管理费：<span>90</span>元</span>
+                                    <img src="../../../images/male02.png" class="member-pic">
+                                    <span class="member-name">专家：尼古拉斯赵四</span>
+                                    <span class="mngr-expense">管理费：<span class="expense-or">90</span>元</span>
                                 </div>
                                 <div class="member-table">
                                     <div class="t-head">
@@ -169,40 +170,1178 @@
                                             <li>积分 (分)</li>
                                         </ul>
                                     </div>
-                                </div>
-                            </div>
-                            <!-- 模块 S-->
-                            <div class="version-area">
-                                <div class="module-item main">
-                                    <div class="adjust-layout clearfix">
-                                        <div class="col-xs-9 title">
-                                            <div class="arrow-icon">
-                                                <i class="iconfont"></i>
-                                            </div>
-                                            1. <span class="item-name">首页</span>
-                                        </div>
-                                        <div class="col-xs-3 action">
-                                            <div class="action-area">
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="sub-module-container">
-                                    <div class="module-item sub clearfix">
-                                        <div class="adjust-layout clearfix op3">
-                                            <div class="col-xs-9 title">
-                                                1. <span class="item-name">发布</span>
-                                            </div>
-                                            <div class="col-xs-3 action">
-                                                <div class="action-area">
-                                                    <!--<span class="checked-name">执行人：徐三岁</span>-->
+                                    <div class="t-body">
+                                        <div class="t-floor">
+                                            <ul class="floor-main">
+                                                <li>
+                                                    <img src="../../../images/male02.png" class="member-pic">
+                                                    <span class="member-name">尼古拉斯赵四</span>
+                                                </li>
+                                                <li>
+                                                    <span>41239008088@qq.com</span>
+                                                </li>
+                                                <li>
+                                                    <span>120</span>
+                                                </li>
+                                                <li>
+                                                    <span>64</span>
+                                                </li>
+                                                <li>
+                                                    <span>7元</span>
+                                                </li>
+                                                <li>
+                                                    <span>25</span>
+                                                </li>
+                                            </ul>
+                                            <div class="reward-third">
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix">
+                                                    <div class="adjust-layout clearfix op4">
+                                                        <div class="col-xs-7 title">
+                                                            <span class="new-item"></span>
+                                                            <p class="per-fail-li-p per-edit-p form-control">1. 用例名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <span class="state-tip color-pass right-ctl">Pass</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content">
+                                                        <ul class="per-step-ul">
+                                                            <li class="per-fail-li mar-top">
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </li>
+                                                            <li class="per-fail-li ">
+                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
+                                                <!--第三层 E-->
+
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix">
+                                                    <div class="adjust-layout clearfix op4">
+                                                        <div class="col-xs-7 title">
+                                                            <p class="per-fail-li-p per-edit-p form-control">2. 用例名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <span class="state-tip color-pass right-ctl">Pass</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content">
+                                                        <ul class="per-step-ul">
+                                                            <li class="per-fail-li mar-top">
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </li>
+                                                            <li class="per-fail-li ">
+                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--第三层 E-->
+
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix">
+                                                    <div class="adjust-layout clearfix op4">
+                                                        <div class="col-xs-7 title">
+                                                            <p class="per-fail-li-p per-edit-p form-control">3. 用例名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <span class="state-tip color-fail right-ctl">Fail</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content">
+                                                        <ul class="per-step-ul">
+                                                            <li class="per-fail-li mar-top">
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </li>
+                                                            <li class="per-fail-li ">
+                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--第三层 E-->
+
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix">
+                                                    <div class="adjust-layout clearfix op4">
+                                                        <div class="col-xs-7 title">
+                                                            <span class="new-item"></span>
+                                                            <p class="per-fail-li-p per-edit-p form-control">4. 用例名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <span class="state-tip color-block right-ctl">Block</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content">
+                                                        <ul class="per-step-ul">
+                                                            <li class="per-fail-li mar-top">
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </li>
+                                                            <li class="per-fail-li ">
+                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control" > 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="sup-info">
+                                                            <div class="sup-info-title">
+                                                                <span class="info-title-span"><img src="../../../images/Shape-ox.png">无法测试原因</span>
+                                                            </div>
+                                                            <div class="sup-info-content info-text">
+                                                                1、点击商品进入商品详情页2、点击右上角【分享】图标，弹出分享方式选择层3、选择分享至【微信】，在微信中选择好友，确认分享1、点击商品进入商品详情页2、点击右上角【分享】图标，弹出分享方式选择层、选择分享至【微信】
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--第三层 E-->
+
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix">
+                                                    <div class="adjust-layout clearfix op4">
+                                                        <div class="col-xs-7 title">
+                                                            <p class="per-fail-li-p per-edit-p form-control">5. 用例名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <span class="state-tip color-na right-ctl">N/A</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content">
+                                                        <ul class="per-step-ul">
+                                                            <li class="per-fail-li mar-top">
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </li>
+                                                            <li class="per-fail-li ">
+                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--第三层 E-->
+
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix">
+                                                    <div class="adjust-layout clearfix op4">
+                                                        <div class="col-xs-7 title">
+                                                            <span class="new-item color-fail"></span>
+                                                            <p class="per-fail-li-p per-edit-p form-control">6. 用例名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <span class="state-tip color-fail right-ctl">Fail</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content">
+                                                        <ul class="per-step-ul">
+                                                            <li class="per-fail-li mar-top">
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </li>
+                                                            <li class="per-fail-li ">
+                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="sup-info">
+                                                            <div class="sup-info-title">
+                                                                <span class="info-title-span"><img src="../../../images/Shape-link.png">关联问题</span>
+                                                            </div>
+                                                            <div class="sup-info-content">
+                                                                <p class="fail-contact-detail">Bug1  注册时验证码输入错误的提示语不正确</p>
+                                                                <p class="fail-contact-detail">Bug1  注册时验证码输入错误的提示语不正确</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--第三层 E-->
+
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix">
+                                                    <div class="adjust-layout clearfix op4">
+                                                        <div class="col-xs-7 title">
+                                                            <span class="new-item"></span>
+                                                            <p class="per-fail-li-p per-edit-p form-control">7. 用例名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <span class="state-tip color-pass right-ctl">Pass</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content">
+                                                        <ul class="per-step-ul">
+                                                            <li class="per-fail-li mar-top">
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </li>
+                                                            <li class="per-fail-li ">
+                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="sup-info">
+                                                            <div class="sup-info-title">
+                                                                <span class="info-title-span"><img src="../../../images/Shape-ox.png">无法测试原因</span>
+                                                            </div>
+                                                            <div class="sup-info-content info-text">
+                                                                1、点击商品进入商品详情页2、点击右上角【分享】图标，弹出分享方式选择层3、选择分享至【微信】，在微信中选择好友，确认分享1、点击商品进入商品详情页2、点击右上角【分享】图标，弹出分享方式选择层、选择分享至【微信】
+                                                            </div>
+                                                        </div>
+                                                        <br>
+                                                        <div class="sup-info">
+                                                            <div class="sup-info-title">
+                                                                <span class="info-title-span"><img src="../../../images/Shape-link.png">关联问题</span>
+                                                            </div>
+                                                            <div class="sup-info-content">
+                                                                <p class="fail-contact-detail">Bug1  注册时验证码输入错误的提示语不正确</p>
+                                                                <p class="fail-contact-detail">Bug1  注册时验证码输入错误的提示语不正确</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--第三层 E-->
                                             </div>
                                         </div>
-                                        <div class="mod-third-content">
-                                            <div class="mod-third-box">
+                                        <div class="t-floor">
+                                            <ul class="floor-main">
+                                                <li>
+                                                    <img src="../../../images/flower01.png" class="member-pic">
+                                                    <span class="member-name">荒野猎人</span>
+                                                </li>
+                                                <li>
+                                                    <span>41239008088@qq.com</span>
+                                                </li>
+                                                <li>
+                                                    <span>360</span>
+                                                </li>
+                                                <li>
+                                                    <span>64</span>
+                                                </li>
+                                                <li>
+                                                    <span>7元</span>
+                                                </li>
+                                                <li>
+                                                    <span>25</span>
+                                                </li>
+                                            </ul>
+                                            <div class="reward-third">
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix">
+                                                    <div class="adjust-layout clearfix op4">
+                                                        <div class="col-xs-7 title">
+                                                            <span class="new-item"></span>
+                                                            <p class="per-fail-li-p per-edit-p form-control">1. 用例名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <span class="state-tip color-pass right-ctl">Pass</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content">
+                                                        <ul class="per-step-ul">
+                                                            <li class="per-fail-li mar-top">
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </li>
+                                                            <li class="per-fail-li ">
+                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--第三层 E-->
 
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix">
+                                                    <div class="adjust-layout clearfix op4">
+                                                        <div class="col-xs-7 title">
+                                                            <p class="per-fail-li-p per-edit-p form-control">2. 用例名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <span class="state-tip color-pass right-ctl">Pass</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content">
+                                                        <ul class="per-step-ul">
+                                                            <li class="per-fail-li mar-top">
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </li>
+                                                            <li class="per-fail-li ">
+                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--第三层 E-->
+
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix">
+                                                    <div class="adjust-layout clearfix op4">
+                                                        <div class="col-xs-7 title">
+                                                            <p class="per-fail-li-p per-edit-p form-control">3. 用例名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <span class="state-tip color-fail right-ctl">Fail</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content">
+                                                        <ul class="per-step-ul">
+                                                            <li class="per-fail-li mar-top">
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </li>
+                                                            <li class="per-fail-li ">
+                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--第三层 E-->
+
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix">
+                                                    <div class="adjust-layout clearfix op4">
+                                                        <div class="col-xs-7 title">
+                                                            <span class="new-item"></span>
+                                                            <p class="per-fail-li-p per-edit-p form-control">4. 用例名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <span class="state-tip color-block right-ctl">Block</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content">
+                                                        <ul class="per-step-ul">
+                                                            <li class="per-fail-li mar-top">
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </li>
+                                                            <li class="per-fail-li ">
+                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control" > 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="sup-info">
+                                                            <div class="sup-info-title">
+                                                                <span class="info-title-span"><img src="../../../images/Shape-ox.png">无法测试原因</span>
+                                                            </div>
+                                                            <div class="sup-info-content info-text">
+                                                                1、点击商品进入商品详情页2、点击右上角【分享】图标，弹出分享方式选择层3、选择分享至【微信】，在微信中选择好友，确认分享1、点击商品进入商品详情页2、点击右上角【分享】图标，弹出分享方式选择层、选择分享至【微信】
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--第三层 E-->
+
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix">
+                                                    <div class="adjust-layout clearfix op4">
+                                                        <div class="col-xs-7 title">
+                                                            <p class="per-fail-li-p per-edit-p form-control">5. 用例名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <span class="state-tip color-na right-ctl">N/A</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content">
+                                                        <ul class="per-step-ul">
+                                                            <li class="per-fail-li mar-top">
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </li>
+                                                            <li class="per-fail-li ">
+                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--第三层 E-->
+
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix">
+                                                    <div class="adjust-layout clearfix op4">
+                                                        <div class="col-xs-7 title">
+                                                            <span class="new-item color-fail"></span>
+                                                            <p class="per-fail-li-p per-edit-p form-control">6. 用例名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <span class="state-tip color-fail right-ctl">Fail</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content">
+                                                        <ul class="per-step-ul">
+                                                            <li class="per-fail-li mar-top">
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </li>
+                                                            <li class="per-fail-li ">
+                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="sup-info">
+                                                            <div class="sup-info-title">
+                                                                <span class="info-title-span"><img src="../../../images/Shape-link.png">关联问题</span>
+                                                            </div>
+                                                            <div class="sup-info-content">
+                                                                <p class="fail-contact-detail">Bug1  注册时验证码输入错误的提示语不正确</p>
+                                                                <p class="fail-contact-detail">Bug1  注册时验证码输入错误的提示语不正确</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--第三层 E-->
+
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix">
+                                                    <div class="adjust-layout clearfix op4">
+                                                        <div class="col-xs-7 title">
+                                                            <span class="new-item"></span>
+                                                            <p class="per-fail-li-p per-edit-p form-control">7. 用例名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <span class="state-tip color-pass right-ctl">Pass</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content">
+                                                        <ul class="per-step-ul">
+                                                            <li class="per-fail-li mar-top">
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </li>
+                                                            <li class="per-fail-li ">
+                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="sup-info">
+                                                            <div class="sup-info-title">
+                                                                <span class="info-title-span"><img src="../../../images/Shape-ox.png">无法测试原因</span>
+                                                            </div>
+                                                            <div class="sup-info-content info-text">
+                                                                1、点击商品进入商品详情页2、点击右上角【分享】图标，弹出分享方式选择层3、选择分享至【微信】，在微信中选择好友，确认分享1、点击商品进入商品详情页2、点击右上角【分享】图标，弹出分享方式选择层、选择分享至【微信】
+                                                            </div>
+                                                        </div>
+                                                        <br>
+                                                        <div class="sup-info">
+                                                            <div class="sup-info-title">
+                                                                <span class="info-title-span"><img src="../../../images/Shape-link.png">关联问题</span>
+                                                            </div>
+                                                            <div class="sup-info-content">
+                                                                <p class="fail-contact-detail">Bug1  注册时验证码输入错误的提示语不正确</p>
+                                                                <p class="fail-contact-detail">Bug1  注册时验证码输入错误的提示语不正确</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--第三层 E-->
+                                            </div>
+                                        </div>
+                                        <div class="t-floor">
+                                            <ul class="floor-main">
+                                                <li>
+                                                    <img src="../../../images/Pokemon01.png" class="member-pic">
+                                                    <span class="member-name">第二天</span>
+                                                </li>
+                                                <li>
+                                                    <span>41239008088@qq.com</span>
+                                                </li>
+                                                <li>
+                                                    <span>120</span>
+                                                </li>
+                                                <li>
+                                                    <span>64</span>
+                                                </li>
+                                                <li>
+                                                    <span>7元</span>
+                                                </li>
+                                                <li>
+                                                    <span>25</span>
+                                                </li>
+                                            </ul>
+                                            <div class="reward-third">
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix">
+                                                    <div class="adjust-layout clearfix op4">
+                                                        <div class="col-xs-7 title">
+                                                            <span class="new-item"></span>
+                                                            <p class="per-fail-li-p per-edit-p form-control">1. 用例名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <span class="state-tip color-pass right-ctl">Pass</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content">
+                                                        <ul class="per-step-ul">
+                                                            <li class="per-fail-li mar-top">
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </li>
+                                                            <li class="per-fail-li ">
+                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--第三层 E-->
+
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix">
+                                                    <div class="adjust-layout clearfix op4">
+                                                        <div class="col-xs-7 title">
+                                                            <p class="per-fail-li-p per-edit-p form-control">2. 用例名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <span class="state-tip color-pass right-ctl">Pass</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content">
+                                                        <ul class="per-step-ul">
+                                                            <li class="per-fail-li mar-top">
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </li>
+                                                            <li class="per-fail-li ">
+                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--第三层 E-->
+
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix">
+                                                    <div class="adjust-layout clearfix op4">
+                                                        <div class="col-xs-7 title">
+                                                            <p class="per-fail-li-p per-edit-p form-control">3. 用例名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <span class="state-tip color-fail right-ctl">Fail</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content">
+                                                        <ul class="per-step-ul">
+                                                            <li class="per-fail-li mar-top">
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </li>
+                                                            <li class="per-fail-li ">
+                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--第三层 E-->
+
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix">
+                                                    <div class="adjust-layout clearfix op4">
+                                                        <div class="col-xs-7 title">
+                                                            <span class="new-item"></span>
+                                                            <p class="per-fail-li-p per-edit-p form-control">4. 用例名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <span class="state-tip color-block right-ctl">Block</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content">
+                                                        <ul class="per-step-ul">
+                                                            <li class="per-fail-li mar-top">
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </li>
+                                                            <li class="per-fail-li ">
+                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control" > 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="sup-info">
+                                                            <div class="sup-info-title">
+                                                                <span class="info-title-span"><img src="../../../images/Shape-ox.png">无法测试原因</span>
+                                                            </div>
+                                                            <div class="sup-info-content info-text">
+                                                                1、点击商品进入商品详情页2、点击右上角【分享】图标，弹出分享方式选择层3、选择分享至【微信】，在微信中选择好友，确认分享1、点击商品进入商品详情页2、点击右上角【分享】图标，弹出分享方式选择层、选择分享至【微信】
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--第三层 E-->
+
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix">
+                                                    <div class="adjust-layout clearfix op4">
+                                                        <div class="col-xs-7 title">
+                                                            <p class="per-fail-li-p per-edit-p form-control">5. 用例名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <span class="state-tip color-na right-ctl">N/A</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content">
+                                                        <ul class="per-step-ul">
+                                                            <li class="per-fail-li mar-top">
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </li>
+                                                            <li class="per-fail-li ">
+                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--第三层 E-->
+
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix">
+                                                    <div class="adjust-layout clearfix op4">
+                                                        <div class="col-xs-7 title">
+                                                            <span class="new-item color-fail"></span>
+                                                            <p class="per-fail-li-p per-edit-p form-control">6. 用例名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <span class="state-tip color-fail right-ctl">Fail</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content">
+                                                        <ul class="per-step-ul">
+                                                            <li class="per-fail-li mar-top">
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </li>
+                                                            <li class="per-fail-li ">
+                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="sup-info">
+                                                            <div class="sup-info-title">
+                                                                <span class="info-title-span"><img src="../../../images/Shape-link.png">关联问题</span>
+                                                            </div>
+                                                            <div class="sup-info-content">
+                                                                <p class="fail-contact-detail">Bug1  注册时验证码输入错误的提示语不正确</p>
+                                                                <p class="fail-contact-detail">Bug1  注册时验证码输入错误的提示语不正确</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--第三层 E-->
+
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix">
+                                                    <div class="adjust-layout clearfix op4">
+                                                        <div class="col-xs-7 title">
+                                                            <span class="new-item"></span>
+                                                            <p class="per-fail-li-p per-edit-p form-control">7. 用例名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <span class="state-tip color-pass right-ctl">Pass</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content">
+                                                        <ul class="per-step-ul">
+                                                            <li class="per-fail-li mar-top">
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </li>
+                                                            <li class="per-fail-li ">
+                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="sup-info">
+                                                            <div class="sup-info-title">
+                                                                <span class="info-title-span"><img src="../../../images/Shape-ox.png">无法测试原因</span>
+                                                            </div>
+                                                            <div class="sup-info-content info-text">
+                                                                1、点击商品进入商品详情页2、点击右上角【分享】图标，弹出分享方式选择层3、选择分享至【微信】，在微信中选择好友，确认分享1、点击商品进入商品详情页2、点击右上角【分享】图标，弹出分享方式选择层、选择分享至【微信】
+                                                            </div>
+                                                        </div>
+                                                        <br>
+                                                        <div class="sup-info">
+                                                            <div class="sup-info-title">
+                                                                <span class="info-title-span"><img src="../../../images/Shape-link.png">关联问题</span>
+                                                            </div>
+                                                            <div class="sup-info-content">
+                                                                <p class="fail-contact-detail">Bug1  注册时验证码输入错误的提示语不正确</p>
+                                                                <p class="fail-contact-detail">Bug1  注册时验证码输入错误的提示语不正确</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--第三层 E-->
+                                            </div>
+                                        </div>
+                                        <div class="t-floor">
+                                            <ul class="floor-main">
+                                                <li>
+                                                    <img src="../../../images/moon01.png" class="member-pic">
+                                                    <span class="member-name">荒野猎人</span>
+                                                </li>
+                                                <li>
+                                                    <span>36468739237@163.com</span>
+                                                </li>
+                                                <li>
+                                                    <span>360</span>
+                                                </li>
+                                                <li>
+                                                    <span>64</span>
+                                                </li>
+                                                <li>
+                                                    <span>7元</span>
+                                                </li>
+                                                <li>
+                                                    <span>25</span>
+                                                </li>
+                                            </ul>
+                                            <div class="reward-third">
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix">
+                                                    <div class="adjust-layout clearfix op4">
+                                                        <div class="col-xs-7 title">
+                                                            <span class="new-item"></span>
+                                                            <p class="per-fail-li-p per-edit-p form-control">1. 用例名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <span class="state-tip color-pass right-ctl">Pass</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content">
+                                                        <ul class="per-step-ul">
+                                                            <li class="per-fail-li mar-top">
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </li>
+                                                            <li class="per-fail-li ">
+                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--第三层 E-->
+
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix">
+                                                    <div class="adjust-layout clearfix op4">
+                                                        <div class="col-xs-7 title">
+                                                            <p class="per-fail-li-p per-edit-p form-control">2. 用例名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <span class="state-tip color-pass right-ctl">Pass</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content">
+                                                        <ul class="per-step-ul">
+                                                            <li class="per-fail-li mar-top">
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </li>
+                                                            <li class="per-fail-li ">
+                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--第三层 E-->
+
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix">
+                                                    <div class="adjust-layout clearfix op4">
+                                                        <div class="col-xs-7 title">
+                                                            <p class="per-fail-li-p per-edit-p form-control">3. 用例名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <span class="state-tip color-fail right-ctl">Fail</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content">
+                                                        <ul class="per-step-ul">
+                                                            <li class="per-fail-li mar-top">
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </li>
+                                                            <li class="per-fail-li ">
+                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--第三层 E-->
+
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix">
+                                                    <div class="adjust-layout clearfix op4">
+                                                        <div class="col-xs-7 title">
+                                                            <span class="new-item"></span>
+                                                            <p class="per-fail-li-p per-edit-p form-control">4. 用例名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <span class="state-tip color-block right-ctl">Block</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content">
+                                                        <ul class="per-step-ul">
+                                                            <li class="per-fail-li mar-top">
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </li>
+                                                            <li class="per-fail-li ">
+                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control" > 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="sup-info">
+                                                            <div class="sup-info-title">
+                                                                <span class="info-title-span"><img src="../../../images/Shape-ox.png">无法测试原因</span>
+                                                            </div>
+                                                            <div class="sup-info-content info-text">
+                                                                1、点击商品进入商品详情页2、点击右上角【分享】图标，弹出分享方式选择层3、选择分享至【微信】，在微信中选择好友，确认分享1、点击商品进入商品详情页2、点击右上角【分享】图标，弹出分享方式选择层、选择分享至【微信】
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--第三层 E-->
+
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix">
+                                                    <div class="adjust-layout clearfix op4">
+                                                        <div class="col-xs-7 title">
+                                                            <p class="per-fail-li-p per-edit-p form-control">5. 用例名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <span class="state-tip color-na right-ctl">N/A</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content">
+                                                        <ul class="per-step-ul">
+                                                            <li class="per-fail-li mar-top">
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </li>
+                                                            <li class="per-fail-li ">
+                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--第三层 E-->
+
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix">
+                                                    <div class="adjust-layout clearfix op4">
+                                                        <div class="col-xs-7 title">
+                                                            <span class="new-item color-fail"></span>
+                                                            <p class="per-fail-li-p per-edit-p form-control">6. 用例名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <span class="state-tip color-fail right-ctl">Fail</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content">
+                                                        <ul class="per-step-ul">
+                                                            <li class="per-fail-li mar-top">
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </li>
+                                                            <li class="per-fail-li ">
+                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="sup-info">
+                                                            <div class="sup-info-title">
+                                                                <span class="info-title-span"><img src="../../../images/Shape-link.png">关联问题</span>
+                                                            </div>
+                                                            <div class="sup-info-content">
+                                                                <p class="fail-contact-detail">Bug1  注册时验证码输入错误的提示语不正确</p>
+                                                                <p class="fail-contact-detail">Bug1  注册时验证码输入错误的提示语不正确</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--第三层 E-->
+
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix">
+                                                    <div class="adjust-layout clearfix op4">
+                                                        <div class="col-xs-7 title">
+                                                            <span class="new-item"></span>
+                                                            <p class="per-fail-li-p per-edit-p form-control">7. 用例名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <span class="state-tip color-pass right-ctl">Pass</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content">
+                                                        <ul class="per-step-ul">
+                                                            <li class="per-fail-li mar-top">
+                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
+                            <textarea class="per-fail-li-text form-control" disabled="disabled" rows="4">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
+                            </textarea>
+                                                            </li>
+                                                            <li class="per-fail-li ">
+                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control">提供微信好友、微信朋友圈二种方式选择</p>
+                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p form-control"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="sup-info">
+                                                            <div class="sup-info-title">
+                                                                <span class="info-title-span"><img src="../../../images/Shape-ox.png">无法测试原因</span>
+                                                            </div>
+                                                            <div class="sup-info-content info-text">
+                                                                1、点击商品进入商品详情页2、点击右上角【分享】图标，弹出分享方式选择层3、选择分享至【微信】，在微信中选择好友，确认分享1、点击商品进入商品详情页2、点击右上角【分享】图标，弹出分享方式选择层、选择分享至【微信】
+                                                            </div>
+                                                        </div>
+                                                        <br>
+                                                        <div class="sup-info">
+                                                            <div class="sup-info-title">
+                                                                <span class="info-title-span"><img src="../../../images/Shape-link.png">关联问题</span>
+                                                            </div>
+                                                            <div class="sup-info-content">
+                                                                <p class="fail-contact-detail">Bug1  注册时验证码输入错误的提示语不正确</p>
+                                                                <p class="fail-contact-detail">Bug1  注册时验证码输入错误的提示语不正确</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--第三层 E-->
+                                            </div>
+                                        </div>
+                                        <div class="t-floor">
+                                            <ul class="floor-main">
+                                                <li>
+                                                    <img src="../../../images/male02.png" class="member-pic">
+                                                    <span class="member-name">荒野猎人</span>
+                                                </li>
+                                                <li>
+                                                    <span>36468739237@163.com</span>
+                                                </li>
+                                                <li>
+                                                    <span>120</span>
+                                                </li>
+                                                <li>
+                                                    <span>64</span>
+                                                </li>
+                                                <li>
+                                                    <span>7元</span>
+                                                </li>
+                                                <li>
+                                                    <span>25</span>
+                                                </li>
+                                            </ul>
+                                            <div class="reward-third">
                                                 <!--第三层 S-->
                                                 <div class="third-item clearfix">
                                                     <div class="adjust-layout clearfix op4">
@@ -468,248 +1607,48 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="module-item sub clearfix">
-                                        <div class="adjust-layout clearfix op3">
-                                            <div class="col-xs-9 title">
-                                                2. <span class="item-name">发布纯文字信息</span>
-                                            </div>
-                                            <div class="col-xs-3 action">
-                                                <div class="action-area">
-                                                    <!--<span class="checked-name">执行人：徐三岁</span>-->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="module-item sub clearfix">
-                                        <div class="adjust-layout clearfix op3">
-                                            <div class="col-xs-9 title">
-                                                3. <span class="item-name">修改文案</span>
-                                            </div>
-                                            <div class="col-xs-3 action">
-                                                <div class="action-area">
-                                                    <!--<span class="checked-name">执行人：徐三岁</span>-->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="module-item sub clearfix">
-                                        <div class="adjust-layout clearfix op3">
-                                            <div class="col-xs-9 title">
-                                                4. <span class="item-name">发布视频</span>
-                                            </div>
-                                            <div class="col-xs-3 action">
-                                                <div class="action-area test-checked">
-                                                    <!--<span class="checked-name">执行人：徐三岁</span>-->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
-                            <!-- 模块 E-->
-
-                            <!-- 模块 S-->
-                            <div class="version-area">
-                                <div class="module-item clearfix main">
-                                    <div class="adjust-layout clearfix">
-                                        <div class="col-xs-9 title">
-                                            <div class="arrow-icon">
-                                                <i class="iconfont"></i>
-                                            </div>
-                                            2. <span class="item-name">探索</span>
-                                        </div>
-                                        <div class="col-xs-3 action">
-                                            <div class="action-area">
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="sub-module-container">
-                                    <div class="module-item sub clearfix">
-                                        <div class="adjust-layout clearfix">
-                                            <div class="col-xs-9 title">
-                                                1. <span class="item-name">发布纯文字信息</span>
-                                            </div>
-                                            <div class="col-xs-3 action">
-                                                <div class="action-area">
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="module-item sub clearfix">
-                                        <div class="adjust-layout clearfix">
-                                            <div class="col-xs-9 title">
-                                                <span class="new-item"></span>
-                                                2. <span class="item-name">发布视频</span>
-                                            </div>
-                                            <div class="col-xs-3 action">
-                                                <div class="action-area">
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- 模块 E-->
                         </div>
                     </div>
                     <div id="tab2" class="examine-bug bg-list report tab-pane fade">
-                        <div class="experts-tab1-top add-top">
-                            <span class="tab1-status">专家评级：</span>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" value="1" class="input-checkbox">
-                                <span class="input-checkbox-show"></span><span class="input-right-span">致命（1）</span>
-                            </label>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" value="1" class="input-checkbox">
-                                <span class="input-checkbox-show"></span><span class="input-right-span">严重（3）</span>
-                            </label>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" value="1" class="input-checkbox">
-                                <span class="input-checkbox-show"></span><span class="input-right-span">缺陷（5）</span>
-                            </label>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" value="1" class="input-checkbox">
-                                <span class="input-checkbox-show"></span><span class="input-right-span">瑕疵（2）</span>
-                            </label>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" value="1" class="input-checkbox">
-                                <span class="input-checkbox-show"></span><span class="input-right-span">建议（2）</span>
-                            </label>
-                            <label class="tab1-label-search"><input type="text" class="tab1-status-search form-control" placeholder="请输入Bug标题或BugID"> </label>
-                        </div>
                         <div class="module_list_wrapper bug-list">
-                            <!-- 模块 S-->
-                            <div class="version-area">
-                                <div class="module-item main">
-                                    <div class="adjust-layout clearfix">
-                                        <div class="col-xs-9 title">
-                                            <div class="arrow-icon">
-                                                <i class="iconfont"></i>
-                                            </div>
-                                            1. <span class="item-name">首页</span>
-                                        </div>
-                                        <div class="col-xs-3 action">
-                                            <div class="action-area">
-
-                                            </div>
-                                        </div>
+                            <div class="member-list">
+                                <div class="member-table">
+                                    <div class="t-head">
+                                        <ul>
+                                            <li>昵称</li>
+                                            <li>账号</li>
+                                            <li>执行用例条数 (条)</li>
+                                            <li>发现Bug数 (个)</li>
+                                            <li>奖励 (元)</li>
+                                            <li>积分 (分)</li>
+                                        </ul>
                                     </div>
-                                </div>
-                                <div class="sub-module-container">
-                                    <div class="module-item sub clearfix" >
-                                        <div class="adjust-layout clearfix op3">
-                                            <div class="col-xs-9 title">
-                                                1. <span class="item-name">发布</span>
-                                            </div>
-                                            <div class="col-xs-3 action">
-                                                <div class="action-area">
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="mod-third-content" >
-                                            <div class="mod-third-box">
-
-                                                <!--第三层 S-->
-                                                <div class="third-item clearfix" >
-                                                    <div class="adjust-layout clearfix op4">
-                                                        <div class="col-xs-7 title">
-                                                            <p class="per-fail-li-p per-edit-p">1.［ UI问题 ］Bug名称</p>
-                                                        </div>
-                                                        <div class="col-xs-5 action">
-                                                            <div class="action-area">
-                                                                <span class="importance-span color-fail">［ 非常有用 ］</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="details-content">
-                                                        <div class="details-left">
-                                                            <div class="mb-20">
-                                                                <p class="per-fail-li-p bef title2">前提条件：</p>
-                                                                <p class="per-fail-li-p per-edit-p"> 提供微信好友、微信朋友圈二种方式选择。</p>
-                                                            </div>
-                                                            <div>
-                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
-                            <textarea class="per-fail-li-text" disabled="disabled" rows="4">1、点击商品进入商品详情页
-2、点击右上角【分享】图标，弹出分享方式选择层
-3、选择分享至【微信】，在微信中选择好友，确认分享
-                            </textarea>
-                                                            </div>
-                                                            <div class="mb-20">
-                                                                <p class="per-fail-li-p bef title3">期望结果：</p>
-                                                                <p class="per-fail-li-p per-edit-p">提供微信好友、微信朋友圈二种方式选择</p>
-                                                            </div>
-                                                            <div class="mb-20">
-                                                                <p class="per-fail-li-p bef title4">实际结果：</p>
-                                                                <p class="per-fail-li-p per-edit-p">提供微信好友、微信朋友圈二种方式选择</p>
-                                                            </div>
-                                                            <div class="mb-20" style="display: none">
-                                                                <p class="per-fail-li-p bef title5">浮现概率：<span>75%</span></p>
-                                                            </div>
-                                                            <div class="mb-20" style="display: none">
-                                                                <p class="per-fail-li-p bef title6">备注：</p>
-                                                                <p class="per-fail-li-p per-edit-p">这是一条很长很长的备注</p>
-                                                            </div>
-                                                            <div class="clearfix mb-20">
-                                                                <p class="per-fail-li-p bef title7 pull-left">测试设备：技嘉-Luchino系列007 </p>
-                                                                <p class="per-fail-li-p bef title8 pull-left">测试网络：WI－FI </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="details-right">
-                                                            <div class="pic-area">
-                                                                <div class="pic-item">
-                                                                    <img src="../../../images/screen-capture.png">
-                                                                </div>
-                                                                <div class="expert-control notoggle-one-active">
-                                                                    <p class="control-title">专家评级：<span>致命</span></p>
-                                                                    <div class="btn-out for_active">
-                                                                        <button class="btn btn-default btn-sm active-color-1 active">非常有用</button>
-                                                                    </div>
-                                                                    <div class="btn-out for_active">
-                                                                        <button class="btn btn-default btn-sm active-color-2">有用</button>
-                                                                    </div>
-                                                                    <div class="btn-out for_active">
-                                                                        <button class="btn btn-default btn-sm active-color-3">一般</button>
-                                                                    </div>
-                                                                    <div class="btn-out for_active">
-                                                                        <button class="btn btn-default btn-sm active-color-4">没什么用</button>
-                                                                    </div>
-                                                                    <div class="btn-out for_active">
-                                                                        <button class="btn btn-default btn-sm active-color-5">不是Bug</button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="mt-15 file-area">
-                                                                <p class="per-fail-li-p bef title9">附件：</p>
-                                                                <p class="per-fail-li-p per-edit-p"><a style="line-height: 22px;">Bojack Horseman.txt
-                                                                    Who is he？ He's Mr. Peanut butter.</a>
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="report-remark-area">
-                                                            <div class="sup-info">
-                                                                <div class="sup-info-title">
-                                                                    <p class="per-fail-li-p bef title6">备注：</p>
-                                                                </div>
-                                                                <div class="sup-info-content info-text">
-                                                                    <div class="marked-text">
-                                                                        这是一条新备注 <a class="edit-remark"><i class="iconfont">&#xe602;</i>编辑</a>
-                                                                    </div>
-                                                                    <div class="marking-text" style="display: none">
-                                                                        <textarea type="text"  class="form-control input-sm" name="bug_detail" rows="5" placeholder="请输入修改内容"></textarea>
-                                                                        <a class="save-remark"><i class="iconfont">&#xe614;</i>保存</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!--第三层 E-->
-
+                                    <div class="t-body">
+                                        <div class="t-floor">
+                                            <ul class="floor-main">
+                                                <li>
+                                                    <img src="../../../images/male02.png" class="member-pic">
+                                                    <span class="member-name">尼古拉斯赵四</span>
+                                                </li>
+                                                <li>
+                                                    <span>41239008088@qq.com</span>
+                                                </li>
+                                                <li>
+                                                    <span>120</span>
+                                                </li>
+                                                <li>
+                                                    <span>64</span>
+                                                </li>
+                                                <li>
+                                                    <span>7元</span>
+                                                </li>
+                                                <li>
+                                                    <span>25</span>
+                                                </li>
+                                            </ul>
+                                            <div class="reward-third">
                                                 <!--第三层 S-->
                                                 <div class="third-item clearfix" >
                                                     <div class="adjust-layout clearfix op4">
@@ -720,6 +1659,13 @@
                                                             <div class="action-area">
                                                                 <span class="importance-span color-fail">［ 非常有用 ］</span>
                                                             </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content details-top">
+                                                        <div class="details-top-in">
+                                                            <span class="details-item"><img src="../../../images/needle.png">所属模块：登录／注册</span>
+                                                            <span class="details-item">所属子模块：登录</span>
+                                                            <span class="details-item"><img src="../../../images/Shape-star.png">专家评级：严重级</span>
                                                         </div>
                                                     </div>
                                                     <div class="details-content">
@@ -782,7 +1728,7 @@
                                                                     </div>
                                                                     <div class="marking-text">
                                                                         <textarea type="text"  class="form-control input-sm" name="bug_detail" rows="5" placeholder="请输入修改内容"></textarea>
-                                                                        <a class="save-remark"><i class="iconfont">&#xe614;</i>保存</a>
+                                                                        <button class="btn blue-btn btn-sm">保存</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -790,133 +1736,96 @@
                                                     </div>
                                                 </div>
                                                 <!--第三层 E-->
-
+                                            </div>
+                                        </div>
+                                        <div class="t-floor">
+                                            <ul class="floor-main">
+                                                <li>
+                                                    <img src="../../../images/flower01.png" class="member-pic">
+                                                    <span class="member-name">荒野猎人</span>
+                                                </li>
+                                                <li>
+                                                    <span>41239008088@qq.com</span>
+                                                </li>
+                                                <li>
+                                                    <span>360</span>
+                                                </li>
+                                                <li>
+                                                    <span>64</span>
+                                                </li>
+                                                <li>
+                                                    <span>7元</span>
+                                                </li>
+                                                <li>
+                                                    <span>25</span>
+                                                </li>
+                                            </ul>
+                                            <div class="reward-third">
                                                 <!--第三层 S-->
-                                                <div class="third-item clearfix">
+                                                <div class="third-item clearfix" >
                                                     <div class="adjust-layout clearfix op4">
                                                         <div class="col-xs-7 title">
-                                                            <p class="per-fail-li-p per-edit-p">3. ［ 功能问题 ］Bug名称</p>
+                                                            <p class="per-fail-li-p per-edit-p">2.［ UI问题 ］Bug名称</p>
                                                         </div>
                                                         <div class="col-xs-5 action">
                                                             <div class="action-area">
-
+                                                                <span class="importance-span color-fail">［ 非常有用 ］</span>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="details-content">
-                                                        <ul class="per-step-ul">
-                                                            <li class="per-fail-li mar-top">
-                                                                <p class="per-fail-li-p bef title1">测试步骤：</p>
-                            <textarea class="per-fail-li-text" disabled="disabled" rows="4">1、点击商品进入商品详情页
-2、点击右上角【分享】图标，弹出分享方式选择层
-3、选择分享至【微信】，在微信中选择好友，确认分享
-                            </textarea>
-                                                            </li>
-                                                            <li class="per-fail-li ">
-                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
-                                                                <p class="per-fail-li-p per-edit-p">提供微信好友、微信朋友圈二种方式选择</p>
-                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
-                                                                <p class="per-fail-li-p per-edit-p"> 提供微信好友、微信朋友圈二种方式选择。</p>
-                                                            </li>
-                                                        </ul>
+                                                        2
+                                                    </div>
+                                                </div>
+                                                <!--第三层 E-->
+                                            </div>
+                                        </div>
+
+                                        <div class="t-floor">
+                                            <ul class="floor-main">
+                                                <li>
+                                                    <img src="../../../images/Pokemon01.png" class="member-pic">
+                                                    <span class="member-name">第二天</span>
+                                                </li>
+                                                <li>
+                                                    <span>41239008088@qq.com</span>
+                                                </li>
+                                                <li>
+                                                    <span>120</span>
+                                                </li>
+                                                <li>
+                                                    <span>64</span>
+                                                </li>
+                                                <li>
+                                                    <span>7元</span>
+                                                </li>
+                                                <li>
+                                                    <span>25</span>
+                                                </li>
+                                            </ul>
+                                            <div class="reward-third">
+                                                <!--第三层 S-->
+                                                <div class="third-item clearfix" >
+                                                    <div class="adjust-layout clearfix op4">
+                                                        <div class="col-xs-7 title">
+                                                            <p class="per-fail-li-p per-edit-p">2.［ UI问题 ］Bug名称</p>
+                                                        </div>
+                                                        <div class="col-xs-5 action">
+                                                            <div class="action-area">
+                                                                <span class="importance-span color-fail">［ 非常有用 ］</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="details-content">
+                                                    3
                                                     </div>
                                                 </div>
                                                 <!--第三层 E-->
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="module-item sub clearfix">
-                                        <div class="adjust-layout clearfix op3">
-                                            <div class="col-xs-9 title">
-                                                2. <span class="item-name">发布纯文字信息</span>
-                                            </div>
-                                            <div class="col-xs-3 action">
-                                                <div class="action-area">
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="module-item sub clearfix">
-                                        <div class="adjust-layout clearfix op3">
-                                            <div class="col-xs-9 title">
-                                                3. <span class="item-name">修改文案</span>
-                                            </div>
-                                            <div class="col-xs-3 action">
-                                                <div class="action-area">
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="module-item sub clearfix">
-                                        <div class="adjust-layout clearfix op3">
-                                            <div class="col-xs-9 title">
-                                                4. <span class="item-name">发布视频</span>
-                                            </div>
-                                            <div class="col-xs-3 action">
-                                                <div class="action-area test-checked">
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
-                            <!-- 模块 E-->
-
-                            <!-- 模块 S-->
-                            <div class="version-area">
-                                <div class="module-item clearfix main">
-                                    <div class="adjust-layout clearfix">
-                                        <div class="col-xs-9 title">
-                                            <div class="arrow-icon">
-                                                <i class="iconfont"></i>
-                                            </div>
-                                            2. <span class="item-name">探索</span>
-                                        </div>
-                                        <div class="col-xs-3 action">
-                                            <div class="action-area">
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="sub-module-container">
-                                    <div class="module-item sub clearfix">
-                                        <div class="adjust-layout clearfix">
-                                            <div class="col-xs-9 title">
-                                                1. <span class="item-name">发布纯文字信息</span>
-                                            </div>
-                                            <div class="col-xs-3 action">
-                                                <div class="action-area">
-                                                    <a class="cancel-check">取消</a>
-                                                    <label class="checkbox-inline check-people">
-                                                        <input type="checkbox" name="send" value="1" class="input-checkbox">
-                                                        <span class="input-checkbox-show"></span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="module-item sub clearfix">
-                                        <div class="adjust-layout clearfix">
-                                            <div class="col-xs-9 title">
-                                                <span class="new-item"></span>
-                                                2. <span class="item-name">发布视频</span>
-                                            </div>
-                                            <div class="col-xs-3 action">
-                                                <div class="action-area">
-                                                    <a class="edit-module-name">编辑</a>
-                                                    <a class="remove-module">删除</a>
-                                                    <a class="save-text">保存</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- 模块 E-->
                         </div>
                     </div>
                 </div>
@@ -926,26 +1835,9 @@
 </div>
 <script>
     $(document).ready(function(){
-//        按钮切换
-        $(".notoggle-one-active .for_active button").on("click",function(){
-            $(this).addClass("active").parent(".for_active").siblings(".for_active").find("button").removeClass("active");
-        });
-
 //            切换打开第二层内容
-        var can_toggle = 1;
-        $(".action-area *").hover(function(){
-            can_toggle = 0;
-        },function(){
-            if($(this).parents(".module-item").hasClass("editing")){
-                can_toggle = 0;
-            }else{
-                can_toggle = 1;
-            }
-        });
-        $(".module-item.main").click(function(){
-            if(can_toggle==1){
-                $(this).parents(".version-area").toggleClass("opening");
-            }
+        $(".floor-main").click(function(){
+            $(this).parents(".t-floor").toggleClass("opening");
         });
     });
 </script>

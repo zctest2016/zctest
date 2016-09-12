@@ -570,7 +570,7 @@ body {
     margin-right: 10px;
 }
 .details-content .sup-info .sup-info-content{
-    padding: 6px 25px 0;
+    padding: 6px 0 0 25px;;
     line-height: 22px;
     letter-spacing: 0px;
     border: 1px solid transparent;
@@ -639,9 +639,83 @@ body {
     margin-left: 0;
 }
 .member-list{
-    border: 1px solid red;
+
+}
+.member-list .member-pic{
+    width: 40px;
+    margin-right: 6px;
+}
+.member-list .mngr-expense{
+    margin-left: 70px;
+}
+.member-list .mngr-expense .expense-or{
+    color: #EB5A3C;
 }
 .member-list .expert-area{
-    padding: 0;
+    padding: 0 26px 22px;
 }
-.member-table .t-head {}
+.member-table{
+    padding: 0 20px;
+}
+.member-table .t-head{
+    background: #FAFAFA;
+    border: 1px solid #EBEBEB;
+}
+.member-table .t-head ul,.member-table .t-body ul.floor-main{
+    overflow: hidden;
+    margin-bottom: 0;
+}
+.member-table .t-head ul li,.member-table .t-body ul.floor-main li{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.member-table .t-body .t-floor .floor-main{
+    border-bottom: 1px solid #ebebeb;
+}
+.member-table .t-body ul.floor-main li{
+    height: 60px;
+    line-height: 60px;
+}
+.member-table .t-head ul li,.member-table .t-body ul.floor-main li{
+    width: 14.5%;
+}
+.member-table .t-head ul li:nth-child(1),.member-table .t-body ul.floor-main li:nth-child(1){
+    width: 21%;
+}
+.member-table .t-head ul li:nth-child(2),.member-table .t-body ul.floor-main li:nth-child(2){
+    width: 21%;
+}
+.member-table .t-body ul.floor-main li:nth-child(1){
+    text-align: left;
+    padding-left: 12px;
+}
+.member-table .t-body .t-floor .third-item{
+    line-height: 48px;
+    border: 1px solid #ebebeb;
+    border-top: 0;
+    padding: 0;
+    background-color: #fafafa;
+}
+.member-table .t-body .t-floor .third-item:first-child{
+    border-top: 1px solid #ebebeb;
+}
+.member-table .t-body .t-floor .third-item .action{
+    text-align: right;
+}
+.member-table .t-body .t-floor .per-step-ul{
+    border-bottom: 0;
+}
+.member-table .t-body .t-floor .third-item .form-control{
+    background-color: #FAFAFA;
+}
+.member-table .t-body .t-floor .third-item textarea.per-fail-li-text{
+    background-color: #FAFAFA;
+}
+.t-floor.opening{
+    border-bottom: 1px solid #ebebeb;
+}
+.member-table .t-body .t-floor .third-item .sup-info .form-control{
+    color: #cccccc;
+}

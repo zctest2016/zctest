@@ -838,6 +838,63 @@ ul.release-step li .span-name.finish-icon {
 #quota button.color-or:focus{
     background-color: #ff843e;
 }
+/*p18*/
+.release-p3.rewards .examine-bug.report .module_list_wrapper{
+    padding: 20px 0 26px 0;
+}
+.release-p3.rewards .tab-content>.tab-pane.examine-bug{
+    padding: 0;
+}
+.reward-third{
+    padding: 20px;
+    display: none;
+}
+.opening .reward-third{
+    display: block;
+}
+.reward-third .details-content .sup-info{
+    background-color: #ffffff;
+}
+.bug-list .third-item .details-content.details-top{
+    padding: 0 20px;
+    height: 50px;
+    line-height: 50px;
+    border-top: 1px solid #ebebeb;
+}
+#tab2 .bug-list .third-item .details-top .details-top-in{
+    border-bottom: 1px solid #ebebeb;
+}
+#tab2 .bug-list .third-item .details-content.details-top{
+    border-top: 1px solid #ebebeb;
+    border-bottom: none;
+    overflow: visible;
+}
+#tab2 .bug-list .third-item .details-content{
+    border-top: 0;
+}
+.details-top-in .details-item{
+    margin-right: 50px;
+}
+.details-top-in .details-item img{
+    margin-right: 10px;
+}
+#tab2 .bug-list .third-item .details-content .marking-text textarea{
+    width: 740px;
+}
+.marking-text .btn-sm{
+    float: left;
+    margin-top: 18px;
+    margin-left: 20px;
+    width: 74px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+}
+/*p22*/
+.release-p3 .module_list_wrapper.p22{
+    border-bottom: 0;
+    padding: 18px 0 26px 0;
+}
 /*p12头部样式*/
 .blue-btn.bottom-btn.usecase-save{
     font-size: 12px;
