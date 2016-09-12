@@ -132,6 +132,12 @@
                     </li>
                     <li class="acc_top_li">
                         <p class="claim_top_title No-center">剩余配额</p>
+                        <div class="residue-data-wap">
+                            <p class="residue-data">用例设计 <span>650</span> 条</p>
+                            <p class="residue-data"> 用例执行<span>1</span> 条</p>
+                        </div>
+                        <a href="javascript:;" class="blue-btn bottom-btn acc-residue" data-toggle="modal" data-target="#not-success">确认验收</a>
+
                     </li>
                 </ul>
             </div>
@@ -1829,11 +1835,6 @@
 </div>
 <script>
     $(document).ready(function(){
-//        按钮切换
-        $(".notoggle-one-active .for_active button").on("click",function(){
-            $(this).addClass("active").parent(".for_active").siblings(".for_active").find("button").removeClass("active");
-        });
-
 //            切换打开第二层内容
         $(".floor-main").click(function(){
             $(this).parents(".t-floor").toggleClass("opening");

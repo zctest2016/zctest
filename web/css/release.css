@@ -885,6 +885,11 @@ ul.release-step li .span-name.finish-icon {
     line-height: 28px;
     font-size: 12px;
 }
+/*p22*/
+.release-p3 .module_list_wrapper.p22{
+    border-bottom: 0;
+    padding: 18px 0 26px 0;
+}
 /*p12头部样式*/
 .blue-btn.bottom-btn.usecase-save{
     font-size: 12px;
