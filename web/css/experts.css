@@ -60,6 +60,33 @@
 .acc_top_li:nth-child(4){
     padding-left: 8px;
 }
+.Padding-left {
+    padding-left: 53px;
+}
+.Padding-left p.claim_top_title.No-center {
+    padding-left: 17px;
+}
+.Padding-left .residue-data-wap.customer-data {
+    width: 138px;
+    padding-left: 6px;
+}
+.Padding-left2{
+    padding-left: 40px;
+}
+.Padding-left2 img {
+    margin-bottom: 25px;
+}
+.Padding-left2 p.claim_top_title.No-center {
+    padding-bottom: 22px;
+    padding-left: 11px;
+}
+.li4-word p.claim_top_title.No-center {
+    padding-left: 17px;
+}
+.li4-word .residue-data-wap.customer-data {
+    width: 138px;
+    padding-left: 6px;
+}
 .customer-ul .acc_top_li.usecase-topli{
     width: 248px;
 }
@@ -255,8 +282,11 @@
 .acc_top_li .acc-li-sapn{
     margin: 0 3px;
 }
+.fix-content .acc_top_li .experts-li3-span {
+    margin: 0 16px;
+}
 .acc_top_li .experts-li3-span {
-    margin: 0 17px;
+    margin: 0 20px;
 }
 .experts-li3-span.FailNotice{
     background: #EB5A3C;
