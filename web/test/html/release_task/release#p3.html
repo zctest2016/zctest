@@ -94,7 +94,7 @@
                     <p class="task_message">其他文档：<span class="task_mes_a"> 下载1</span><span class="task_mes_a">下载2</span></p>
                 </li>
                 <li class="claim_top_li last">
-                    <p class="remaining_time"></p>
+                    <p class="remaining_time"><i class="icon iconfont" style="margin-right: 8px;">&#xe601;</i>客户信息</p>
                 </li>
             </ul>
             <div class="user-window" style="display: none;">
@@ -335,11 +335,11 @@
                     </div>
                 </div>
             </div>
-            <div class="bottom-btn-group">
+            <div class="bottom-btn-group" id="choice-top">
                 <a href="javascript:;" class="basic-btn bottom-btn">上一步</a>
                 <a href="javascript:;" class="blue-btn bottom-btn" data-toggle="modal" data-target="#not-success">发布任务</a>
             </div>
-            <div class="zc_test-box choice-person">
+            <div class="zc_test-box choice-person" id="choice">
                 <h3 class="cygl">
                     <span>分配人员－选择人员</span>
                     <div class="close-cy">
@@ -354,66 +354,77 @@
                                 <img class="current-selected" src="../../../images/selecting01.png">
                                 <span class="tester-name">徐三岁</span>
                                 <span class="tester-qq">QQ：414709426</span>
+                                <span class="tester-cancel"><a>取消分配</a></span>
                             </li>
                             <li>
                                 <img class="tester-head" src="../../../images/female02.png">
                                 <img class="current-selected" src="../../../images/selecting01.png">
                                 <span class="tester-name">徐三岁</span>
                                 <span class="tester-qq">QQ：414709426</span>
+                                <span class="tester-cancel"><a>取消分配</a></span>
                             </li>
                             <li>
                                 <img class="tester-head" src="../../../images/male01.png">
                                 <img class="current-selected" src="../../../images/selecting01.png">
                                 <span class="tester-name">徐三岁</span>
                                 <span class="tester-qq">QQ：414709426</span>
+                                <span class="tester-cancel"><a></a></span>
                             </li>
                             <li>
                                 <img class="tester-head" src="../../../images/male02.png">
                                 <img class="current-selected" src="../../../images/selecting01.png">
                                 <span class="tester-name">徐三岁</span>
                                 <span class="tester-qq">QQ：414709426</span>
+                                <span class="tester-cancel"><a></a></span>
                             </li>
                             <li>
                                 <img class="tester-head" src="../../../images/Pokemon01.png">
                                 <img class="current-selected" src="../../../images/selecting01.png">
                                 <span class="tester-name">徐三岁</span>
                                 <span class="tester-qq">QQ：414709426</span>
+                                <span class="tester-cancel"><a></a></span>
                             </li>
                             <li>
                                 <img class="tester-head" src="../../../images/flower01.png">
                                 <img class="current-selected" src="../../../images/selecting01.png">
                                 <span class="tester-name">徐三岁</span>
                                 <span class="tester-qq">QQ：414709426</span>
+                                <span class="tester-cancel"><a></a></span>
                             </li>
                             <li>
                                 <img class="tester-head" src="../../../images/moon01.png">
                                 <img class="current-selected" src="../../../images/selecting01.png">
                                 <span class="tester-name">徐三岁</span>
                                 <span class="tester-qq">QQ：414709426</span>
+                                <span class="tester-cancel"><a></a></span>
                             </li>
                             <li>
                                 <img class="tester-head" src="../../../images/sun01.png">
                                 <img class="current-selected" src="../../../images/selecting01.png">
                                 <span class="tester-name">徐三岁</span>
                                 <span class="tester-qq">QQ：414709426</span>
+                                <span class="tester-cancel"><a></a></span>
                             </li>
                             <li>
                                 <img class="tester-head" src="../../../images/female01.png">
                                 <img class="current-selected" src="../../../images/selecting01.png">
                                 <span class="tester-name">徐三岁</span>
                                 <span class="tester-qq">QQ：414709426</span>
+                                <span class="tester-cancel"><a>取消分配</a></span>
                             </li>
                             <li>
                                 <img class="tester-head" src="../../../images/female02.png">
                                 <img class="current-selected" src="../../../images/selecting01.png">
                                 <span class="tester-name">徐三岁</span>
                                 <span class="tester-qq">QQ：414709426</span>
+                                <span class="tester-cancel"><a></a></span>
                             </li>
                             <li>
                                 <img class="tester-head" src="../../../images/male01.png">
                                 <img class="current-selected" src="../../../images/selecting01.png">
                                 <span class="tester-name">徐三岁</span>
                                 <span class="tester-qq">QQ：414709426</span>
+                                <span class="tester-cancel"><a></a></span>
                             </li>
                         </ul>
                     </div>
@@ -482,6 +493,49 @@
                 $(".cp-items ul li").css("top",floor_style);
             }
         });
+//            选择人员固定
+        /*选择人员高度*/
+        var c_height = $("#chocie").height();
+        /*上方元素padding高度*/
+//        var t_padding = c_height-30;
+        var t_padding = i_height+62;
+        /*fix-content高度*/
+        var fc_height = $(".fix-content").height();
+        /*全部内容高度*/
+        var all_height = fc_height+51;
+        /*视窗高度*/
+        var screenH = $(window).height();
+        /*加载固定*/
+        if(all_height>screenH){
+            $("#choice-top").css("padding-bottom",t_padding);
+            $("#choice").addClass("fixing");
+        }
+        /*缩放固定*/
+        $(window).resize(function(){
+            var screenH = $(window).height();
+            if(all_height>screenH){
+                $("#choice-top").css("padding-bottom",t_padding);
+                $("#choice").addClass("fixing");
+            }else{
+                $("#choice-top").css("padding-bottom","30px");
+                $("#choice").removeClass("fixing");
+            }
+        });
+        /*内容交互固定*/
+        $(".module-item.main").click(function(){
+            var screenH = $(window).height();
+            /*fix-content高度*/
+            var fc_height = $(".fix-content").height();
+            /*全部内容高度*/
+            var all_height = fc_height+51;
+            if(all_height>screenH){
+                $("#choice-top").css("padding-bottom",t_padding);
+                $("#choice").addClass("fixing");
+            }else{
+                $("#choice-top").css("padding-bottom","30px");
+                $("#choice").removeClass("fixing");
+            }
+        })
     });
 </script>
 </body>

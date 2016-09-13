@@ -10,7 +10,7 @@ $(function(){
     var left = $(".zc_new-aside");
     if(screenW>767){
         $(window).scroll(function(){
-            if($(window).scrollTop()>51){
+            if($(window).scrollTop()>50){
                 left.addClass("fix");
 
             }else{
