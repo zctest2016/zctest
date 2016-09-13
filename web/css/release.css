@@ -307,6 +307,11 @@ ul.release-step li .span-name.finish-icon {
 .zc_test-box.choice-person{
     border-color: #ffffff;
 }
+#choice.fixing{
+    position: fixed;
+    bottom: 0;
+    width: 1085px;
+}
 .zc_test-box.choice-person .cygl{
     height: 60px;
     line-height: 60px;
@@ -348,6 +353,7 @@ ul.release-step li .span-name.finish-icon {
 .zc_test-box.choice-person .cp-items ul li img{
     margin-bottom: 10px;
     cursor: pointer;
+    width: 60px;
 }
 .zc_test-box.choice-person .cp-items ul li.active .current-selected{
     display: inline-block;
@@ -372,6 +378,14 @@ ul.release-step li .span-name.finish-icon {
     margin-top: 5px;
     white-space: nowrap;
     letter-spacing: -1px;
+}
+.zc_test-box.choice-person .cp-items ul li span.tester-cancel{
+    text-align: center;
+    margin-top: 5px;
+    height: 17px;
+}
+.tester-cancel a{
+    cursor: pointer;
 }
 .zc_test-box.choice-person .cp-control{
     float: left;
