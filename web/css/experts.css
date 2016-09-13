@@ -147,11 +147,6 @@
     margin-bottom: 0;
 }
 
-
-
-
-
-
 .claim_topApp{
     margin: 30px 30px 30px 0;
     float: left;
@@ -173,10 +168,11 @@
     padding: 0 15px;
     outline: none;
     margin-top: 4px;
+    cursor: default;
 }
-.App_desgin:hover{
-    color: #3098F2;
-}
+/*.App_desgin:hover{*/
+    /*color: #3098F2;*/
+/*}*/
 .claim_discribe{
     padding: 30px 0 30px 30px;
 }
@@ -201,6 +197,9 @@
     line-height: 24px;
     clear: both;
     display: inline-block;
+}
+.No-marbot.task_discribe{
+    margin-bottom: 0;
 }
 .task_discribe.form-control{
     width: 971px;
