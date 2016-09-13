@@ -122,12 +122,11 @@
                 <ul class="nav nav-tabs testin-nav-tabs" id="myTab">
                     <li class=""><a data-toggle="tab" href="#tab1" aria-expanded="false">提交用例</a></li>
                     <li class="active"><a data-toggle="tab" href="#tab2" aria-expanded="true">BUG列表</a></li>
-                    <a class="" data-toggle="modal" data-target="#add-problem">新建问题</a>
                     <button class="btn btn-default btn-sm pull-right">继续执行</button>
                 </ul>
                 <div class="tab-content" id="myTabContent">
                     <div id="tab1" class="tab-pane fade">
-                        <div class="module_list_wrapper">
+                        <div class="module_list_wrapper submit-use-case">
                             <!-- 模块 S-->
                             <div class="version-area">
                                 <div class="module-item main">
@@ -153,12 +152,12 @@
                                             </div>
                                             <div class="col-xs-3 action">
                                                 <div class="action-area">
-                                                    <button class="btn btn-blue btn-sm pull-right right-ctl">添加用例</button>
+                                                    <button class="btn btn-blue btn-sm pull-right right-ctl" data-toggle="modal" data-target="#add-problem">添加用例</button>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="mod-third-content">
-                                            <div class="mod-third-box">
+                                            <div class="mod-third-box edit-case-box">
 
                                                 <!--第三层 S-->
                                                 <div class="third-item clearfix">
@@ -169,10 +168,10 @@
                                                         </div>
                                                         <div class="col-xs-5 action">
                                                             <div class="action-area">
-                                                                <!--<a class="edit-item right-ctl"><i class="iconfont">&#xe602;</i>编辑</a>-->
-                                                                <!--<a class="edit-save right-ctl"><i class="iconfont">&#xe614;</i>保存</a>-->
-                                                                <!--<a class="remark right-ctl"><i class="iconfont">&#xe60d;</i>备注</a>-->
-                                                                <!--<a class="delete right-ctl"><i class="iconfont">&#xe60c;</i>删除</a>-->
+                                                                <a class="edit-item right-ctl"><i class="iconfont">&#xe602;</i>编辑</a>
+                                                                <a class="edit-save right-ctl"><i class="iconfont">&#xe614;</i>保存</a>
+                                                                <a class="remark right-ctl"><i class="iconfont">&#xe60d;</i>备注</a>
+                                                                <a class="delete right-ctl"><i class="iconfont">&#xe60c;</i>删除</a>
                                                                 <span class="state-tip color-pass right-ctl">Pass</span>
                                                                 <button class="btn btn-default btn-sm pull-right right-ctl">继续执行</button>
                                                             </div>
@@ -207,7 +206,7 @@
                                                         <div class="col-xs-5 action">
                                                             <div class="action-area">
                                                                 <a class="edit-item right-ctl"><i class="iconfont">&#xe602;</i>编辑</a>
-                                                                <!--<a class="edit-save right-ctl"><i class="iconfont">&#xe614;</i>保存</a>-->
+                                                                <a class="edit-save right-ctl"><i class="iconfont">&#xe614;</i>保存</a>
                                                                 <a class="remark disable right-ctl"><i class="iconfont">&#xe60d;</i>备注</a>
                                                                 <!--<a class="delete right-ctl"><i class="iconfont">&#xe60c;</i>删除</a>-->
                                                                 <span class="state-tip color-pass right-ctl">Pass</span>
@@ -243,9 +242,9 @@
                                                         </div>
                                                         <div class="col-xs-5 action">
                                                             <div class="action-area">
-                                                                <!--<a class="edit-item right-ctl"><i class="iconfont">&#xe602;</i>编辑</a>-->
-                                                                <!--<a class="edit-save right-ctl"><i class="iconfont">&#xe614;</i>保存</a>-->
-                                                                <!--<a class="remark disable right-ctl"><i class="iconfont">&#xe60d;</i>备注</a>-->
+                                                                <a class="edit-item right-ctl"><i class="iconfont">&#xe602;</i>编辑</a>
+                                                                <a class="edit-save right-ctl"><i class="iconfont">&#xe614;</i>保存</a>
+                                                                <a class="remark disable right-ctl"><i class="iconfont">&#xe60d;</i>备注</a>
                                                                 <!--<a class="delete right-ctl"><i class="iconfont">&#xe60c;</i>删除</a>-->
                                                                 <span class="state-tip color-fail right-ctl">Fail</span>
                                                                 <button class="btn btn-default btn-sm pull-right right-ctl">继续执行</button>
@@ -327,9 +326,9 @@
                                                         </div>
                                                         <div class="col-xs-5 action">
                                                             <div class="action-area">
-                                                                <!--<a class="edit-item right-ctl"><i class="iconfont">&#xe602;</i>编辑</a>-->
-                                                                <!--<a class="edit-save right-ctl"><i class="iconfont">&#xe614;</i>保存</a>-->
-                                                                <!--<a class="remark disable right-ctl"><i class="iconfont">&#xe60d;</i>备注</a>-->
+                                                                <a class="edit-item right-ctl"><i class="iconfont">&#xe602;</i>编辑</a>
+                                                                <a class="edit-save right-ctl"><i class="iconfont">&#xe614;</i>保存</a>
+                                                                <a class="remark disable right-ctl"><i class="iconfont">&#xe60d;</i>备注</a>
                                                                 <!--<a class="delete right-ctl"><i class="iconfont">&#xe60c;</i>删除</a>-->
                                                                 <span class="state-tip color-na right-ctl">N/A</span>
                                                                 <button class="btn btn-default btn-sm pull-right right-ctl">继续执行</button>
@@ -469,7 +468,7 @@
                                             </div>
                                             <div class="col-xs-3 action">
                                                 <div class="action-area">
-                                                    <button class="btn btn-blue btn-sm pull-right">添加用例</button>
+                                                    <button class="btn btn-blue btn-sm pull-right" data-toggle="modal" data-target="#add-problem">添加用例</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -482,7 +481,7 @@
                                             <div class="col-xs-3 action">
                                                 <div class="action-area">
                                                     <span class="checked-name">执行人：徐三岁</span>
-                                                    <button class="btn btn-blue btn-sm pull-right">添加用例</button>
+                                                    <button class="btn btn-blue btn-sm pull-right" data-toggle="modal" data-target="#add-problem">添加用例</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -495,7 +494,7 @@
                                             <div class="col-xs-3 action">
                                                 <div class="action-area test-checked">
                                                     <span class="checked-name">执行人：徐三岁</span>
-                                                    <button class="btn btn-blue btn-sm pull-right">添加用例</button>
+                                                    <button class="btn btn-blue btn-sm pull-right" data-toggle="modal" data-target="#add-problem">添加用例</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -585,7 +584,7 @@
                                             </div>
                                             <div class="col-xs-3 action">
                                                 <div class="action-area">
-                                                    <button class="btn btn-blue btn-sm pull-right right-ctl">添加用例</button>
+                                                    <button class="btn btn-blue btn-sm pull-right right-ctl">添加Bug</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -706,7 +705,7 @@
                                             </div>
                                             <div class="col-xs-3 action">
                                                 <div class="action-area">
-                                                    <button class="btn btn-blue btn-sm pull-right">添加用例</button>
+                                                    <button class="btn btn-blue btn-sm pull-right">添加Bug</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -719,7 +718,7 @@
                                             <div class="col-xs-3 action">
                                                 <div class="action-area">
                                                     <span class="checked-name">执行人：徐三岁</span>
-                                                    <button class="btn btn-blue btn-sm pull-right">添加用例</button>
+                                                    <button class="btn btn-blue btn-sm pull-right">添加Bug</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -732,7 +731,7 @@
                                             <div class="col-xs-3 action">
                                                 <div class="action-area test-checked">
                                                     <span class="checked-name">执行人：徐三岁</span>
-                                                    <button class="btn btn-blue btn-sm pull-right">添加用例</button>
+                                                    <button class="btn btn-blue btn-sm pull-right">添加Bug</button>
                                                 </div>
                                             </div>
                                         </div>

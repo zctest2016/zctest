@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../../../css/perform.css"/>
     <script src="../../../js/jquery-1.11.1.min.js"></script>
     <script src="../../../js/testinBS.js"></script>
+    <script src="../../../js/left-menu.js"></script>
 </head>
 <style>
     body{background-color: #F5F7F7; }
@@ -133,7 +134,7 @@
                 </div>
             </div>
 
-            <div class="zc_test-box release-p3 add-p5">
+            <div class="zc_test-box release-p3 add-p5 mb-30" id="repeat-top">
                 <ul class="nav nav-tabs testin-nav-tabs" id="myTab">
                     <li class=""><a data-toggle="tab" href="#tab1" aria-expanded="false">审核Bug</a></li>
                     <li class="active"><a data-toggle="tab" href="#tab2" aria-expanded="true">审核用例结果</a></li>
@@ -581,7 +582,7 @@
                                             </div>
                                         </div>
                                         <div class="mod-third-content">
-                                            <div class="mod-third-box">
+                                            <div class="mod-third-box edit-case-box">
 
                                                 <!--第三层 S-->
                                                 <div class="third-item clearfix">
@@ -592,10 +593,10 @@
                                                         </div>
                                                         <div class="col-xs-5 action">
                                                             <div class="action-area">
-                                                                <!--<a class="edit-item right-ctl"><i class="iconfont">&#xe602;</i>编辑</a>-->
-                                                                <!--<a class="edit-save right-ctl"><i class="iconfont">&#xe614;</i>保存</a>-->
-                                                                <!--<a class="remark right-ctl"><i class="iconfont">&#xe60d;</i>备注</a>-->
-                                                                <!--<a class="delete right-ctl"><i class="iconfont">&#xe60c;</i>删除</a>-->
+                                                                <a class="edit-item right-ctl"><i class="iconfont">&#xe602;</i>编辑</a>
+                                                                <a class="edit-save right-ctl"><i class="iconfont">&#xe614;</i>保存</a>
+                                                                <a class="remark right-ctl"><i class="iconfont">&#xe60d;</i>备注</a>
+                                                                <a class="delete right-ctl"><i class="iconfont">&#xe60c;</i>删除</a>
                                                                 <span class="state-tip color-pass right-ctl">Pass</span>
                                                                 <button class="btn btn-default btn-sm pull-right right-ctl">继续执行</button>
                                                             </div>
@@ -630,7 +631,7 @@
                                                         <div class="col-xs-5 action">
                                                             <div class="action-area">
                                                                 <a class="edit-item right-ctl"><i class="iconfont">&#xe602;</i>编辑</a>
-                                                                <!--<a class="edit-save right-ctl"><i class="iconfont">&#xe614;</i>保存</a>-->
+                                                                <a class="edit-save right-ctl"><i class="iconfont">&#xe614;</i>保存</a>
                                                                 <a class="remark disable right-ctl"><i class="iconfont">&#xe60d;</i>备注</a>
                                                                 <!--<a class="delete right-ctl"><i class="iconfont">&#xe60c;</i>删除</a>-->
                                                                 <span class="state-tip color-pass right-ctl">Pass</span>
@@ -666,9 +667,9 @@
                                                         </div>
                                                         <div class="col-xs-5 action">
                                                             <div class="action-area">
-                                                                <!--<a class="edit-item right-ctl"><i class="iconfont">&#xe602;</i>编辑</a>-->
-                                                                <!--<a class="edit-save right-ctl"><i class="iconfont">&#xe614;</i>保存</a>-->
-                                                                <!--<a class="remark disable right-ctl"><i class="iconfont">&#xe60d;</i>备注</a>-->
+                                                                <a class="edit-item right-ctl"><i class="iconfont">&#xe602;</i>编辑</a>
+                                                                <a class="edit-save right-ctl"><i class="iconfont">&#xe614;</i>保存</a>
+                                                                <a class="remark disable right-ctl"><i class="iconfont">&#xe60d;</i>备注</a>
                                                                 <!--<a class="delete right-ctl"><i class="iconfont">&#xe60c;</i>删除</a>-->
                                                                 <span class="state-tip color-fail right-ctl">Fail</span>
                                                                 <button class="btn btn-default btn-sm pull-right right-ctl">继续执行</button>
@@ -750,9 +751,9 @@
                                                         </div>
                                                         <div class="col-xs-5 action">
                                                             <div class="action-area">
-                                                                <!--<a class="edit-item right-ctl"><i class="iconfont">&#xe602;</i>编辑</a>-->
-                                                                <!--<a class="edit-save right-ctl"><i class="iconfont">&#xe614;</i>保存</a>-->
-                                                                <!--<a class="remark disable right-ctl"><i class="iconfont">&#xe60d;</i>备注</a>-->
+                                                                <a class="edit-item right-ctl"><i class="iconfont">&#xe602;</i>编辑</a>
+                                                                <a class="edit-save right-ctl"><i class="iconfont">&#xe614;</i>保存</a>
+                                                                <a class="remark disable right-ctl"><i class="iconfont">&#xe60d;</i>备注</a>
                                                                 <!--<a class="delete right-ctl"><i class="iconfont">&#xe60c;</i>删除</a>-->
                                                                 <span class="state-tip color-na right-ctl">N/A</span>
                                                                 <button class="btn btn-default btn-sm pull-right right-ctl">继续执行</button>
@@ -983,31 +984,33 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade testin-modal expert-bug" id="set-bug" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-    <div class="modal-dialog repeat-bug">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                    ×
-                </button>
-                <h4 class="modal-title" id="myModalLabel">
-                    设置重复的Bug
-                </h4>
-            </div>
-            <div class="modal-body">
-                <p class="repeat-bug-title">请选择首个Bug：</p>
-                <div class="per-fail-contact">
-                    <p class="fail-contact-detail">1234.［ 功能问题 ］ Bug标题<span><img src="../../../images/close-x.png" class="t-2"></span></p>
-                    <p class="fail-contact-detail">1234.［ 功能问题 ］ Bug标题<span><img src="../../../images/close-x.png" class="t-2"></span></p>
-                    <p class="fail-contact-detail">1234.［ 功能问题 ］ Bug标题<span><img src="../../../images/close-x.png" class="t-2"></span></p>
+            <!--<div class="modal fade testin-modal expert-bug" id="set-bug" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">-->
+            <div class="testin-modal expert-bug" id="repeat">
+                <div class="modal-dialog repeat-bug">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                ×
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel">
+                                设置重复的Bug
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <p class="repeat-bug-title">请选择首个Bug：</p>
+                            <div class="per-fail-contact">
+                                <p class="fail-contact-detail">1234.［ 功能问题 ］ Bug标题<span><img src="../../../images/close-x.png" class="t-2"></span></p>
+                                <p class="fail-contact-detail">1234.［ 功能问题 ］ Bug标题<span><img src="../../../images/close-x.png" class="t-2"></span></p>
+                                <p class="fail-contact-detail">1234.［ 功能问题 ］ Bug标题<span><img src="../../../images/close-x.png" class="t-2"></span></p>
+                            </div>
+                            <div class="tac">
+                                <button type="button" class="btn testin-btn-primary" style="width: 88px">确定</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="tac">
-                    <button type="button" class="btn testin-btn-primary" style="width: 88px">确定</button>
-                </div>
             </div>
+            <!--</div>-->
         </div>
     </div>
 </div>
@@ -1058,16 +1061,54 @@
             $(this).addClass("t-hover");
         });
         $(".examine-bug .not-select").mouseleave(function(){
-//            var is_open = $(this).find(".testin-select-open").index();
-//            if(is_open==-1){
-//                $(this).find(".testin-select-set").removeClass("t-hover");
-//            };
             $(this).find(".testin-select-set").removeClass("t-hover");
         });
         $(".testin-select-list li").click(function(){
             $(this).parents(".select-grade").removeClass("not-select");
         });
 
+//            选择人员固定
+        /*选择人员高度*/
+        var c_height = $("#repeat").height();
+        /*上方元素margin高度*/
+        var t_margin = c_height-30;
+        /*fix-content高度*/
+        var fc_height = $(".article").height();
+        /*全部内容高度*/
+        var all_height = fc_height+51;
+        /*视窗高度*/
+        var screenH = $(window).height();
+        /*加载固定*/
+        if(all_height>screenH){
+            $("#repeat-top").css("margin-bottom",t_margin);
+            $("#repeat").addClass("fixing");
+        }
+        /*缩放固定*/
+        $(window).resize(function(){
+            var screenH = $(window).height();
+            if(all_height>screenH){
+                $("#repeat-top").css("margin-bottom",t_margin);
+                $("#repeat").addClass("fixing");
+            }else{
+                $("#repeat-top").css("margin-bottom","30px");
+                $("#repeat").removeClass("fixing");
+            }
+        });
+        /*内容交互固定*/
+        $(".module-item.main").click(function(){
+            var screenH = $(window).height();
+            /*fix-content高度*/
+            var fc_height = $(".article").height();
+            /*全部内容高度*/
+            var all_height = fc_height+51;
+            if(all_height>screenH){
+                $("#repeat-top").css("margin-bottom",t_margin);
+                $("#repeat").addClass("fixing");
+            }else{
+                $("#repeat-top").css("margin-bottom","30px");
+                $("#repeat").removeClass("fixing");
+            }
+        });
     });
 </script>
 <script>
@@ -1075,6 +1116,27 @@
         $(".window-notice").show();
     },function(){
         $(".window-notice").hide();
-    })
+    });
+    //    备注上方的提示
+    $(".per-form-span.note").hover(function(){
+        $(".note-window").show();
+    },function(){
+        $(".note-window").hide();
+    });
+    //    编辑保存按钮操作
+    $(".edit-item").click(function(){
+        var prt = $(this).parents(".third-item");
+        prt.toggleClass("editing");
+        prt.find(".per-fail-li-p.per-edit-p").attr("contenteditable","true").css("border-color","#ccc");
+        prt.find(".sup-info-content.info-text").attr("contenteditable","true").css("border-color","#ccc");
+        prt.find(".per-fail-li-text").removeAttr("disabled").css("border-color","#ccc");
+    });
+    $(".edit-save").click(function(){
+        var prt = $(this).parents(".third-item");
+        prt.toggleClass("editing");
+        prt.find(".per-fail-li-p.per-edit-p").attr("contenteditable","false").css("border-color","transparent");
+        prt.find(".sup-info-content.info-text").attr("contenteditable","false").css("border-color","transparent");
+        prt.find(".per-fail-li-text").attr("disabled","disabled").css("border-color","transparent");
+    });
 </script>
 </html>

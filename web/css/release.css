@@ -648,6 +648,11 @@ ul.release-step li .span-name.finish-icon {
 }
 .expert-bug .repeat-bug{
     width: 1084px;
+    margin: 0;
+}
+.repeat-bug .modal-content{
+    border: 1px solid #ebebeb;
+    box-shadow: none;
 }
 .expert-bug .repeat-bug .modal-body{
     padding: 17px 44px 19px 41px!important;
@@ -673,6 +678,9 @@ ul.release-step li .span-name.finish-icon {
 .expert-bug .repeat-bug .modal-body .tac button{
     margin-top: 20px;
 }
+#repeat.fixing{
+    position: fixed;bottom: 0;
+}
 /*p11*/
 .examine-bug .results .third-item .adjust-layout{
     padding: 0 30px!important;
@@ -688,6 +696,19 @@ ul.release-step li .span-name.finish-icon {
 }
 .module_list_wrapper.results .version-area:first-child .module-item.main{
     border-top: none;
+}
+.edit-case-box .action-area a{
+    display: none;
+    line-height: 47px;
+}
+.edit-case-box .action-area button{
+    margin-left: 20px!important;
+}
+.edit-case-box .adjust-layout:hover .action-area a{
+    display: inline-block;
+}
+ .edit-case-box .third-item .adjust-layout{
+    padding-right: 20px!important;
 }
 /*p12-13*/
 .module_list_wrapper.bugs-list .version-area:first-child .module-item.main{
@@ -765,6 +786,9 @@ ul.release-step li .span-name.finish-icon {
 }
 .examine-bug.bg-list.report .experts-tab1-top{
     padding: 10px 20px 10px 42px;
+}
+.module_list_wrapper.submit-use-case .version-area:first-child .module-item.main{
+    border-top: none;
 }
 .module_list_wrapper.bug-list .version-area:first-child .module-item.main{
     border-top: none;
