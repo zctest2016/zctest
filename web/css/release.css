@@ -538,6 +538,20 @@ ul.release-step li .span-name.finish-icon {
     line-height: 24px;
     cursor: pointer;
 }
+#tab2 .bug-list .edit-bug-box .third-item .details-content{
+    border-top: 1px solid #ebebeb;
+}
+.edit-bug-box .third-item .adjust-layout{
+    padding: 0 20px 0 0!important;
+}
+.edit-bug-box .action-area a{
+    display: none;
+    line-height: 47px;
+}
+.edit-bug-box .adjust-layout:hover .action-area a{
+    display: inline-block;
+
+}
 /*p10样式*/
 .release-p3 .tab-content>.tab-pane.examine-bug{
     padding: 20px 0;

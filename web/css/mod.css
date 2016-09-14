@@ -604,10 +604,27 @@ body {
 .bug-list .third-item .details-content .details-left{
     width: 415px;
     float: left;
+    max-height: 310px;
+    overflow-y: scroll;
 }
 .bug-list .third-item .details-content .details-right{
     width: 358px;
     float: right;
+}
+.bug-list .third-item .details-content .details-bottom{
+    clear: both;
+    width: 100%;
+    margin-top: 30px;
+}
+.details-bottom .bottom-items{
+    display: inline-block;
+    vertical-align: top;
+}
+.bit-l{
+    width: 475px;
+}
+.bit-r{
+    width: 358px;
 }
 .bug-list .third-item .details-content{
     overflow: hidden;
@@ -623,6 +640,7 @@ body {
     height: 66px;
     overflow: hidden;
     width: 100%;
+    background-color: transparent;
 }
 .details-right .pic-area{
     overflow: hidden;

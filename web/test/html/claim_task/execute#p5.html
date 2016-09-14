@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="../../../css/perform.css">
     <script src="../../../js/jquery-1.11.1.min.js"></script>
     <script src="../../../js/testinBS.js"></script>
+    <script src="../../../js/left-menu.js"></script>
+    <script src="../../../js/jquery.nicescroll.js"></script>
 </head>
 <style>
     body{background-color: #F5F7F7; }
@@ -589,7 +591,7 @@
                                             </div>
                                         </div>
                                         <div class="mod-third-content" >
-                                            <div class="mod-third-box">
+                                            <div class="mod-third-box edit-bug-box">
 
                                                 <!--第三层 S-->
                                                 <div class="third-item clearfix" >
@@ -607,8 +609,8 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="details-content" style="display: block">
-                                                        <div class="details-left">
+                                                    <div class="details-content">
+                                                        <div class="details-left scroll-content">
                                                             <div class="mb-20">
                                                                 <p class="per-fail-li-p bef title2">前提条件：</p>
                                                                 <p class="per-fail-li-p per-edit-p"> 提供微信好友、微信朋友圈二种方式选择。</p>
@@ -635,10 +637,10 @@
                                                                 <p class="per-fail-li-p bef title6">备注：</p>
                                                                 <p class="per-fail-li-p per-edit-p">这是一条很长很长的备注</p>
                                                             </div>
-                                                            <div class="clearfix">
-                                                                <p class="per-fail-li-p bef title7 pull-left">测试设备：技嘉-Luchino系列007 </p>
-                                                                <p class="per-fail-li-p bef title8 pull-left">测试网络：WI－FI </p>
-                                                            </div>
+                                                            <!--<div class="clearfix">-->
+                                                                <!--<p class="per-fail-li-p bef title7 pull-left">测试设备：技嘉-Luchino系列007 </p>-->
+                                                                <!--<p class="per-fail-li-p bef title8 pull-left">测试网络：WI－FI </p>-->
+                                                            <!--</div>-->
                                                         </div>
                                                         <div class="details-right">
                                                             <div class="pic-area">
@@ -649,7 +651,14 @@
                                                                     <img src="../../../images/screen-capture.png">
                                                                 </div>
                                                             </div>
-                                                            <div class="mt-30">
+
+                                                        </div>
+                                                        <div class="details-bottom">
+                                                            <div class="clearfix bottom-items bit-l">
+                                                                <p class="per-fail-li-p bef title7 pull-left">测试设备：技嘉-Luchino系列007 </p>
+                                                                <p class="per-fail-li-p bef title8 pull-left">测试网络：WI－FI </p>
+                                                            </div>
+                                                            <div class="bottom-items bit-r">
                                                                 <p class="per-fail-li-p bef title9">附件：</p>
                                                                 <p class="per-fail-li-p per-edit-p"><a style="line-height: 22px;">Bojack Horseman.txt
                                                                     Who is he？ He's Mr. Peanut butter.</a>
@@ -677,21 +686,61 @@
                                                         </div>
                                                     </div>
                                                     <div class="details-content">
-                                                        <ul class="per-step-ul">
-                                                            <li class="per-fail-li mar-top">
+                                                        <div class="details-left scroll-content">
+                                                            <div class="mb-20">
+                                                                <p class="per-fail-li-p bef title2">前提条件：</p>
+                                                                <p class="per-fail-li-p per-edit-p"> 提供微信好友、微信朋友圈二种方式选择。</p>
+                                                            </div>
+                                                            <div>
                                                                 <p class="per-fail-li-p bef title1">测试步骤：</p>
                             <textarea class="per-fail-li-text" disabled="disabled" rows="4">1、点击商品进入商品详情页
 2、点击右上角【分享】图标，弹出分享方式选择层
 3、选择分享至【微信】，在微信中选择好友，确认分享
                             </textarea>
-                                                            </li>
-                                                            <li class="per-fail-li ">
-                                                                <p class="per-fail-li-p bef title2">期望结果：</p>
+                                                            </div>
+                                                            <div class="mb-20">
+                                                                <p class="per-fail-li-p bef title3">期望结果：</p>
                                                                 <p class="per-fail-li-p per-edit-p">提供微信好友、微信朋友圈二种方式选择</p>
-                                                                <p class="per-fail-li-p bef title3">前提条件：</p>
-                                                                <p class="per-fail-li-p per-edit-p"> 提供微信好友、微信朋友圈二种方式选择。</p>
-                                                            </li>
-                                                        </ul>
+                                                            </div>
+                                                            <div class="mb-20">
+                                                                <p class="per-fail-li-p bef title4">实际结果：</p>
+                                                                <p class="per-fail-li-p per-edit-p">提供微信好友、微信朋友圈二种方式选择</p>
+                                                            </div>
+                                                            <div class="mb-20">
+                                                                <p class="per-fail-li-p bef title5">浮现概率：<span>75%</span></p>
+                                                            </div>
+                                                            <div class="mb-20">
+                                                                <p class="per-fail-li-p bef title6">备注：</p>
+                                                                <p class="per-fail-li-p per-edit-p">这是一条很长很长的备注</p>
+                                                            </div>
+                                                            <!--<div class="clearfix">-->
+                                                            <!--<p class="per-fail-li-p bef title7 pull-left">测试设备：技嘉-Luchino系列007 </p>-->
+                                                            <!--<p class="per-fail-li-p bef title8 pull-left">测试网络：WI－FI </p>-->
+                                                            <!--</div>-->
+                                                        </div>
+                                                        <div class="details-right">
+                                                            <div class="pic-area">
+                                                                <div class="pic-item">
+                                                                    <img src="../../../images/screen-capture.png">
+                                                                </div>
+                                                                <div class="pic-item">
+                                                                    <img src="../../../images/screen-capture.png">
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="details-bottom">
+                                                            <div class="clearfix bottom-items bit-l">
+                                                                <p class="per-fail-li-p bef title7 pull-left">测试设备：技嘉-Luchino系列007 </p>
+                                                                <p class="per-fail-li-p bef title8 pull-left">测试网络：WI－FI </p>
+                                                            </div>
+                                                            <div class="bottom-items bit-r">
+                                                                <p class="per-fail-li-p bef title9">附件：</p>
+                                                                <p class="per-fail-li-p per-edit-p"><a style="line-height: 22px;">Bojack Horseman.txt
+                                                                    Who is he？ He's Mr. Peanut butter.</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <!--第三层 E-->
@@ -1022,6 +1071,15 @@
         prt.find(".per-fail-li-p.per-edit-p").attr("contenteditable","false").css("border-color","transparent");
         prt.find(".sup-info-content.info-text").attr("contenteditable","false").css("border-color","transparent");
         prt.find(".per-fail-li-text").attr("disabled","disabled").css("border-color","transparent");
+    });
+    $('.scroll-content').niceScroll({
+        cursorcolor: "#ccc",//#CC0071 光标颜色
+        cursoropacitymax: 1, //改变不透明度非常光标处于活动状态（scrollabar“可见”状态），范围从1到0
+        touchbehavior: false, //使光标拖动滚动像在台式电脑触摸设备
+        cursorwidth: "5px", //像素光标的宽度
+        cursorborder: "0", //     游标边框css定义
+        cursorborderradius: "5px",//以像素为光标边界半径
+        autohidemode: false //是否隐藏滚动条
     });
 </script>
 </body>
