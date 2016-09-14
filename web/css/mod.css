@@ -623,8 +623,25 @@ body {
 .bit-l{
     width: 475px;
 }
+.bit-l-lg{
+    width: 475px;
+}
 .bit-r{
     width: 358px;
+}
+.reward-bug-box .details-right{
+    margin-right: 80px;
+}
+.reward-bug-box .report-remark-area{
+    border-top: 0;
+    margin-top: 15px;
+}
+.report-bug-box .report-remark-area{
+    margin-top: 15px;
+}
+.report-bug-box .bit-r{
+    margin-left: 78px;
+    width: 350px;
 }
 .bug-list .third-item .details-content{
     overflow: hidden;
