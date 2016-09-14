@@ -441,13 +441,13 @@
                                                         <div class="sup-info">
                                                             <div class="sup-info-title">
                                                                 <span class="info-title-span"><img src="../../../images/Shape-ox.png">无法测试原因</span>
-                                                                <a class="pull-right"><i class="iconfont">&#xe602;</i>编辑</a>
+                                                                <a class="pull-right in-save"><i class="iconfont">&#xe614;</i>保存</a>
+                                                                <a class="pull-right in-edit"><i class="iconfont">&#xe602;</i>编辑</a>
                                                             </div>
                                                             <div class="sup-info-content info-text">
                                                                 1、点击商品进入商品详情页2、点击右上角【分享】图标，弹出分享方式选择层3、选择分享至【微信】，在微信中选择好友，确认分享1、点击商品进入商品详情页2、点击右上角【分享】图标，弹出分享方式选择层、选择分享至【微信】
                                                             </div>
                                                         </div>
-                                                        <br>
                                                         <div class="sup-info">
                                                             <div class="sup-info-title">
                                                                 <span class="info-title-span"><img src="../../../images/Shape-link.png">关联问题</span>
@@ -1062,16 +1062,25 @@
         var prt = $(this).parents(".third-item");
         prt.toggleClass("editing");
         prt.find(".per-fail-li-p.per-edit-p").attr("contenteditable","true").css("border-color","#ccc");
-        prt.find(".sup-info-content.info-text").attr("contenteditable","true").css("border-color","#ccc");
         prt.find(".per-fail-li-text").removeAttr("disabled").css("border-color","#ccc");
     });
     $(".edit-save").click(function(){
         var prt = $(this).parents(".third-item");
         prt.toggleClass("editing");
         prt.find(".per-fail-li-p.per-edit-p").attr("contenteditable","false").css("border-color","transparent");
-        prt.find(".sup-info-content.info-text").attr("contenteditable","false").css("border-color","transparent");
         prt.find(".per-fail-li-text").attr("disabled","disabled").css("border-color","transparent");
     });
+    $(".in-edit").click(function(){
+        var in_prt = $(this).parents(".sup-info");
+        in_prt.toggleClass("in-editing");
+        in_prt.find(".sup-info-content.info-text").attr("contenteditable","true").css("border-color","#ccc");
+    });
+    $(".in-save").click(function(){
+        var in_prt = $(this).parents(".sup-info");
+        in_prt.toggleClass("in-editing");
+        in_prt.find(".sup-info-content.info-text").attr("contenteditable","false").css("border-color","transparent");
+    });
+
     $('.scroll-content').niceScroll({
         cursorcolor: "#ccc",//#CC0071 光标颜色
         cursoropacitymax: 1, //改变不透明度非常光标处于活动状态（scrollabar“可见”状态），范围从1到0

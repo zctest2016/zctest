@@ -31,7 +31,7 @@
 .claim_top_li.last{
     position: relative;
     float: right;
-    top: 53px;
+    top: 48px;
     right: 45px;
 }
 .claim_top_ul.add-show .claim_topApp{
@@ -267,6 +267,7 @@ ul.release-step li .span-name.finish-icon {
     margin: 14px 0 13px 21px;
     display: block;
     float: left;
+    cursor: pointer;
 }
 .upload-span{
     font-size: 13px;
@@ -288,6 +289,43 @@ ul.release-step li .span-name.finish-icon {
 .send-check{
     margin-top: 27px;
     margin-left: 34px;
+}
+.hide-block{
+    padding-left: 74px;
+}
+.hide-block button{
+    margin-right: 10px;
+}
+.hide-block button:hover{
+    border-color: #b3b3b3;
+    color: #333;
+}
+.kz_list_bx {
+    margin-top: 20px;
+    overflow: hidden;
+    width: 680px;
+    height: auto;
+}
+.bug_deve_step2 {
+    border: 1px solid #e6edf5;
+}
+.bug_deve_step2 .first_tr {
+    border: none;
+}
+.kz_list_bx tr th {
+    width: 33%;
+    height: 40px;
+    background: #f4f7fa;
+    color: #485a69;
+    text-align: center;
+    font-weight: 100;
+    line-height: 40px;
+}
+.kz_list_bx tr td {
+    color: #485a69;
+    text-align: center;
+    font-size: 9pt;
+    line-height: 40px;
 }
 /*release-p3的样式*/
 .release-p3 .testin-nav-tabs{

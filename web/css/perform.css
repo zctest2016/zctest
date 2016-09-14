@@ -240,6 +240,19 @@ a.blue-btn.bottom-btn.mar-top.No-left {
     float: right;
     padding: 14px 20px;
 }
+.per-form-span.note{
+    padding-left: 0;
+    padding-right: 10px;
+}
+.per-form-span.per-save{
+    display: none;
+}
+.editing .per-form-span.per-save{
+    display: block;
+}
+.editing .per-form-span.per-edite{
+    display: none;
+}
 .per-form-span:hover{
     color:#3098F2;
 }
@@ -289,7 +302,7 @@ a.blue-btn.bottom-btn.mar-top.No-left {
 .per-step-ul{
     padding-bottom: 22px;
     border-bottom: 1px solid #ebebeb;
-    min-height: 196px;
+    min-height: 138px;
 }
 .per-fail-li{
     display: inline-block;
@@ -299,7 +312,7 @@ a.blue-btn.bottom-btn.mar-top.No-left {
 }
 textarea.per-fail-li-text{
     width: 420px;
-    height: 126px;
+    height: auto;
 }
 textarea.per-fail-li-text.form-control[disabled]{
     background-color: #fff;
@@ -314,7 +327,7 @@ textarea.per-fail-li-text{
     font-size: 13px;
     color: #333333;
     letter-spacing: 0px;
-    line-height: 26px;
+    line-height: 18px;
     margin-bottom: 0;
     /*padding-left: 23px;*/
     border: 1px solid transparent;
@@ -325,11 +338,25 @@ textarea.per-fail-li-text{
     box-shadow: none;
     -webkit-transition: none;
 }
-.per-fail-li-p.bef{
+.Modify-content.editing textarea.per-fail-li-text {
+    padding: 15px 20px;
+    min-height: 126px;
+}
+.Modify-content.editing .per-fail-li-p.per-edit-p {
+    padding: 8px 15px;
+}
+.Modify-content.editing .per-fail-li-p.bef.title3 {
+    margin-top: 18px;
+    margin-bottom: 12px;
+}
+.Modify-content.editing .per-fail-li-p.bef {
     margin-bottom: 6px;
 }
+.per-fail-li-p.bef{
+    margin-bottom: 0px;
+}
 .per-fail-li-p.bef.title3{
-    margin-top: 13px;
+    margin-top: 0px;
 }
 .per-fail-li-p.bef.title1:before{
     content: url("../images/step.png");
@@ -387,6 +414,7 @@ textarea.per-fail-li-text{
     padding-left: 20px;
     line-height: 58px;
     border-bottom: 1px solid #EBEBEB;
+    margin-bottom: 16px;
 }
 .per-res-title a span{
     font-size: 14px;
@@ -524,7 +552,7 @@ textarea.per-fail-li-text{
     width: 190px;
 }
 .modify-middle.per-fail-middle .add-pho-discript {
-    padding: 10px 20px 94px 23px;
+    padding: 10px 20px 74px 23px;
 }
 .bottom-btn-group.per-fail-btn{
     padding-top: 0;

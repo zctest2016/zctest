@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../../../css/perform.css"/>
     <script src="../../../js/jquery-1.11.1.min.js"></script>
     <script src="../../../js/testinBS.js"></script>
+    <script src="../../../js/left-menu.js"></script>
 </head>
 <body>
 <div class="zc_new-nav">
@@ -121,7 +122,7 @@
                     <span class="per-fr-notice NANotice">N/A</span>
                     <span class="per-form-span note"><i class="icon iconfont" style="margin-right: 6px;position: relative; top: 1px;">&#xe60d;</i>备注</span>
                     <span class="per-form-span per-edite"style=""><i class="icon iconfont" style="">&#xe602;</i> 编辑</span>
-                    <span class="per-form-span per-save"style="display: none;line-height: 22px;"><img src="../../../images/save.png" style="margin-right: 3px;"> 保存</span>
+                    <span class="per-form-span per-save"><img src="../../../images/save.png" style="margin-right: 3px;"> 保存</span>
                     <div class="note-window" style="display: none;">
                         <p class="note-window-p">提供微信好友、微信朋友圈二种方式选择。</p>
                     </div>
@@ -130,9 +131,9 @@
                     <ul class="per-step-ul">
                         <li class="per-fail-li mar-top">
                             <p class="per-fail-li-p bef title1">测试步骤：</p>
-                            <textarea class="per-fail-li-text form-control" disabled="disabled">1、点击商品进入商品详情页
-                                2、点击右上角【分享】图标，弹出分享方式选择层
-                                3、选择分享至【微信】，在微信中选择好友，确认分享
+                            <textarea class="per-fail-li-text form-control" rows="4" disabled="disabled">1、点击商品进入商品详情页
+2、点击右上角【分享】图标，弹出分享方式选择层
+3、选择分享至【微信】，在微信中选择好友，确认分享
                             </textarea>
                         </li>
                         <li class="per-fail-li ">
@@ -172,18 +173,19 @@
         $(".note-window").hide();
     });
     //    编辑保存按钮操作
-    $(".per-form-span.per-edite").click(function(){
-        $(this).hide();
-        $(".per-form-span.per-save").show();
-        $(".per-fail-li-p.per-edit-p").attr("contenteditable","true").css("border-color","#ccc");
-        $(".per-fail-li-text").removeAttr("disabled").css("border-color","#ccc");
+    $(".per-edite").click(function(){
+        var prt = $(this).parents(".Modify-content");
+        prt.toggleClass("editing");
+        prt.find(".per-fail-li-p.per-edit-p").attr("contenteditable","true").css("border-color","#ccc");
+        prt.find(".sup-info-content.info-text").attr("contenteditable","true").css("border-color","#ccc");
+        prt.find(".per-fail-li-text").removeAttr("disabled").css("border-color","#ccc");
     });
-    $(".per-form-span.per-save").click(function(){
-        $(this).hide();
-        $(".per-form-span.per-edite").show();
-        $(".per-fail-li-p.per-edit-p").attr("contenteditable","false").css("border-color","transparent");
-        $(".per-fail-li-text").attr("disabled","disabled").css("border-color","transparent");
-
+    $(".per-save").click(function(){
+        var prt = $(this).parents(".Modify-content");
+        prt.toggleClass("editing");
+        prt.find(".per-fail-li-p.per-edit-p").attr("contenteditable","false").css("border-color","transparent");
+        prt.find(".sup-info-content.info-text").attr("contenteditable","false").css("border-color","transparent");
+        prt.find(".per-fail-li-text").attr("disabled","disabled").css("border-color","transparent");
     });
 </script>
 </html>

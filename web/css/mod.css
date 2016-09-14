@@ -503,6 +503,9 @@ body {
 .module_list_wrapper .sub-module-container .module-item .third-item .adjust-layout .action{
     padding: 0;
 }
+.edit-case-box .third-item .details-content{
+    padding-bottom: 0;
+}
 .third-item .details-content{
     border-top: 1px solid #ebebeb;
     padding-bottom: 20px;
@@ -564,7 +567,7 @@ body {
     background: #FAFAFA;
     border: 1px solid #EBEBEB;
     border-radius: 2px;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     padding: 15px 20px;
 }
 .info-title-span img{
@@ -578,10 +581,6 @@ body {
     letter-spacing: 0px;
     border: 1px solid transparent;
 }
-.editing .details-content .sup-info .sup-info-content.info-text{
-    margin-top: 18px;
-    padding: 15px 25px 15px;
-}
 .editing .details-content .sup-info{
     padding: 15px 20px 20px;
 }
@@ -590,6 +589,25 @@ body {
 }
 .details-content .per-fail-li-p a{
     cursor: pointer;
+}
+.sup-info-title a{
+    cursor: pointer;
+}
+.sup-info-title a .iconfont{
+    margin-right: 8px;
+}
+.sup-info.in-editing .sup-info-content.info-text{
+    margin-top: 18px;
+    padding: 15px 25px 15px;
+}
+.in-editing .in-edit{
+    display: none;
+}
+.in-editing .in-save{
+    display: block;
+}
+.in-save{
+    display: none;
 }
 /*BUG列表样式*/
 .module_list_wrapper .module-item .third-item .action .action-area .edit-save{
