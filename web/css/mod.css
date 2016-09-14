@@ -148,6 +148,7 @@ body {
 }
 .module_list_wrapper .sub-module-container .module-item .adjust-layout {
     padding: 12px 20px 12px 60px;
+    cursor: pointer;
 }
 .module_list_wrapper .sub-module-container .module-item .adjust-layout .title {
     padding-left: 23px;
@@ -384,6 +385,9 @@ body {
     background: transparent;
     color: #666666;
 }
+.importance-span{
+    margin-left: 13px;
+}
 .importance-span.color-pass{
     background: transparent;
     color: #00c185;
@@ -399,6 +403,11 @@ body {
 .importance-span.color-na{
     background: transparent;
     color: #7261BF;
+}
+.look-repeat .iconfont{
+    font-size: 20px;
+    position: relative;
+    top: 2px;
 }
 /********/
 .expert-control button:hover:active:focus{
@@ -729,6 +738,7 @@ body {
 }
 .member-table .t-body .t-floor .floor-main{
     border-bottom: 1px solid #ebebeb;
+    cursor: pointer;
 }
 .member-table .t-body ul.floor-main li{
     height: 60px;

@@ -691,6 +691,7 @@
                                                     </div>
                                                     <div class="col-xs-5 action">
                                                         <div class="action-area">
+                                                            <a class="look-repeat"><i class="iconfont">&#xe615;</i>查看重复Bug</a>
                                                             <span class="importance-span color-fail">［ 非常有用 ］</span>
                                                         </div>
                                                     </div>
@@ -770,8 +771,8 @@
                                                                 <div class="marked-text">
                                                                     这是一条新备注 <a class="edit-remark"><i class="iconfont">&#xe602;</i>编辑</a>
                                                                 </div>
-                                                                <div class="marking-text" style="display: none">
-                                                                    <textarea type="text"  class="form-control input-sm" name="bug_detail" rows="5" placeholder="请输入修改内容"></textarea>
+                                                                <div class="marking-text">
+                                                                    <textarea type="text" class="form-control input-sm" name="bug_detail" rows="5" placeholder="请输入修改内容"></textarea>
                                                                     <a class="save-remark"><i class="iconfont">&#xe614;</i>保存</a>
                                                                 </div>
                                                             </div>
@@ -850,7 +851,7 @@
                                                                 <p class="per-fail-li-p bef title6">备注：</p>
                                                             </div>
                                                             <div class="sup-info-content info-text">
-                                                                <div class="marked-text" style="display: none">
+                                                                <div class="marked-text">
                                                                     这是一条新备注 <a class="edit-remark"><i class="iconfont">&#xe602;</i>编辑</a>
                                                                 </div>
                                                                 <div class="marking-text">
@@ -1102,9 +1103,18 @@
                 $(this).parents(".third-item").toggleClass("details-open");
             }
         });
+
+        //    备注编辑状态与保存
+        $(".save-remark").click(function(){
+            $(this).parents(".info-text").addClass("remarked");
+        });
+        $(".edit-remark").click(function(){
+            $(this).parents(".info-text").removeClass("remarked");
+        });
     });
 </script>
 <script>
+//      滚动条美化
     $('.scroll-content').niceScroll({
         cursorcolor: "#ccc",//#CC0071 光标颜色
         cursoropacitymax: 1, //改变不透明度非常光标处于活动状态（scrollabar“可见”状态），范围从1到0
