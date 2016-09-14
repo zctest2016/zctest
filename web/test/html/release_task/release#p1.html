@@ -138,9 +138,14 @@
                             <div class="col-sm-5">
                                 <div class="fg-line">
                                     <textarea type="text" id="bug_detail" class="form-control input-sm" name="bug_detail" rows="5">双击上传按钮，就闪退</textarea>
-                                    <p class="blue-link"><a><i class="icon iconfont">&#xe605;</i>客户要求</a></p>
                                     <div class="help-block"></div>
+                                    <p class="blue-link"><a class="require-link"><i class="icon iconfont">&#xe605;</i>客户要求</a></p>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="tip-out" style="margin-left: 141px;">
+                            <div class="require" style="display: none ;">
+                                <p>上点击显示客户要求，再点关闭。来源：开发者提测时的需求描述。专家同步至测试者处。与开发者上传附件限制条件相同。上点击显示客户要求，再点关闭。来源：开发者提测时的需求描述。专家同步至测试者处。与开发者上传附件限制条件相同。</p>
                             </div>
                         </div>
                         <div class="form-group">
@@ -208,6 +213,12 @@
             $(".user-window").css("display","inline-block");
         },function(){
             $(".user-window").hide();
+        })
+
+        $(".require-link").hover(function(){
+            $(".require").css("display","inline-block");
+        },function(){
+            $(".require").hide();
         })
     });
 </script>
