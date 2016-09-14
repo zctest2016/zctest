@@ -197,6 +197,11 @@ ul.release-step li .span-name.finish-icon {
 .has-error .form-control{
     border: 1px solid #EB5A3C;
 }
+.has-error .form-control:focus {
+    border-color: #ee6666;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.025),0 0 6px #ee6666;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.025),0 0 6px #ee6666;
+}
 .has-error .help-block{
     color: #EB5A3C;
 }
@@ -902,6 +907,50 @@ ul.release-step li .span-name.finish-icon {
 }
 #quota button.color-or:focus{
     background-color: #ff843e;
+}
+#comment .modal-body{
+    padding-top: 25px!important;
+    padding-bottom: 25px!important;
+}
+#comment .modal-body p.tac{
+    margin-bottom: 0;
+    font-size: 14px;
+}
+.comment-btn-group{
+    text-align: center;
+    margin-top: 30px;
+}
+.comment-btn-group a{
+    width: 108px;
+    height: 40px;
+    border: 1px solid #cccccc;
+    border-radius: 100px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 13px;
+    color: #333333;
+    line-height: 38px;
+    cursor: pointer;
+}
+.comment-btn-group a:hover{
+    background-color: #fff;
+    border: 1px solid #ff7733;
+    color: #ff7733;
+}
+.comment-btn-group .active{
+    background-color: #ff7733;
+    border: 1px solid #ff7733;
+    color: #ffffff;
+}
+.comment-btn-group .active:hover{
+    background-color: #ff7733;
+    border: 1px solid #ff7733;
+    color: #ffffff;
+}
+.comment-text textarea{
+    width: 384px;
+    margin: 25px auto 0;
+    font-size: 13px;
 }
 /*p18*/
 .release-p3.rewards .examine-bug.report .module_list_wrapper{

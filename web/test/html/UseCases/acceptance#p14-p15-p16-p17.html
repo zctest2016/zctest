@@ -116,7 +116,7 @@
                         <p class="residue-data">用例设计 <span>650</span> 条</p>
                         <p class="residue-data"> 用例执行<span>1</span> 条</p>
                     </div>
-                    <a href="javascript:;" class="blue-btn bottom-btn acc-residue" data-toggle="modal" data-target="#not-success">确认验收</a>
+                    <a href="javascript:;" class="blue-btn bottom-btn acc-residue" data-toggle="modal" data-target="#comment">确认验收</a>
 
                 </li>
             </ul>
@@ -1021,6 +1021,34 @@
         </div>
     </div>
 </div>
+<div class="modal fade testin-modal" id="comment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog" style="width: 487px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    ×
+                </button>
+                <h4 class="modal-title" id="myModalLabel2">
+                    <span style="opacity: 0">.</span>
+                </h4>
+            </div>
+            <div class="modal-body">
+                <p class="tac">请选择满意度：</p>
+                <div class="comment-btn-group">
+                    <a>非常满意</a>
+                    <a>满意</a>
+                    <a>不满意</a>
+                </div>
+                <div class="comment-text">
+                    <textarea class="form-control input-sm" placeholder="其他想对我们说的话：）"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn testin-btn-primary" style="width: 88px">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
 <script>
     $(document).ready(function(){
 //        默认显示弹窗
@@ -1029,6 +1057,10 @@
 //        按钮切换
         $(".notoggle-one-active .for_active button").on("click",function(){
             $(this).addClass("active").parent(".for_active").siblings(".for_active").find("button").removeClass("active");
+        });
+//        评分按钮切换
+        $("#comment .comment-btn-group a").on("click",function(){
+            $(this).addClass("active").siblings("a").removeClass("active");
         });
 
 //            切换打开第二层内容

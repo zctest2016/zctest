@@ -604,7 +604,7 @@ body {
 .bug-list .third-item .details-content .details-left{
     width: 415px;
     float: left;
-    max-height: 310px;
+    max-height: 296px;
     overflow-y: scroll;
 }
 .bug-list .third-item .details-content .details-right{
@@ -614,7 +614,7 @@ body {
 .bug-list .third-item .details-content .details-bottom{
     clear: both;
     width: 100%;
-    margin-top: 30px;
+    padding-top: 10px;
 }
 .details-bottom .bottom-items{
     display: inline-block;
