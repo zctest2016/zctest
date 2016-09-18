@@ -525,11 +525,9 @@
 </body>
 <script>
     $(document).ready(function(){
-        $(".remaining_time").hover(function(){
-            $(".user-window").css("display","inline-block");
-        },function(){
-            $(".user-window").hide();
-        })
+        $(".remaining_time").click(function(){
+            $(".user-window").toggleClass("dis-in");
+        });
     });
 </script>
 

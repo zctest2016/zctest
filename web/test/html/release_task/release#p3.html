@@ -99,7 +99,7 @@
             </ul>
             <div class="user-window" style="display: none;">
                 <div class="user-window-top">
-                    <p class="task_message">客户：<span>徐季佳</span></p>｀
+                    <p class="task_message">客户：<span>徐季佳</span></p>
                     <p class="task_message">手机：<span>18010050097</span></p>
                     <p class="task_message">Q Q：<span> 414709426</span></p>
                     <p class="task_message">邮箱：<span> xujijia@testin.cn</span></p>
@@ -535,6 +535,10 @@
                 $("#choice-top").css("padding-bottom","30px");
                 $("#choice").removeClass("fixing");
             }
+        });
+
+        $(".remaining_time").click(function(){
+            $(".user-window").toggleClass("dis-in");
         });
     });
 </script>

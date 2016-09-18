@@ -179,3 +179,6 @@ body{background: #F5F7F7;font-family: ""PingFang SC",Proxima Nova","Helvetica Ne
 .testin-select-list li{
     font-size: 13px;
 }
+.dis-in{
+    display: inline-block!important;
+}

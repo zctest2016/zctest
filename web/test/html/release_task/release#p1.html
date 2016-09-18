@@ -209,17 +209,12 @@
 </body>
 <script>
     $(document).ready(function(){
-        $(".remaining_time").hover(function(){
-            $(".user-window").css("display","inline-block");
-        },function(){
-            $(".user-window").hide();
-        })
-
-        $(".require-link").hover(function(){
-            $(".require").css("display","inline-block");
-        },function(){
-            $(".require").hide();
-        })
+        $(".remaining_time").click(function(){
+            $(".user-window").toggleClass("dis-in");
+        });
+        $(".require-link").click(function(){
+            $(".require").toggleClass("dis-in");
+        });
     });
 </script>
 </html>

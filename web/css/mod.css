@@ -182,11 +182,14 @@ body {
 .module_list_wrapper .module-item.editing .adjust-layout .action .save-text{
     display: inline-block;
 }
+.module_list_wrapper .module-item.editing .adjust-layout .action .remove-module{
+    display: inline-block!important;
+}
 .module_list_wrapper .module-item.editing .adjust-layout .action .edit-module-name{
     opacity: 0;z-index: -1;position: relative;
 }
 .module_list_wrapper .module-item.editing .adjust-layout .action .remove-module{
-    /*opacity: 0;z-index: -1;position: relative;*/
+    /*display: inline-block;*/
 }
 .cygl .btn-sm{
     padding: 4px 11px;
